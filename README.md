@@ -16,12 +16,7 @@ The source code of each cheat code can be found in the "Source Code" folder. The
 
 
 All cheat codes were written and tested on Mario Kart 8 v4.1 (PAL). They should work on all regions regardless.
-
-
-
-
-
-
-Special thanks to:
-
+<br/><br/><br/>
+**Special thanks to:**
+<br/>
 ShyGuy for the Turbo.rpx Ghidra project.
