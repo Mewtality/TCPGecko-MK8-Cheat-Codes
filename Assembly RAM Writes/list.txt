@@ -261,25 +261,6 @@ Is Assembly RAM Writes [O]
 
 
 
-No Music [Divengerss]
-#105F6AE4 3F800000
-105F6AE4 00000000
-
-Mutes all music in the game.
-
-Online [O]
-Offline [O]
-
-- This code is fully stable.
-- To fully disable, restart the race.
-
----
-
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
-
-
-
 No Online Disconnection [Mewtality]
 #0E55F86C 57C3063E
 0E55F86C 38600000
