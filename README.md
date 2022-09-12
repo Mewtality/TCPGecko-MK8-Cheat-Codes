@@ -12,6 +12,11 @@ All cheat codes in this repository are "Raw Machine Codes". This means you have 
 ![image](https://user-images.githubusercontent.com/59747767/189653773-bb804530-205c-40f0-80d2-395652d3dede.png)
 
 
-The source code, machine code and description for how to use the cheat code are available in each file.
+The source code of each cheat code can be found in the "Source Code" folder.
+The machine code, which is what you use for enabling the hack, can be found in the "Machine Code" folder.
 
 Any cheat codes were written and tested on Mario Kart 8 v4.1 (PAL). They should work on all regions.
+
+
+Special thanks to:
+ShyGuy for the Turbo.rpx Ghidra project.
