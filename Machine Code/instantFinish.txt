@@ -3,10 +3,10 @@ Instant Start [Mewtality]
 2C0C0000 41820024
 818C0238 2C0C0000
 41820018 800C0028
-2C000005 4082000C
-38000006 900C0028
+2C000006 4082000C
+38000007 900C0028
 
-All local players start instantly.
+The race ends instantly.
 
 Online [O]
 Offline [O]
