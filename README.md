@@ -9,7 +9,7 @@ To use these cheat codes you must download:
 
 All cheat codes in this repository are "Raw Machine Codes". This means you have to enable the feature when adding the code to your code list in Jgecko U:
 
-![image](https://user-images.githubusercontent.com/59747767/189652579-ec8b7df2-a3ca-4f17-838b-f728c7492623.png)
+![image](https://user-images.githubusercontent.com/59747767/189653773-bb804530-205c-40f0-80d2-395652d3dede.png)
 
 
 The source code, machine code and description for how to use the cheat code are available in each file.
