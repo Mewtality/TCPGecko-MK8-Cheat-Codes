@@ -1,0 +1,34 @@
+Instant Respawn [Mewtality]
+7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820060 818C023C
+2C0C0000 41820054
+880C003E 2C000000
+41820048 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810030 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+818C004C 818C0014
+800C0034 900C001C
+800C008C 900C006C
+8001000C 7C0803A6
+38210008
+
+Lakitu instantly moves to the respawn location when picking up a player.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+- To fully disable, restart the race.
+
+---
+
+Source: https://pastebin.com/7e6HqkZ0
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]

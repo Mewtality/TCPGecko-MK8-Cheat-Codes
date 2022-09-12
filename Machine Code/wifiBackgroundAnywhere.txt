@@ -1,0 +1,31 @@
+WiFi Background Anywhere [Mewtality]
+7C0802A6 90010004
+9421FFF8 3C000E6E
+60007DB4 7C0903A6
+4E800421 2C030000
+41820054 3C000E76
+60005AC0 7C0903A6
+4E800421 3D801069
+818CA738 2C0C0000
+41820034 88AC0040
+2C050002 41820028
+88AC0041 2C050004
+4182001C 7D836378
+38800001 3C000E6E
+6000DB74 7C0903A6
+4E800421 8001000C
+7C0803A6 38210008
+
+Forces the wifi planet background to show anywhere in the menu.
+ 
+Online [X]
+Offline [X]
+ 
+- This code is fully stable.
+ 
+---
+ 
+Source: https://pastebin.com/N0aSty2F
+ 
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]

@@ -1,0 +1,24 @@
+Unlock Home Menu [Mewtality]
+7C0802A6 90010004
+9421FFF8 3C000E64
+6000E218 7C0903A6
+4E800421 2C030000
+41820010 818302CC
+38000000 900C002C
+8001000C 7C0803A6
+38210008
+
+Forces the home menu to open when pressing the home button.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Source: https://pastebin.com/XiW0bAkC
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]

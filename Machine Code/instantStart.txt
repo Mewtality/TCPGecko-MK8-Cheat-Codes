@@ -1,0 +1,24 @@
+Instant Start [Mewtality]
+7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820024 818C0238
+2C0C0000 41820018
+800C0028 2C000005
+4082000C 38000006
+900C0028 8001000C
+7C0803A6 38210008
+
+All local players start instantly.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+
+---
+
+Source: https://pastebin.com/ifYj0iR4
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]

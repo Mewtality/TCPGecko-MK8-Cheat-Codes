@@ -1,0 +1,22 @@
+Pause Timer [Mewtality]
+3D801069 818CA70C
+2C0C0000 41820018
+818C0034 2C0C0000
+4182000C 38000001
+980C004C
+
+Pauses the Time Trial mode timer.
+This also affects other modes, which makes all races to never end after 9 minutes and 59 seconds.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+- To fully disable, restart the race.
+
+---
+
+Source: https://pastebin.com/k32VG3mk
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]

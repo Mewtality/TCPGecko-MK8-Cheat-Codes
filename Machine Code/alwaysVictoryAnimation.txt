@@ -1,0 +1,39 @@
+Always Victory Animation [Mewtality]
+7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820084 818C023C
+2C0C0000 41820078
+880C003E 2C000000
+4182006C 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820054 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+4181003C 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+800C0148 2C000000
+4082001C 80630008
+38800001 3C000E23
+6000DA14 7C0903A6
+4E800421 8001000C
+7C0803A6 38210008
+
+Always have the victory character animation.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+- Send code before starting a race.
+- To fully disable, restart the race.
+
+---
+
+Source: https://pastebin.com/1Yv5sjAh
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]
