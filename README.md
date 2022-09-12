@@ -8,6 +8,7 @@ To use these cheat codes you must download:
 
 
 All cheat codes in this repository are "Raw Machine Codes". This means you have to enable the feature when adding the code to your code list in Jgecko U:
+
 ![image](https://user-images.githubusercontent.com/59747767/189652579-ec8b7df2-a3ca-4f17-838b-f728c7492623.png)
 
 
