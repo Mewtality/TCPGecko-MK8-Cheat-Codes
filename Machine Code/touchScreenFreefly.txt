@@ -1,4 +1,4 @@
-Freefly [Mewtality]
+Touch Screen Freefly [Mewtality]
 7C0802A6 90010004
 9421FFEC 93E10008
 93C1000C 93A10010

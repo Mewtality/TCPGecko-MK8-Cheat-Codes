@@ -46,4 +46,4 @@ Is Assembly RAM Writes [X]
 ---
 
 Recommended to be used with:
-- Freefly [Mewtality]
+- Touch Screen Freefly [Mewtality]
