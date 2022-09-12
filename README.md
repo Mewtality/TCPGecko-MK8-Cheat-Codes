@@ -1,6 +1,6 @@
 # TCPGecko-MK8-Cheat-Codes
 Various cheat codes for MK8 (Wii U) written in PowerPC Assembly.
-<br/><br/><br/>
+<br/><br/>
 To use these cheat codes you must download:
 
 - Jgecko U: https://github.com/BullyWiiPlaza/JGeckoU
