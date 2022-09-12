@@ -39,7 +39,7 @@ Offline [X]
  
 ---
  
-Source: https://pastebin.com/VmwuVtmC
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
  
 Is Raw Machine Code [O]
 Is Assembly RAM Writes [X]
