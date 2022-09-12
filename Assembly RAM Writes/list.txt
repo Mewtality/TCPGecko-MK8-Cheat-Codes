@@ -203,6 +203,26 @@ Is Assembly RAM Writes [O]
 
 
 
+Ignore Dirt [Mewtality]
+#0E3553A4 4BFFEACD
+0E3553A4 60000000
+
+Driving on dirt will not slow down players.
+
+Online [X]
+Offline [O]
+
+- This code affects all karts in local modes.
+- This code is fully stable.
+- Send code before starting a race.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]
+
+
+
 Increase Item Limiters [Mewtality]
 #0E2E948C 7D635B78
 0E2E948C 3860000C
