@@ -203,11 +203,11 @@ Is Assembly RAM Writes [O]
 
 
 
-Ignore Dirt [Mewtality]
-#0E3553A4 4BFFEACD
-0E3553A4 60000000
+Ignore Off-Road [Mewtality]
+#0E353EBC 80BF01E0
+0E353EBC 60000000
 
-Driving on dirt will not slow down players.
+Driving on off-road will not slow down players.
 
 Online [X]
 Offline [O]
