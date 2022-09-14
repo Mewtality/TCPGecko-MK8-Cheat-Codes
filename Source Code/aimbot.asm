@@ -107,8 +107,13 @@ _skip:
 		lfs f7, 0x8 (%a3)
 
 		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (r29)" # DRC Kart Global Coordinates.
-		lfs f8, 0 (%a3)
-		lfs f10, 0x8 (%a3)
+		mr %a5, %a3
+
+		call("object_KartInfoProxy_isAntiG"), "lwz %a3, 0x20C (r29)"
+		cmpwi %a3, 0
+		bne _resetToggle
+		lfs f8, 0 (%a5)
+		lfs f10, 0x8 (%a5)
 		fsubs f5, f8, f5
 		fsubs f7, f10, f7
 		fmuls f8, f5, f5
@@ -118,9 +123,20 @@ _skip:
 		fdivs f10, f7, f1
 		fneg f8, f8
 		fneg f10, f10
-		stfs f8, 0x258 (%a3)
-		stfs f10, 0x254 (%a3)
-		stfs f10, 0x260 (%a3)
+
+		lis r12, _rodata + 0xC0@h
+		lfs f9, _rodata + 0xC0@l (r12) # Max Value (-1)
+		fcmpu cr0, f8, f9
+		ble _end
+		fcmpu cr0, f10, f9
+		ble _end
+
+		stfs f8, 0x24C (%a5)
+		stfs f8, 0x258 (%a5)
+		stfs f8, 0x264 (%a5)
+		stfs f10, 0x254 (%a5)
+		stfs f10, 0x260 (%a5)
+		stfs f10, 0x26C (%a5)
 		b _end
 
 _resetFlag:
