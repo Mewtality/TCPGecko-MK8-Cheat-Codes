@@ -15,12 +15,12 @@
 		isRaceState("_end")
 
 		getDRCPlayer("_end")
-        mr %a4, %a3
+		mr %a4, %a3
 
-        lis %a3, itemDirector@ha
-        lwz %a3, itemDirector@l (%a3)
+		lis %a3, itemDirector@ha
+		lwz %a3, itemDirector@l (%a3)
 
-        call("object_ItemDirector_slot_StartSlot")
+		call("object_ItemDirector_slot_StartSlot")
 
 _end:
 		stackReset()

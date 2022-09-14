@@ -109,7 +109,6 @@ _skip:
 
 		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (r29)" # DRC Kart Global Coordinates.
 		lfs f8, 0 (%a3)
-		lfs f9, 0x4 (%a3)
 		lfs f10, 0x8 (%a3)
 		fsubs f5, f8, f5
 		fsubs f7, f10, f7

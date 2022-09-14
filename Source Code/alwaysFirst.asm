@@ -14,13 +14,13 @@
 		isRaceReady("_end")
 		isRaceState("_end")
 
-        getDRCPlayer("_end")
+		getDRCPlayer("_end")
 
 		dereference("raceManagement"), 0x4C
 		rlwinm %a0, %a3, 2, 0, 29
 		lwzx r12, r12, %a0
-        li %a0, 0
-        stw %a0, 0x2C (r12)
+		li %a0, 0
+		stw %a0, 0x2C (r12)
 
 _end:
 		stackReset()

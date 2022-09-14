@@ -11,29 +11,29 @@
 	.func forceDRCFullscreen
 		stackUpdate(1)
 
-        push(31)
+		push(31)
 
 		isRaceReady("_end")
 		isRacePaused("_end")
 
 		getDRCPlayer("_end")
 		dereference("GUIManagement"), 0x10, 0x4, 0x1A0
-        lwz %a3, 0x2BC (r12)
-        cmpwi %a3, 0
-        beq _end
-        mr r31, %a3
+		lwz %a3, 0x2BC (r12)
+		cmpwi %a3, 0
+		beq _end
+		mr r31, %a3
 
-        li r4, 0
-        li r5, 0
-        li r6, 1
-        call("ui_Control_RaceDRC_setPushButton")
-        mr %a3, r31
+		li r4, 0
+		li r5, 0
+		li r6, 1
+		call("ui_Control_RaceDRC_setPushButton")
+		mr %a3, r31
 		call("ui_Control_RaceDRC_forceSetFullScreen")
-        mr %a3, r31
-        call("ui_Control_RaceDRC_quitDRCButtons")
+		mr %a3, r31
+		call("ui_Control_RaceDRC_quitDRCButtons")
 
 _end:
-        pop(31)
+		pop(31)
 
 		stackReset()
 	.endfunc

@@ -20,7 +20,7 @@
 		beq _end
 
 		li %a0, 0x1
-        stb %a0, 0x4C (r12)
+		stb %a0, 0x4C (r12)
 
 _end:
 		stackReset()
