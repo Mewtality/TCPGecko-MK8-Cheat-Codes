@@ -104,7 +104,6 @@ _skip:
 
 		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (%a3)" # Nearest Kart Global Coordinates.
 		lfs f5, 0 (%a3)
-		lfs f6, 0x4 (%a3)
 		lfs f7, 0x8 (%a3)
 
 		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (r29)" # DRC Kart Global Coordinates.
