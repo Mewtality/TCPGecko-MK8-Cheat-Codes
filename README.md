@@ -17,7 +17,8 @@ Cheat codes in the "Assembly RAM Writes" folder must have the "Assembly RAM Writ
 ![image](https://user-images.githubusercontent.com/59747767/189666550-adff3fa6-9075-4d77-8f5e-056c15cd5492.png)
 <br/><br/>
 
-The source code of each cheat code can be found in the "Source Code" folder.
+The source code of each cheat code can be found in the "Source Code" folder.<br />
+If you want to edit and compile the source code, see: https://github.com/Mewtality/WiiU-PowerPC-ASM-Library
 <br/><br/>
 All cheat codes were written and tested on Mario Kart 8 v4.1 (PAL). They should work on all regions regardless.
 <br/><br/><br/>
