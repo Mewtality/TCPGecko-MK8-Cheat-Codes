@@ -1,0 +1,2585 @@
+<?xml version="1.0" encoding="UTF-16"?><codes>
+    <entry name="Aimbot">
+        <code>7C0802A6 90010004
+9421FFB0 93E10008
+93C1000C 93A10010
+3FE0106F 3D801069
+818CA70C 2C0C0000
+41820298 818C023C
+2C0C0000 4182028C
+880C003E 2C000000
+41820280 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820268 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810250 3C000E31
+60003F38 7C0903A6
+4E800421 83C30004
+83A30014 807D020C
+3C000E31 60004784
+7C0903A6 4E800421
+2C030000 4082021C
+807E0008 3C000E34
+60004D88 7C0903A6
+4E800421 806301A4
+88FF0025 3CA00000
+60A50100 7C662838
+7C053000 40820024
+881F0024 2C000000
+38000001 981F0024
+40820018 68E70001
+98FF0025 4800000C
+38000000 981F0024
+2C070000 418201B0
+881F0026 2C000000
+4082010C 38000001
+981F0026 3D801068
+818C3000 80EC025C
+2C070000 408101A4
+7CE903A6 39210014
+3901001C 7CE63B78
+38E7FFFF 7CE33B78
+3C000E31 60003F38
+7C0903A6 4E800421
+80630014 8063020C
+3C000E31 60004218
+7C0903A6 4E800421
+C0A30000 D0A90000
+C0A30004 D0A90004
+C0A30008 D0A90008
+807D020C 3C000E31
+60004218 7C0903A6
+4E800421 7D244B78
+3C000E7F 600079DC
+7C0903A6 4E800421
+D4280004 7CC903A6
+4200FF84 3D801052
+C0AC2D64 3D80105E
+C10CAF1C FCC04090
+3D801068 818C3000
+80EC025C 39010020
+7CE903A6 38E7FFFF
+54E0103A 7CE8042E
+FC072800 41820018
+FC073000 40800010
+38A7FFF5 7CA500D0
+FCC03890 4200FFD8
+FC064000 408000AC
+90BF0028 807F0028
+3C000E31 60003F38
+7C0903A6 4E800421
+80630014 8063020C
+3C000E31 60004218
+7C0903A6 4E800421
+C0A30000 C0C30004
+C0E30008 807D020C
+3C000E31 60004218
+7C0903A6 4E800421
+C1030000 C1430008
+ECA82828 ECEA3828
+ED050172 ED4701F2
+EC28502A 3C000EC0
+6000B6A4 7C0903A6
+4E800421 ED050824
+ED470824 FD004050
+FD405050 D1030258
+D1430254 D1430260
+48000020 38000000
+981F0026 4800000C
+38000000 901F0024
+3800FFFF 901F0028
+83A10010 83C1000C
+83E10008 80010054
+7C0803A6 38210050</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>When enabled, the player will automatically aim the nearest kart.
+ 
+Online [O]
+Offline [O]
+ 
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+ 
+&lt;HOME&gt;
+Toggle
+ 
+---
+ 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+ 
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]
+ 
+---
+ 
+Recommended to be used with:
+- Lock Home Menu [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always 5 Balloons">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820078 818C023C
+2C0C0000 4182006C
+880C003E 2C000000
+41820060 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820048 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810030 7C641B78
+3D801069 818CA70C
+818C023C 398C0080
+5463103A 7C6C182E
+3C000E5C 60004460
+7C0903A6 4E800421
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Always have 5 balloons in battle mode.
+ 
+Online [O]
+Offline [O]
+ 
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+ 
+---
+ 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+ 
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always Draft">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+4182006C 818C023C
+2C0C0000 41820060
+880C003E 2C000000
+41820054 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+4182003C 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810024 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+38000080 900C01A8
+900C01AC 8001000C
+7C0803A6 38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Always have draft effect.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always First">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820068 818C023C
+2C0C0000 4182005C
+880C003E 2C000000
+41820050 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820038 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810020 3D801069
+818CA70C 818C004C
+5460103A 7D8C002E
+38000000 900C002C
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Player will always be on first place.
+
+Online [X]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always Star Powerup">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820068 818C023C
+2C0C0000 4182005C
+880C003E 2C000000
+41820050 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820038 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810020 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+38000010 900C0160
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Always have star powerup.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always Victory Animation">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820084 818C023C
+2C0C0000 41820078
+880C003E 2C000000
+4182006C 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820054 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+4181003C 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+800C0148 2C000000
+4082001C 80630008
+38800001 3C000E23
+6000DA14 7C0903A6
+4E800421 8001000C
+7C0803A6 38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Always have the victory character animation.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+- Send code before starting a race.
+- To fully disable, restart the race.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Best Play Stats">
+        <code>7C0802A6 90010004
+9421FFF8 3C000E64
+6000E218 7C0903A6
+4E800421 2C030000
+41820064 806302C8
+808300E4 8884015C
+3C000E67 60003630
+7C0903A6 4E800421
+81830158 3C000098
+6000967F 900C14E8
+900C14F0 900C14F4
+900C14FC 900C1500
+900C1504 900C1A18
+38000000 900C1508
+900C1A1C 3C000001
+6000869F 900C1A20
+900C1A24 8001000C
+7C0803A6 38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Play stats are modified to the best possible play stats.
+- Coins: 9M
+- Wins: 9M
+- Losses: 0
+- VR: 99K
+- BR: 99K
+- Drifts: 9M
+- Mini-Turbos: 9M
+- Super Mini-Turbos: 9M
+- Jump Boosts: 9M
+- Times Saved by Lakitu: 9M
+- Balloons Popped: 9M
+- Own Balloons Popped: 0
+ 
+Online [X]
+Offline [X]
+ 
+- Enter and finish a race for a permanent save.
+ 
+---
+ 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+ 
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Blue Shell Ride">
+        <code>7C0802A6 90010004
+9421FFE8 93E10008
+3D801069 818CA70C
+2C0C0000 418200E8
+818C023C 2C0C0000
+418200DC 880C003E
+2C000000 418200D0
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 418200B8
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 418100A0
+7C7F1B78 3C601069
+8063A71C 3881000C
+3C000E29 6000E324
+7C0903A6 4E800421
+800C0174 7C00F800
+40820074 800C002C
+540087FF 40820068
+3D801069 818CA70C
+818C004C 57E0103A
+7D8C002E 800C002C
+2C000000 41820048
+7FE3FB78 3C000E31
+60003F38 7C0903A6
+4E800421 80630004
+80630014 C0A1000C
+D0A30024 C0A10010
+D0A30028 C0A10014
+D0A3002C 3C000E35
+600095AC 7C0903A6
+4E800421 83E10008
+8001001C 7C0803A6
+38210018</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>When throwing a blue shell, the player will follow it until it reaches its destination.
+While being in first place, this code will not activate.
+ 
+Online [O]
+Offline [O]
+ 
+- This only applies to the player with a Wii U Gamepad.
+- This code may cause some unintended behavior.
+ 
+---
+ 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+ 
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Bullet Bill At Command">
+        <code>7C0802A6 90010004
+9421FFF4 93E10008
+3D801069 818CA70C
+2C0C0000 418200EC
+818C023C 2C0C0000
+418200E0 880C003E
+2C000000 418200D4
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 418200BC
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 418100A4
+3C000E31 60003F38
+7C0903A6 4E800421
+83E30004 80630014
+8063020C 3C000E31
+60004784 7C0903A6
+4E800421 2C030000
+40820070 807F0008
+3C000E34 60004D88
+7C0903A6 4E800421
+806301A4 3CA00000
+60A50011 7C662838
+7C053000 4082001C
+7FE3FB78 3C000E34
+60002CAC 7C0903A6
+4E800421 4800002C
+3CA00000 60A50003
+7C662838 7C053000
+40820018 7FE3FB78
+3C000E34 6000361C
+7C0903A6 4E800421
+83E10008 80010010
+7C0803A6 3821000C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Enable and disable Bullet Bill at will.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+&lt;A + Y&gt;
+Enable
+
+&lt;A + B&gt;
+Disable
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]
+
+---
+
+Recommended to be used with:
+- Use Items During Bullet Bill [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Bullet Bill Killer">
+        <code>7C0802A6 90010004
+9421FFE4 93E10008
+93C1000C 93A10010
+93810014 3D801069
+818CA70C 2C0C0000
+4182015C 818C023C
+2C0C0000 41820150
+880C003E 2C000000
+41820144 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+4182012C 3D804012
+818C0F1C 558047FF
+4082011C 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810104 7C7F1B78
+3C000E31 60003F38
+7C0903A6 4E800421
+83C30004 83A30014
+807D020C 3C000E31
+60004784 7C0903A6
+4E800421 2C030000
+408200CC 807E0008
+3C000E34 60004D88
+7C0903A6 4E800421
+806301A4 3CA00000
+60A50080 7C662838
+7C053000 408200A0
+3D801069 818CA70C
+818C023C 80AC0030
+38A5000C 1CDF006C
+7C05302E 90010018
+38610018 3C000E28
+600081D8 7C0903A6
+4E800421 7C7C1B78
+8063003C 3C000EA8
+60001FFC 7C0903A6
+4E800421 5463103A
+819C0040 7D8C182E
+807D020C 3C000E31
+60004218 7C0903A6
+4E800421 C0AC0074
+D0A30000 C0AC0078
+D0A30004 C0AC007C
+D0A30008 C0AC008C
+D0A30258 C0AC0090
+D0A30268 C0AC0094
+D0A30260 83810014
+83A10010 83C1000C
+83E10008 80010020
+7C0803A6 3821001C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Attempts to teleport the kart to the next checkpoint coordinates.
+If there are multiple paths, character will teleport to a random one.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+&lt;Left Stick Button&gt;
+Enable
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]
+
+---
+
+Recommended to be used with:
+- Disable Boundaries [Mewtality]
+- Disable Culling [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Coin Limit at 99">
+        <code>#0E5C2E34 2C1D000A
+#0E5C2E3C 3BA0000A
+#0E7A9DB0 2800000A
+0E5C2E34 2C1D0063
+0E5C2E3C 3BA00063
+0E7A9DB0 28000063</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>ShyGuy</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>The coin limit is increased from 10 max to 99 max.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Coin Randomizer">
+        <code>7C0802A6 90010004
+9421FFF4 93E10008
+3D801069 818CA70C
+2C0C0000 4182008C
+818C023C 2C0C0000
+41820080 880C003E
+2C000000 41820074
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 4182005C
+3D804012 818C0F1C
+558047FF 4082004C
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 41810034
+3D801069 818CA70C
+818C023C 398C0080
+5463103A 7FEC182E
+38600064 3C000EA8
+60001FFC 7C0903A6
+4E800421 907F0040
+83E10008 80010010
+7C0803A6 3821000C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Constantly changes the coin amount to a random value.
+ 
+Online [O]
+Offline [O]
+ 
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+ 
+---
+ 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+ 
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Cow Calamity">
+        <code>#0E438138 80610008
+0E438138 38600050</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>ShyGuy</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Spawns 80 cows in Moo Moo Meadows.
+
+Online [X]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+- Send code before starting a race.
+- May cause performance issues.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable All AI">
+        <code>#0E311418 48025A29
+0E311418 38600001</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Disables all AI operations.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Anti-Gravity">
+        <code>#0E5D41A4 9421FF00
+0E5D41A4 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Players will ignore anti-gravity paths.
+
+Online [X]
+Offline [O]
+
+- This code is fully stable.
+- Send code before starting a race.
+
+---
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Bloom">
+        <code>#0E98262C 54C3063E
+0E98262C 38600000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Removes scene bloom FX.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Boundaries">
+        <code>#0E316044 4BFFFD3D
+#0E3160E4 4BFFFC9D
+#0E316120 4BFFFC61
+#0E316FF0 4BFFED91
+#0E35FB7C 4BFB6205
+#0E35FBD4 4BFB61AD
+0E316044 60000000
+0E3160E4 60000000
+0E316120 60000000
+0E316FF0 60000000
+0E35FB7C 60000000
+0E35FBD4 60000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Prevent Lakitu from grabbing players off-stage.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]
+
+---
+
+Recommended to be used with:
+- Disable Culling [Mewtality]
+- Respawn At Command [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Camera Anti-Gravity">
+        <code>#0E28C2E4 4BFFB8FD
+0E28C2E4 60000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>The camera ignores the gravity changes.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+- Send code before starting a race.
+- To fully disable, restart the race.
+
+---
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Culling">
+        <code>#0E297994 9421FFC0
+0E297994 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Makes the entire map always visible.
+Useful for codes that allow your player to go out of bounds.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+- May cause performance issues in local multiplayer modes.
+- Send code before starting a race.
+- To fully disable, restart the race.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]
+
+---
+
+Recommended to be used with:
+- Disable Boundaries [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Object Collisions">
+        <code>#0E40B014 7C0802A6
+0E40B014 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Disables various map object collisions.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+- Send code before starting a race.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Wall Collisions">
+        <code>#0E355314 4BFFCCD1
+0E355314 60000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Disables various wall collisions.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]
+
+---
+
+Recommended to be used with:
+- Disable Boundaries [Mewtality]
+- Disable Culling [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Drop Items At Command">
+        <code>7C0802A6 90010004
+9421FFEC 93E10008
+93C1000C 93A10010
+3D801069 818CA70C
+2C0C0000 418200F4
+818C023C 2C0C0000
+418200E8 880C003E
+2C000000 418200DC
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 418200C4
+3D804012 818C0F1C
+558047FF 408200B4
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 4181009C
+7C7F1B78 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+83C3000C 83DE005C
+3FA0106F 806C0008
+3C000E34 60004D88
+7C0903A6 4E800421
+806301A4 3CA00002
+60A50000 7C662838
+7C053000 40820044
+881D0008 2C000000
+40820040 38000001
+981D0008 7FC3F378
+3C000E2E 600047E4
+7C0903A6 4E800421
+7FC3F378 3C000E2E
+60003A88 7C0903A6
+4E800421 4800000C
+38000000 981D0008
+83A10010 83C1000C
+83E10008 80010018
+7C0803A6 38210014</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Drop the current item(s) in possession on the ground.
+ 
+Online [O]
+Offline [O]
+ 
+- This only applies to the player with a Wii U Gamepad.
+- Crashes may occur if used aggressively.
+- May cause performance issues.
+ 
+&lt;D-Pad Down&gt;
+Enable
+ 
+---
+ 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+ 
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]
+ 
+---
+ 
+Recommended to be used with:
+- Item Wheel [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Force DRC Fullscreen">
+        <code>7C0802A6 90010004
+9421FFF4 93E10008
+3D801069 818CA70C
+2C0C0000 418200AC
+818C023C 2C0C0000
+418200A0 880C003E
+2C000000 41820094
+3D804012 818C0F1C
+558047FF 40820084
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 4181006C
+3D801069 818CC36C
+818C0010 818C0004
+818C01A0 806C02BC
+2C030000 4182004C
+7C7F1B78 38800000
+38A00000 38C00001
+3C000E7A 60000E6C
+7C0903A6 4E800421
+7FE3FB78 3C000E7A
+60001DF8 7C0903A6
+4E800421 7FE3FB78
+3C000E7A 60000E0C
+7C0903A6 4E800421
+83E10008 80010010
+7C0803A6 3821000C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Forces the Wii U gamepad's TV screen copy of the game to always stay fullscreen.
+Useful for touch screen cheat codes.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+- To fully disable, restart the race.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]
+
+---
+
+Recommended to be used with:
+- Touch Screen Freefly [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Force Home Menu">
+        <code>7C0802A6 90010004
+9421FFF8 3C000E64
+6000E218 7C0903A6
+4E800421 2C030000
+41820010 818302CC
+38000000 900C002C
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Forces the home menu to open when pressing the home button.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Glider At Command">
+        <code>7C0802A6 90010004
+9421FFF4 93E10008
+3D801069 818CA70C
+2C0C0000 4182011C
+818C023C 2C0C0000
+41820110 880C003E
+2C000000 41820104
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 418200EC
+3D804012 818C0F1C
+558047FF 408200DC
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 418100C4
+3C000E31 60003F38
+7C0903A6 4E800421
+83E30004 80630014
+8063020C 3C000E31
+60004784 7C0903A6
+4E800421 2C030000
+40820090 807F0008
+3C000E34 60004D88
+7C0903A6 4E800421
+806301A4 3CA00001
+60A50001 7C662838
+7C053000 4082003C
+7FE3FB78 3880FFFF
+3C000E33 6000DAAC
+7C0903A6 4E800421
+2C030000 40820044
+7FE3FB78 3C000E34
+60003330 7C0903A6
+4E800421 4800002C
+3CA00002 60A50001
+7C662838 7C053000
+40820018 7FE3FB78
+3C000E34 60002B5C
+7C0903A6 4E800421
+83E10008 80010010
+7C0803A6 3821000C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Enable and disable Glider at will.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+&lt;A + D-Pad Up&gt;
+Enable
+
+&lt;A + D-Pad Down&gt;
+Disable
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Gravity Modifier">
+        <code>#10688828 3E19999A
+10688828 3D4CCCCD</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Modifies the gravity.
+To change gravity strength, modify the value at line 2.
+
+Default value is x0.15 (3E19999A)
+Current value is x0.05 (3D4CCCCD)
+
+Online [X]
+Offline [O]
+
+- This code affects all karts in local modes.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Ignore Off-Road">
+        <code>#0E353EBC 80BF01E0
+0E353EBC 60000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Driving on off-road will not slow down players.
+
+Online [X]
+Offline [O]
+
+- This code affects all karts in local modes.
+- This code is fully stable.
+- Send code before starting a race.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Increase Item Limiters">
+        <code>#0E2E948C 7D635B78
+0E2E948C 3860000C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Increases the amount of the same items that can spawn at the same time.
+e.g. multiple blue shells are able to spawn.
+
+Online [X]
+Offline [O]
+
+- This code affects all karts in local modes.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Infinite Items">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820068 818C023C
+2C0C0000 4182005C
+880C003E 2C000000
+41820050 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820038 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810020 7C641B78
+3C601069 8063A71C
+3C000E29 6000D550
+7C0903A6 4E800421
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Player automatically gets an item after using one.
+
+Online [X]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Infinite Laps">
+        <code>#0E5D58C4 4BFFF9B5
+0E5D58C4 60000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Lap progression will be stopped.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Acceleration">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820098 818C023C
+2C0C0000 4182008C
+880C003E 2C000000
+41820080 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820068 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810050 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+800C00FC 540007FF
+41820030 818C0014
+80AC02E8 80CC03B8
+7C053000 4181001C
+7D836378 C02C03B8
+3C000E34 6000ECA0
+7C0903A6 4E800421
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>When accelerating, kart speed is set to max instantly.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Backwards Acceleration">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820098 818C023C
+2C0C0000 4182008C
+880C003E 2C000000
+41820080 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820068 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810050 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+800C00FC 540007BD
+41820030 818C0014
+80AC02E8 2C050000
+40800020 7D836378
+3D801051 C02C6BF8
+3C000E34 6000ECA0
+7C0903A6 4E800421
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>When kart goes on reverse it reaches max backwards speed instantly.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Finish">
+        <code>3D801069 818CA70C
+2C0C0000 41820024
+818C0238 2C0C0000
+41820018 800C0028
+2C000006 4082000C
+38000007 900C0028</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>The race ends right away.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Orange Drift">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820068 818C023C
+2C0C0000 4182005C
+880C003E 2C000000
+41820050 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820038 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810020 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+38000002 900C55A8
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Instantly get orange drift.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Recovery">
+        <code>7C0802A6 90010004
+9421FFF4 93E10008
+3D801069 818CA70C
+2C0C0000 41820094
+818C023C 2C0C0000
+41820088 880C003E
+2C000000 4182007C
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 41820064
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 4181004C
+3C000E31 60003F38
+7C0903A6 4E800421
+83E30004 80630014
+8063020C 3C000E31
+600045F0 7C0903A6
+4E800421 2C030000
+41820018 7FE3FB78
+3C000E33 6000E5C0
+7C0903A6 4E800421
+83E10008 80010010
+7C0803A6 3821000C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Player becomes immune to crushing and lightning. After getting hit, player can react instantly.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Respawn">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820060 818C023C
+2C0C0000 41820054
+880C003E 2C000000
+41820048 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810030 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+818C004C 818C0014
+800C0034 900C001C
+800C008C 900C006C
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Lakitu instantly moves to the respawn location when picking up a player.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+- To fully disable, restart the race.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Start">
+        <code>3D801069 818CA70C
+2C0C0000 41820024
+818C0238 2C0C0000
+41820018 800C0028
+2C000005 4082000C
+38000006 900C0028</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>All local players start instantly.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Stop">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820098 818C023C
+2C0C0000 4182008C
+880C003E 2C000000
+41820080 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820068 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810050 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+800C00FC 540007BD
+41820030 818C0014
+80AC02E8 2C050000
+40810020 7D836378
+3D801052 C02C2D64
+3C000E34 6000ECA0
+7C0903A6 4E800421
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Instantly stops the player's vehicles when using brakes.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Item Rapid Fire">
+        <code>#106F0020 00000000
+#0E29A0A8 880C0000
+7C0802A6 90010004
+9421FFF8 3D80106F
+880C0020 2C000000
+4082008C 38000001
+980C0020 3C600EC9
+6063DE6C 38800064
+49023F8B 48000105
+7C6802A6 38000200
+44000002 60000000
+7C641B78 3C608EC9
+6063DE6C 38A00064
+38002500 44000002
+60000000 3C600E29
+6063A0A8 38800004
+49023F8B 480000BD
+7C6802A6 38000200
+44000002 60000000
+7C641B78 3C608E29
+6063A0A8 38A00004
+38002500 44000002
+60000000 3D801069
+818CA70C 2C0C0000
+41820070 818C023C
+2C0C0000 41820064
+880C003E 2C000000
+41820058 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820040 3D804012
+818C0F1C 558047FF
+40820030 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810018 3D801069
+818CA71C 818C07B8
+38000000 7C0C19AE
+8001000C 7C0803A6
+38210008 48000074
+4E800021 48A03DC5
+4E800021 7C0802A6
+90010004 9421FFF4
+93E10008 7D9F6378
+3C000E5C 60001B00
+7C0903A6 4E800421
+3D801069 818CA71C
+818C07B0 7D8C1A14
+7C0CF800 4082000C
+38A00000 4800000C
+7FECFB78 88AC0000
+83E10008 80010010
+7C0803A6 3821000C
+7CA02B78 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Throw items very fast automatically when holding down the use item button(s).
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Lock Home Menu">
+        <code>7C0802A6 90010004
+9421FFF8 3C000E64
+6000E218 7C0903A6
+4E800421 2C030000
+41820010 818302CC
+38000001 900C002C
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Prevents the home menu from opening.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Moonjump">
+        <code>#106F001C 00000000
+#0E3583D0 38610008
+7C0802A6 90010004
+9421FFF8 3D80106F
+880C001C 2C000000
+4082008C 38000001
+980C001C 3C600EC9
+6063DC90 388000E0
+49023F8B 48000089
+7C6802A6 38000200
+44000002 60000000
+7C641B78 3C608EC9
+6063DC90 38A000E0
+38002500 44000002
+60000000 3C600E35
+606383D0 38800004
+49023F8B 48000041
+7C6802A6 38000200
+44000002 60000000
+7C641B78 3C608E35
+606383D0 38A00004
+38002500 44000002
+60000000 8001000C
+7C0803A6 38210008
+480000F0 4E800021
+489458C1 4E800021
+38610008 7C0802A6
+90010004 9421FFF4
+93A10008 7C7D1B78
+3D801069 818CA70C
+2C0C0000 418200A4
+818C023C 2C0C0000
+41820098 880C003E
+2C000000 4182008C
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 41820074
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 4181005C
+3C000E31 60003F38
+7C0903A6 4E800421
+80630004 80030014
+7C00F000 4082003C
+80630008 3C000E34
+60004D88 7C0903A6
+4E800421 806301A4
+3CA00000 60A54000
+7C662838 7C053000
+40820010 C0BE0238
+FCA02850 D0BE0238
+7FA3EB78 83A10008
+80010010 7C0803A6
+3821000C 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Inverts the player's gravity at will.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+&lt;R&gt;
+Enable
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="No Bullet Bill SFX">
+        <code>#0E1EC17C 4812853D
+0E1EC17C 38600000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Removes the bullet bill sound effect.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="No Music">
+        <code>#105F6AE4 3F800000
+105F6AE4 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Divengerss</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Mutes all music in the game.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+- To fully disable, restart the race.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="No Online Disconnection">
+        <code>#0E55F86C 57C3063E
+0E55F86C 38600000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>You can't get disconnected from online games.
+
+Online [O]
+Offline [X]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="No Screen Effects">
+        <code>#0E3221F8 7C0802A6
+0E3221F8 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Removes ink splash, motion blur and other annoying screen effects.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="No Star Theme">
+        <code>#0E1EC138 481284FD
+0E1EC138 38600000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Removes the star theme while in star powerup.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="No Wall Speed Reduction">
+        <code>#0E350EF4 9421FFB0
+0E350EF4 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Hitting walls will not reduce vehicle speed.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Pause Timer">
+        <code>3D801069 818CA70C
+2C0C0000 41820018
+818C0034 2C0C0000
+4182000C 38000001
+980C004C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Pauses the Time Trial mode timer.
+This also affects other modes, which makes all races to never end after 9 minutes and 59 seconds.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+- To fully disable, restart the race.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Piranha Plant At Command">
+        <code>7C0802A6 90010004
+9421FFF0 93E10008
+93C1000C 3D801069
+818CA70C 2C0C0000
+418200D4 818C023C
+2C0C0000 418200C8
+880C003E 2C000000
+418200BC 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+418200A4 3D804012
+818C0F1C 558047FF
+40820094 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+4181007C 3C000E31
+60003F38 7C0903A6
+4E800421 83E30004
+80630014 83C3020C
+7FC3F378 3C000E31
+600046C8 7C0903A6
+4E800421 2C030000
+40820044 807F0008
+3C000E34 60004D88
+7C0903A6 4E800421
+806301A4 3CA00000
+60A50020 7C662838
+7C053000 40820018
+7FC3F378 3C000E31
+60004878 7C0903A6
+4E800421 83C1000C
+83E10008 80010014
+7C0803A6 38210010</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Enable Piranha Plant at will.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+&lt;ZR&gt;
+Enable
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Rainbow Kart 8">
+        <code>7C0802A6 90010004
+9421FFF0 93E10008
+93C1000C 3D804012
+818C0F1C 558047FF
+40820174 3FE0106F
+3D801069 818CA70C
+2C0C0000 41820158
+818C0328 2C0C0000
+4182014C 818C00A4
+2C0C0000 41820140
+3CA00001 38A5A300
+7D8C282E 2C0C0000
+4182012C 818C0000
+2C0C0000 41820120
+7D9E6378 3D801052
+C0AC2D64 3D801050
+C0CC22BC 88BF000C
+2C050000 40820018
+38000001 981F000C
+D0DE00B4 D0BE00B8
+D0BE00BC 3D801050
+C0EC332C 3D801050
+C10C22B0 C13E00B4
+C15E00B8 C17E00BC
+88BF000D 28050005
+418100C4 54A5103A
+48000015 7C0802A6
+7C002A14 7C0903A6
+4E800420 4E800021
+48000018 48000028
+48000038 48000048
+48000058 48000068
+ED4A382A FC0A3000
+40810070 38000001
+48000064 ED293828
+FC092800 4181005C
+38000002 48000050
+ED6B382A FC0B3000
+40810048 38000003
+4800003C ED4A3828
+FC0A2800 41810034
+38000004 48000028
+ED29382A FC093000
+40810020 38000005
+48000014 ED6B3828
+FC0B2800 4181000C
+38000000 981F000D
+D11E0108 D13E00B4
+D15E00B8 D17E00BC
+4800000C 38000000
+B01F000C 83C1000C
+83E10008 80010014
+7C0803A6 38210010</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>The main source of light in all stages changes from red to green to blue repeatedly.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+- May cause performance issues.
+- To fully disable, restart the race.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Remove Out-Of-Bounds Fail-Safe">
+        <code>#0E311708 40800010
+0E311708 48000010</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Falling to far down will not teleport the player back on the map.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Respawn At Command">
+        <code>7C0802A6 90010004
+9421FFF4 93E10008
+3D801069 818CA70C
+2C0C0000 418200A0
+818C023C 2C0C0000
+41820094 880C003E
+2C000000 41820088
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 41820070
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 41810058
+3C000E31 60003F38
+7C0903A6 4E800421
+83E30004 807F0008
+3C000E34 60004D88
+7C0903A6 4E800421
+806301A4 3CA00000
+60A51200 7C662838
+7C053000 40820018
+807F004C 3C000E31
+60005D80 7C0903A6
+4E800421 83E10008
+80010010 7C0803A6
+3821000C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Forces a respawn.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+&lt;SELECT (-)&gt;
+Enable
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Rocket Bill">
+        <code>7C0802A6 90010004
+9421FFF4 93E10008
+3D801069 818CA70C
+2C0C0000 418200D8
+818C023C 2C0C0000
+418200CC 880C003E
+2C000000 418200C0
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 418200A8
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 41810090
+3C000E31 60003F38
+7C0903A6 4E800421
+83E30004 80630014
+8063020C 3C000E31
+600046B8 7C0903A6
+4E800421 2C030000
+4182005C 7FE3FB78
+80630008 3C000E34
+60004D88 7C0903A6
+4E800421 806301A4
+3CA00000 60A50011
+7C662838 7C053000
+4082002C 819F0014
+C0AC03B8 7D836378
+3D801050 C0CC22D4
+EC2501B2 3C000E34
+6000ECA0 7C0903A6
+4E800421 83E10008
+80010010 7C0803A6
+3821000C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Multiplies the Bullet Bill's speed by x10 at will.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- Crashes may occur if used aggressively.
+
+&lt;A + Y&gt;
+Enable
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]
+
+---
+
+Recommended to be used with:
+- Bullet Bill At Command [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Slopes Don't Work">
+        <code>#0E35838C 4BFFDF51
+0E35838C 60000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Driving on slopes causes weird behavior.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Super Item Wheel">
+        <code>7C0802A6 90010004
+9421FFF0 93E10008
+93C1000C 3D801069
+818CA70C 2C0C0000
+41820148 818C023C
+2C0C0000 4182013C
+880C003E 2C000000
+41820130 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820118 3D804012
+818C0F1C 558047FF
+40820108 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+418100F0 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+83E3000C 83FF005C
+3FC0106F 806C0008
+3C000E34 60004D88
+7C0903A6 4E800421
+806301A4 3CA00008
+60A50000 7C662838
+7C053000 4082000C
+38A00001 48000024
+3CA00004 60A50000
+7C662838 7C053000
+4082000C 38A0FFFF
+48000008 38A00000
+881E0000 2C000000
+98BE0000 801E0004
+4082001C 7CE02A14
+28070014 40810008
+68070014 7CE03B78
+901E0004 80BF0044
+2C050000 41800020
+7C050000 4182003C
+7FE3FB78 3C000E2E
+60003AC4 7C0903A6
+4E800421 801F0084
+2C000000 4081001C
+7FE3FB78 389E0004
+3C000E2E 60004514
+7C0903A6 4E800421
+83C1000C 83E10008
+80010014 7C0803A6
+38210010</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Select items at will.
+
+Online [X]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+&lt;D-Pad Left&gt;
+Previous Item
+
+&lt;D-Pad Right&gt;
+Next Item
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]
+
+---
+
+Recommended to be used with:
+- Increase Item Limiters [Mewtality]
+- Use Items During Bullet Bill [Mewtality]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Switch Camera FOV">
+        <code>#106F0018 00000000
+#0E2F1FC8 FC40D090
+7C0802A6 90010004
+9421FFF8 3D80106F
+880C001A 2C000000
+4082008C 38000001
+980C001A 3C600EC9
+6063DD70 388000FC
+49023F8B 48000089
+7C6802A6 38000200
+44000002 60000000
+7C641B78 3C608EC9
+6063DD70 38A000FC
+38002500 44000002
+60000000 3C600E2F
+60631FC8 38800004
+49023F8B 48000041
+7C6802A6 38000200
+44000002 60000000
+7C641B78 3C608E2F
+60631FC8 38A00004
+38002500 44000002
+60000000 8001000C
+7C0803A6 38210008
+4800010C 4E800021
+489ABDA9 4E800021
+7C0802A6 90010004
+9421FFF4 93E10008
+3FE0106F 3D801069
+818CA70C 2C0C0000
+418200C4 818C023C
+2C0C0000 418200B8
+880C003E 2C000000
+418200AC 3D804012
+818C0F1C 558047FF
+4082009C 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810084 3C000E31
+60003F38 7C0903A6
+4E800421 80630004
+80630008 3C000E34
+60004D88 7C0903A6
+4E800421 806301A4
+88FF0019 3CA00000
+60A50040 7C662838
+7C053000 40820024
+881F0018 2C000000
+38000001 981F0018
+40820018 68E70001
+98FF0019 4800000C
+38000000 981F0018
+2C070000 41820010
+3D801050 C0AC233C
+EF5A282A FC40D090
+83E10008 80010010
+7C0803A6 3821000C
+4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Changes the camera FOV at will.
+ 
+Online [O]
+Offline [O]
+ 
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+ 
+&lt;Right Stick Button&gt;
+Toggle
+ 
+---
+ 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+ 
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Touch Screen Freefly">
+        <code>7C0802A6 90010004
+9421FFEC 93E10008
+93C1000C 93A10010
+3FA0106F 3D801069
+818CA70C 2C0C0000
+41820140 818C023C
+2C0C0000 41820134
+880C003E 2C000000
+41820128 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820110 3D804012
+818C0F1C 558047FF
+40820100 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+418100E8 3C000E31
+60003F38 7C0903A6
+4E800421 83E30004
+83C30014 807E020C
+3C000E31 60004784
+7C0903A6 4E800421
+2C030000 408200B4
+807F0008 3C000E34
+60004D88 7C0903A6
+4E800421 C0A30110
+C0C30114 806301A4
+3CA00000 60A58000
+7C662838 7C053000
+40820080 807F0014
+3C000E35 600095AC
+7C0903A6 4E800421
+C15D0010 C17D0014
+D0BD0010 D0DD0014
+3D801052 C00C2D64
+FC0A0000 41820058
+ED455028 ED665828
+3D801050 C00C4854
+ED4A0032 ED6B0032
+807E020C 3C000E31
+60004218 7C0903A6
+4E800421 C0E30000
+C1230008 ECE7502A
+ED29582A D0E30000
+D1230008 48000010
+38000000 901D0010
+901D0014 83A10010
+83C1000C 83E10008
+80010018 7C0803A6
+38210014</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Changes the kart coordinates based on touch screen input.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+&lt;Touch Screen&gt;
+Move
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Trick Anywhere">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820068 818C023C
+2C0C0000 4182005C
+880C003E 2C000000
+41820050 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820038 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810020 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+38000010 900C01D0
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Character is able to trick anytime anywhere.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Unlock Everything">
+        <code>7C0802A6 90010004
+9421FFF8 3C000E64
+6000E218 7C0903A6
+4E800421 2C030000
+41820164 806302C8
+808300E4 8884015C
+3C000E67 60003630
+7C0903A6 4E800421
+81830158 3C000303
+60000303 900C04CC
+900C04D0 900C04D4
+900C04EC 900C04F0
+900C04F4 900C050C
+900C0510 900C0514
+900C052C 900C0530
+900C0534 900C054C
+900C0550 900C0554
+900C05CC 900C05D0
+900C05D4 900C05EC
+900C05F0 900C05F4
+900C060C 900C0610
+900C0614 900C062C
+900C0630 900C0634
+900C064C 900C0650
+900C0654 900C1A28
+900C1A2C 900C1A50
+900C1A54 900C1A58
+900C1A5C 900C1A60
+900C1A64 900C1A68
+B00C1A6C 900C1A90
+900C1A94 900C1A98
+900C1A9C 900C1AA0
+900C1AA4 B00C1AA8
+900C1AD0 900C1AD4
+900C1AD8 900C1ADC
+B00C1AE0 900C1B10
+900C1B14 900C1B18
+B00C1B5A 900C1B5C
+900C1B60 900C1B64
+900C1B68 900C1B6C
+900C1B70 900C1B74
+900C1B78 900C1B7C
+900C1B80 900C1B84
+900C1B88 900C1B8C
+900C1B90 900C1B94
+900C1B98 900C1B9C
+900C1BA0 900C1BA4
+900C1BA8 900C1BAC
+900C1BB0 8001000C
+7C0803A6 38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Unlocks everything. This does not include DLC.
+
+Online [X]
+Offline [X]
+
+- Enter and finish a race for a permanent save.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Unbreakable Items">
+        <code>#0E2A3970 81830000
+0E2A3970 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Items can't break by hitting players, stage hazards or other items.
+
+Online [X]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Use Items During Bullet Bill">
+        <code>#0E299C04 4807AAB5
+0E299C04 38600000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Players gain the ability to use items while in a bullet bill.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="WiFi Background Anywhere">
+        <code>7C0802A6 90010004
+9421FFF8 3C000E6E
+60007DB4 7C0903A6
+4E800421 2C030000
+41820054 3C000E76
+60005AC0 7C0903A6
+4E800421 3D801069
+818CA738 2C0C0000
+41820034 88AC0040
+2C050002 41820028
+88AC0041 2C050004
+4182001C 7D836378
+38800001 3C000E6E
+6000DB74 7C0903A6
+4E800421 8001000C
+7C0803A6 38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Forces the wifi planet background to show anywhere in the menu.
+ 
+Online [X]
+Offline [X]
+ 
+- This code is fully stable.
+ 
+---
+ 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+ 
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Raw Machine Code End">
+        <code>4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors/>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+</codes>

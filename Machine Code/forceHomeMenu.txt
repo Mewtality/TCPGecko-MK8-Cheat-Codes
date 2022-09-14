@@ -1,4 +1,4 @@
-Unlock Home Menu [Mewtality]
+Force Home Menu [Mewtality]
 7C0802A6 90010004
 9421FFF8 3C000E64
 6000E218 7C0903A6

@@ -6,7 +6,7 @@ Instant Start [Mewtality]
 2C000006 4082000C
 38000007 900C0028
 
-The race ends instantly.
+The race ends right away.
 
 Online [O]
 Offline [O]

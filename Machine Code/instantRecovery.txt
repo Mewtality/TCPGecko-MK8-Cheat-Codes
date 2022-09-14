@@ -30,7 +30,6 @@ Online [O]
 Offline [O]
 
 - This only applies to the player with a Wii U Gamepad.
-- This code contains minor issues.
 
 ---
 

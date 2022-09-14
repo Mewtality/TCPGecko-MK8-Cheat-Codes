@@ -24,7 +24,7 @@ Instant Acceleration [Mewtality]
 8001000C 7C0803A6
 38210008
 
-When accelerating, kart speed is set from 0 to max instantly.
+When accelerating, kart speed is set to max instantly.
 
 Online [O]
 Offline [O]

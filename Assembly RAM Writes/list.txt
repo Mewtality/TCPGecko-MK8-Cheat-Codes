@@ -243,11 +243,11 @@ Is Assembly RAM Writes [O]
 
 
 
-No Bullet Bill SFX [Mewtality]
-#0E1EC17C 4812853D
-0E1EC17C 38600000
+Infinite Laps [Mewtality]
+#0E5D58C4 4BFFF9B5
+0E5D58C4 60000000
 
-Removes the bullet bill sound effect.
+Lap progression will be stopped.
 
 Online [O]
 Offline [O]
@@ -262,11 +262,11 @@ Is Assembly RAM Writes [O]
 
 
 
-No Lap Count [Mewtality]
-#0E5D58C4 4BFFF9B5
-0E5D58C4 60000000
+No Bullet Bill SFX [Mewtality]
+#0E1EC17C 4812853D
+0E1EC17C 38600000
 
-Lap progression will be stopped.
+Removes the bullet bill sound effect.
 
 Online [O]
 Offline [O]
