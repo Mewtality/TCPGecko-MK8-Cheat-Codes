@@ -1,7 +1,7 @@
 /*
 * File: aimbot.asm
 * Author: Mewtality
-* Date: 2022-09-12 02:07:07
+* Date: 2022-09-15 15:56:33
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#0666
 */
@@ -125,7 +125,7 @@ _skip:
 		fneg f10, f10
 
 		lis r12, _rodata + 0xC0@h
-		lfs f9, _rodata + 0xC0@l (r12) # Max Value (-1)
+		lfs f9, _rodata + 0xC0@l (r12) # Min Value (-1)
 		fcmpu cr0, f8, f9
 		ble _end
 		fcmpu cr0, f10, f9

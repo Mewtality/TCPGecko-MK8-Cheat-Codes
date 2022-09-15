@@ -28,7 +28,6 @@ Play stats are modified to the best possible play stats.
 - Mini-Turbos: 9M
 - Super Mini-Turbos: 9M
 - Jump Boosts: 9M
-- Times Saved by Lakitu: 9M
 - Balloons Popped: 9M
 - Own Balloons Popped: 0
  

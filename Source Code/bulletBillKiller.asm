@@ -65,13 +65,19 @@
 		stfs f5, 0x8 (%a3)
 
 		lfs f5, 0x8C (r12)
+		stfs f5, 0x24C (%a3)
 		stfs f5, 0x258 (%a3)
+		stfs f5, 0x264 (%a3)
 
 		lfs f5, 0x90 (r12)
+		stfs f5, 0x250 (%a3)
+		stfs f5, 0x25C (%a3)
 		stfs f5, 0x268 (%a3)
 
 		lfs f5, 0x94 (r12)
+		stfs f5, 0x254 (%a3)
 		stfs f5, 0x260 (%a3)
+		stfs f5, 0x26C (%a3)
 
 _end:
 		pop(28); pop(29); pop(30); pop(31)

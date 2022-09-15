@@ -41,7 +41,7 @@ Offline [O]
 - This only applies to the player with a Wii U Gamepad.
 - Crashes may occur if used aggressively.
 
-<A + Y>
+<Hold A + Y>
 Enable
 
 ---
