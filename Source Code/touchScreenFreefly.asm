@@ -35,6 +35,10 @@
 
 		isActivator("_reset"), "TOUCH_SCREEN"
 
+		call("object_KartInfoProxy_isAntiG"), "lwz %a3, 0x20C (r30)"
+		cmpwi %a3, 0
+		bne _reset
+
 		call("object_KartVehicleMove_forceStop"), "lwz %a3, 0x14 (r31)"
 
 		lfs f10, freefly.asm@l (r29) # 1 Frame Old Touch Screen X
@@ -61,12 +65,26 @@
 		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (r30)"
 		lfs f7, 0 (%a3) # Kart X
 		lfs f9, 0x8 (%a3) # Kart Z
-
 		fadds f7, f7, f10
 		fadds f9, f9, f11
 
 		stfs f7, 0 (%a3)
 		stfs f9, 0x8 (%a3)
+
+		lis r12, _rodata + 0x20B64@h
+		lfs f5, _rodata + 0x20B64@l (r12)
+		lis r12, _rodata + 0xC0@h
+		lfs f6, _rodata + 0xC0@l (r12)
+
+		stfs f5, 0x24C (%a3)
+		stfs f5, 0x258 (%a3)
+		stfs f5, 0x264 (%a3)
+		stfs f5, 0x250 (%a3)
+		stfs f5, 0x25C (%a3)
+		stfs f5, 0x268 (%a3)
+		stfs f6, 0x254 (%a3)
+		stfs f6, 0x260 (%a3)
+		stfs f6, 0x26C (%a3)
 		b _end
 
 _reset:
