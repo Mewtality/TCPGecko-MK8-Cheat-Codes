@@ -51,5 +51,3 @@ _end:
 		pop(30); pop(31)
 		stackReset()
 	.endfunc
-nop
-nop
