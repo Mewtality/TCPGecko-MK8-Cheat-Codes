@@ -48,19 +48,19 @@
 		stfs f6, freefly.asm+0x4@l (r29)
 
 		lis r12, _rodata + 0x20B64@h
-		lfs f0, _rodata + 0x20B64@l (r12) # Min Value
+		lfs f5, _rodata + 0x20B64@l (r12) # Min Value
 
-		fcmpu cr0, f10, f0
+		fcmpu cr0, f10, f5
 		beq _end
 
 		fsubs f10, f5, f10 # Current - Old X = Velocity X
 		fsubs f11, f6, f11 # Current - Old Y = Velocity Y
 
 		lis r12, _rodata + 0x2654@h
-		lfs f0, _rodata + 0x2654@l (r12) # Velocity Multiplier
+		lfs f5, _rodata + 0x2654@l (r12) # Velocity Multiplier
 
-		fmuls f10, f10, f0
-		fmuls f11, f11, f0
+		fmuls f10, f10, f5
+		fmuls f11, f11, f5
 
 		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (r30)"
 		lfs f7, 0 (%a3) # Kart X

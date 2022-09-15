@@ -364,7 +364,6 @@ Is Assembly RAM Writes [X]</comment>
 - Mini-Turbos: 9M
 - Super Mini-Turbos: 9M
 - Jump Boosts: 9M
-- Times Saved by Lakitu: 9M
 - Balloons Popped: 9M
 - Own Balloons Popped: 0
  
@@ -1543,6 +1542,69 @@ Is Raw Machine Code [O]
 Is Assembly RAM Writes [X]</comment>
         <enabled>false</enabled>
     </entry>
+    <entry name="Invoke Random Damage Effect">
+        <code>7C0802A6 90010004
+9421FFF0 93E10008
+93C1000C 3D801069
+818CA70C 2C0C0000
+41820100 818C023C
+2C0C0000 418200F4
+880C003E 2C000000
+418200E8 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+418200D0 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+418100B8 3C000E31
+60003F38 7C0903A6
+4E800421 83E30004
+83C30014 807E020C
+3C000E31 60004784
+7C0903A6 4E800421
+2C030000 40820084
+807E020C 3C000E31
+600046B8 7C0903A6
+4E800421 2C030000
+40820068 807F0008
+3C000E34 60004D88
+7C0903A6 4E800421
+806301A4 3CA00200
+60A50000 7C662838
+7C053000 4082003C
+38600014 3C000EA8
+60001FFC 7C0903A6
+4E800421 907E0298
+819F0020 38000000
+900C001C 906C000C
+38A04000 80DF0144
+7CA53378 90BF0144
+83C1000C 83E10008
+80010014 7C0803A6
+38210010</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>It forces a random damage animation to occur at will.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+&lt;Shake Down&gt;
+Enable
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
     <entry name="Item Rapid Fire">
         <code>#106F0020 00000000
 #0E29A0A8 880C0000
@@ -1828,6 +1890,45 @@ Offline [O]
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="No Voice Clip Limit">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820068 818C023C
+2C0C0000 4182005C
+880C003E 2C000000
+41820050 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820038 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810020 3C000E31
+60003F38 7C0903A6
+4E800421 80630014
+3800FFFF 9003027C
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Character voice clips restart right after another.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
         <enabled>false</enabled>
     </entry>
     <entry name="No Wall Speed Reduction">
@@ -2127,7 +2228,7 @@ Offline [O]
 - This only applies to the player with a Wii U Gamepad.
 - Crashes may occur if used aggressively.
 
-&lt;A + Y&gt;
+&lt;Hold A + Y&gt;
 Enable
 
 ---
@@ -2606,6 +2707,6 @@ Is Assembly RAM Writes [X]</comment>
         <assembly_ram_write>false</assembly_ram_write>
         <comment>Is Raw Machine Code [O]
 Is Assembly RAM Writes [X]</comment>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </entry>
 </codes>
