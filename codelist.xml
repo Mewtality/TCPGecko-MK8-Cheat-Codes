@@ -2700,14 +2700,4 @@ Is Raw Machine Code [O]
 Is Assembly RAM Writes [X]</comment>
         <enabled>false</enabled>
     </entry>
-    <entry name="Raw Machine Code End">
-        <code>4E800020</code>
-        <codeInputType>Cheat Code</codeInputType>
-        <authors/>
-        <raw_assembly>true</raw_assembly>
-        <assembly_ram_write>false</assembly_ram_write>
-        <comment>Is Raw Machine Code [O]
-Is Assembly RAM Writes [X]</comment>
-        <enabled>true</enabled>
-    </entry>
 </codes>
