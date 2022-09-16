@@ -1,7 +1,7 @@
 /*
 * File: aimbot.asm
 * Author: Mewtality
-* Date: 2022-09-15 15:56:33
+* Date: 2022-09-16 10:48:34
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#0666
 */
@@ -127,9 +127,9 @@ _skip:
 		lis r12, _rodata + 0xC0@h
 		lfs f9, _rodata + 0xC0@l (r12) # Min Value (-1)
 		fcmpu cr0, f8, f9
-		ble _end
+		ble _end # abort if NaN
 		fcmpu cr0, f10, f9
-		ble _end
+		ble _end # abort if NaN
 
 		stfs f8, 0x24C (%a5)
 		stfs f8, 0x258 (%a5)

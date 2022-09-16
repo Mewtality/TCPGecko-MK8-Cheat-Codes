@@ -1,7 +1,7 @@
 /*
 * File: invokeRandomDamageEffect.asm
 * Author: Mewtality
-* Date: 2022-09-15 20:59:04
+* Date: 2022-09-16 10:48:40
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#0666
 */
@@ -34,18 +34,20 @@
 
 		isActivator("_end"), enabler
 
-		call("nn_nex_Platform_GetRandomNumber"), "li %a3, 0x14"
-		stw %a3, 0x298 (r30)
-
-        lwz r12, 0x20 (r31)
-        li %a0, 0
-        stw %a0, 0x1C (r12)
-        stw %a3, 0xC (r12)
-
 		li %a5, 0x4000
 		lwz %a6, 0x144 (r31)
 		or %a5, %a5, %a6
+		rlwinm. %a6, %a6, 0x12, 0x1F, 0x1F
+		bne _end
 		stw %a5, 0x144 (r31)
+
+		call("nn_nex_Platform_GetRandomNumber"), "li %a3, 0x14"
+		stw %a3, 0x298 (r30)
+
+		lwz r12, 0x20 (r31)
+		li %a0, 0
+		stw %a0, 0x1C (r12)
+		stw %a3, 0xC (r12)
 
 _end:
 		pop(30); pop(31)
