@@ -1,7 +1,7 @@
 /*
 * File: dialogBoxTest.asm
 * Author: Mewtality
-* Date: 
+* Date: 2022-09-18 23:43:50
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#0666
 */
@@ -38,8 +38,8 @@ _start:
 
 		requestDialogPage()
 
-		printDialogBodyText getString("mainBodyText")
-		printDialogButtonText getString("mainButtonText") 
+		printDialogBodyText getString("mainBodyText");
+		printDialogButtonText getString("mainButtonText"); 
 
 		b _end
 
