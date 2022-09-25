@@ -3,7 +3,7 @@
 * Author: Mewtality
 * Date: 2022-09-07 13:08:18
 * YouTube: https://www.youtube.com/c/Mewtality
-* Discord: Mewtality#0666
+* Discord: Mewtality#8315
 */
 
 	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
