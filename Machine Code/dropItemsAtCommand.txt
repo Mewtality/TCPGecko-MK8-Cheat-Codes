@@ -35,8 +35,9 @@ Drop Items At Command [Mewtality]
 4E800421 4800000C
 38000000 981D0008
 83A10010 83C1000C
-83E10008 80010018
-7C0803A6 38210014
+83E10008 4C00012C
+80010018 7C0803A6
+38210014
 
 Drop the current item(s) in possession on the ground.
  
@@ -44,7 +45,6 @@ Online [O]
 Offline [O]
  
 - This only applies to the player with a Wii U Gamepad.
-- Crashes may occur if used aggressively.
 - May cause performance issues.
  
 <D-Pad Down>

@@ -51,5 +51,7 @@ _else:
 _end:
 		pop(29); pop(30); pop(31)
 
+		isync
+
 		stackReset()
 	.endfunc
