@@ -8,7 +8,7 @@
 
 	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
 
-	enabler = "SHAKE_DOWN"
+	enabler = "FLICK_DOWN"
 
 	.func invokeRandomDamageEffect
 		stackUpdate(2)

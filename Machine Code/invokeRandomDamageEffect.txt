@@ -48,7 +48,7 @@ Offline [O]
 - This only applies to the player with a Wii U Gamepad.
 - This code is fully stable.
 
-<Shake Down>
+<Flick Down>
 Enable
 
 ---
