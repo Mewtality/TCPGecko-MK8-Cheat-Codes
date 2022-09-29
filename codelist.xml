@@ -2730,6 +2730,75 @@ Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]</comment>
         <enabled>false</enabled>
     </entry>
+    <entry name="Water Anywhere">
+        <code>#106F0030 00000000
+#0E340224 2C030000
+7C0802A6 90010004
+9421FFF8 3D80106F
+880C0030 2C000000
+4082008C 38000001
+980C0030 3C600EC9
+6063DD70 388000AC
+49023F8B 48000089
+7C6802A6 38000200
+44000002 60000000
+7C641B78 3C608EC9
+6063DD70 38A000AC
+38002500 44000002
+60000000 3C600E34
+60630224 38800004
+49023F8B 48000041
+7C6802A6 38000200
+44000002 60000000
+7C641B78 3C608E34
+60630224 38A00004
+38002500 44000002
+60000000 8001000C
+7C0803A6 38210008
+480000BC 4E800021
+4895DB4D 4E800021
+7C0802A6 90010004
+9421FFF4 93C10008
+7C7E1B78 3D801069
+818CA70C 2C0C0000
+41820070 818C023C
+2C0C0000 41820064
+880C003E 2C000000
+41820058 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820040 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810028 3C000E31
+60003F38 7C0903A6
+4E800421 81830004
+7C0CF800 4082000C
+38600001 48000008
+7FC3F378 83C10008
+80010010 7C0803A6
+3821000C 2C030000
+4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Kart behaves as if it were underwater at all times.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
     <entry name="WiFi Background Anywhere">
         <code>7C0802A6 90010004
 9421FFF8 3C000E6E
