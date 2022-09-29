@@ -1,7 +1,7 @@
 /*
 * File: switchFOVAtCommand.asm
 * Author: Mewtality
-* Date: 2022-09-08 13:20:00
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -17,7 +17,7 @@
 	.long switchFOVAtCommand.asm, 0, hook, 0xFC40D090
 
 	.func FOVPatcher
-	hook = "object_KartCamera_calcFovy" + 0x25C
+	hook = "object::KartCamera::calcFovy()" + 0x25C
 	hookData = 0x0EC9DD70
 
 		stackUpdate(0)
@@ -61,7 +61,7 @@ getFOVHookData:
 		getDRCKartUnit("_skip")
 		lwz %a3, 0x4 (%a3)
 
-		call("object_KartVehicleControl_getRaceController"), "lwz %a3, 0x8 (%a3)"
+		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (%a3)"
 		lwz %a3, 0x1A4 (%a3)
 
 		lbz %a7, switchFOVAtCommand.asm+0x1@l (r31)

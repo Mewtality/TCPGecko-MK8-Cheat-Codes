@@ -23,7 +23,7 @@ If you want to edit and compile the source code, see: https://github.com/Mewtali
 All cheat codes were written and tested on Mario Kart 8 v4.1 (PAL). They should work on all regions regardless.
 <br/><br/>
 "**codelist.xml**" contains all codes ready to be used in Jgecko U. But before that you need to:
-- rename the file to your game's region (European: **AMKP01.xml**; American: **AMKE01.xml**; Japanese: AMKJ01)
+- rename the file to your game's region (European: **AMKP01.xml**; American: **AMKE01.xml**; Japanese: **AMKJ01**)
 - place the file in the "codes" folder of Jgecko U.<br/><br/><br/>
 ## Special thanks to:
 - ShyGuy for the Turbo.rpx Ghidra project.

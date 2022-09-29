@@ -1,7 +1,7 @@
 /*
 * File: coinRandomizer.asm
 * Author: Mewtality
-* Date: 2022-09-07 13:13:31
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -10,7 +10,6 @@
 
 	.func coinRandomizer
 		stackUpdate(1)
-
 		push(31)
 
 		isRaceReady("_end")
@@ -24,11 +23,10 @@
 		rlwinm %a3, %a3, 0x2, 0x0, 0x1D
 		lwzx r31, r12, %a3
 
-		call("nn_nex_Platform_GetRandomNumber"), "li %a3, 0x64"
+		call("nn::nex::Platform::GetRandomNumber()"), "li %a3, 0x64"
 		stw %a3, 0x40 (r31)
 
 _end:
 		pop(31)
-
 		stackReset()
 	.endfunc

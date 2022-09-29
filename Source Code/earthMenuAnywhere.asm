@@ -1,7 +1,7 @@
 /*
 * File: earthMenuAnywhere.asm
 * Author: Mewtality
-* Date: 2022-09-07 01:59:05
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -11,10 +11,10 @@
 	.func earthMenuAnywhere
 		stackUpdate(0)
 
-		call("FID_conflict_ui_GetBg")
+		call("FID_conflict:ui::GetBg()")
 		cmpwi %a3, 0
 		beq _end
-		call("ui_Page_Bg_animKeepWiFi")
+		call("ui::Page_Bg::animKeepWiFi()")
 		dereference("menuManagement")
 		cmpwi r12, 0
 		beq _end
@@ -24,7 +24,7 @@
 		lbz %a5, 0x41 (r12)
 		cmpwi %a5, 0x4
 		beq _end
-		call("object_Menu3DModelDirector_informBeginWiFi"), "mr %a3, r12; li %a4, 1"
+		call("object::Menu3DModelDirector::informBeginWiFi()"), "mr %a3, r12; li %a4, 1"
 
 _end:
 		stackReset()

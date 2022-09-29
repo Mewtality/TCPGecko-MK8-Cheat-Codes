@@ -1,7 +1,7 @@
 /*
 * File: alwaysVictoryAnimation.asm
 * Author: Mewtality
-* Date: 2022-09-07 12:50:10
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -21,7 +21,7 @@
 		cmpwi %a0, 0
 		bne _end
 
-		call("object_DriverKart_startGoalAnim"), "lwz %a3, 0x8 (%a3); li %a4, 0x1"
+		call("object::DriverKart::startGoalAnim()"), "lwz %a3, 0x8 (%a3); li %a4, 0x1"
 
 _end:
 		stackReset()

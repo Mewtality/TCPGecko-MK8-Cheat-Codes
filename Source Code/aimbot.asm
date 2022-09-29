@@ -1,7 +1,7 @@
 /*
 * File: aimbot.asm
 * Author: Mewtality
-* Date: 2022-09-16 10:48:34
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -25,11 +25,11 @@
 		lwz r30, 0x4 (%a3)
 		lwz r29, 0x14 (%a3)
 
-		call("object_KartInfoProxy_isJugemHang"), "lwz %a3, 0x20C (r29)"
+		call("object::KartInfoProxy::isJugemHang()"), "lwz %a3, 0x20C (r29)"
 		cmpwi r3, 0
 		bne _resetToggle
 
-		call("object_KartVehicleControl_getRaceController"), "lwz %a3, 0x8 (r30)"
+		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r30)"
 		lwz %a3, 0x1A4 (%a3)
 
 		isActivatorToggle("_resetFlag"), toggle, aimbot.asm
@@ -49,10 +49,10 @@ _pushVectorIntoArray:
 		mr %a6, %a7
 		subi %a7, %a7, 1
 		
-		call("object_KartInfoProxy_getKartUnit"), "mr %a3, %a7"
+		call("object::KartInfoProxy::getKartUnit()"), "mr %a3, %a7"
 		lwz %a3, 0x14 (%a3)
 
-		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (%a3)"
+		call("object::KartInfoProxy::getPos()"), "lwz %a3, 0x20C (%a3)"
 		lfs f5, 0 (%a3) # Kart Global X-Axis.
 		stfs f5, 0 (%r9)
 		lfs f5, 0x4 (%a3) # Kart Global Y-Axis.
@@ -60,7 +60,7 @@ _pushVectorIntoArray:
 		lfs f5, 0x8 (%a3) # Kart Global Z-Axis.
 		stfs f5, 0x8 (%r9)
 
-		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (r29)" # DRC Kart Global Coordinates.
+		call("object::KartInfoProxy::getPos()"), "lwz %a3, 0x20C (r29)" # DRC Kart Global Coordinates.
 		call("ASM_VECDistance"), "mr %a4, %r9"
 
 		stfsu f1, 0x4 (%r8) # Push vector into the array.
@@ -99,17 +99,17 @@ _invalidKart:
 		stw %a5, aimbot.asm+0x4@l (r31)
 
 _skip:
-		call("object_KartInfoProxy_getKartUnit"), "lwz %a3, aimbot.asm+0x4@l (r31)"
+		call("object::KartInfoProxy::getKartUnit()"), "lwz %a3, aimbot.asm+0x4@l (r31)"
 		lwz %a3, 0x14 (%a3)
 
-		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (%a3)" # Nearest Kart Global Coordinates.
+		call("object::KartInfoProxy::getPos()"), "lwz %a3, 0x20C (%a3)" # Nearest Kart Global Coordinates.
 		lfs f5, 0 (%a3)
 		lfs f7, 0x8 (%a3)
 
-		call("object_KartInfoProxy_getPos"), "lwz %a3, 0x20C (r29)" # DRC Kart Global Coordinates.
+		call("object::KartInfoProxy::getPos()"), "lwz %a3, 0x20C (r29)" # DRC Kart Global Coordinates.
 		mr %a5, %a3
 
-		call("object_KartInfoProxy_isAntiG"), "lwz %a3, 0x20C (r29)"
+		call("object::KartInfoProxy::isAntiG()"), "lwz %a3, 0x20C (r29)"
 		cmpwi %a3, 0
 		bne _resetToggle
 		lfs f8, 0 (%a5)

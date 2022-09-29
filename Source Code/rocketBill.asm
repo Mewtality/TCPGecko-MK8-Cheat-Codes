@@ -1,7 +1,7 @@
 /*
 * File: rocketBill.asm
 * Author: Mewtality
-* Date: 2022-09-07 15:54:20
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -14,7 +14,6 @@
 
 	.func rocketBill
 		stackUpdate(1)
-
 		push(31)
 
 		isRaceReady("_end")
@@ -24,12 +23,12 @@
 		lwz r31, 0x4 (%a3)
 
 		lwz %a3, 0x14 (%a3)
-		call("object_KartInfoProxy_isKiller"), "lwz %a3, 0x20C (%a3)"
+		call("object::KartInfoProxy::isKiller()"), "lwz %a3, 0x20C (%a3)"
 		cmpwi %a3, 0
 		beq _end
 
 		mr %a3, r31
-		call("object_KartVehicleControl_getRaceController"), "lwz %a3, 0x8 (%a3)"
+		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (%a3)"
 		lwz %a3, 0x1A4 (%a3)
 		isActivator("_end"), enabler
 
@@ -41,10 +40,9 @@
 		lfs f6, speedMultiplier@l (r12)
 		fmuls f1, f5, f6
 
-		call("object_KartVehicleMove_setSpeed")
+		call("object::KartVehicleMove::setSpeed()")
 
 _end:
 		pop(31)
-
 		stackReset()
 	.endfunc

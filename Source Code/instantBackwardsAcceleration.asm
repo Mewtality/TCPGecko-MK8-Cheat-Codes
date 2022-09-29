@@ -1,7 +1,7 @@
 /*
 * File: instantBackwardsAcceleration.asm
 * Author: Mewtality
-* Date: 2022-09-08 20:31:25
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -30,7 +30,7 @@
 		lis r12, _rodata + 0x149F8@h
 		lfs f1, _rodata + 0x149F8@l (r12)
 
-		call("object_KartVehicleMove_setSpeed")
+		call("object::KartVehicleMove::setSpeed()")
 
 _end:
 		stackReset()

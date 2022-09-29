@@ -1,7 +1,7 @@
 /*
 * File: instantAcceleration.asm
 * Author: Mewtality
-* Date: 2022-09-07 15:08:30
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -26,7 +26,7 @@
 		lwz %a6, 0x3B8 (r12)
 		cmpw %a5, %a6
 		bgt _end
-		call("object_KartVehicleMove_setSpeed"), "mr %a3, r12; lfs f1, 0x3B8 (r12)"
+		call("object::KartVehicleMove::setSpeed()"), "mr %a3, r12; lfs f1, 0x3B8 (r12)"
 
 _end:
 		stackReset()

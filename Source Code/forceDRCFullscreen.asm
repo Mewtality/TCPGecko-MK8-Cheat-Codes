@@ -1,7 +1,7 @@
 /*
 * File: forceDRCFullscreen.asm
 * Author: Mewtality
-* Date: 2022-09-07 14:50:52
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -10,7 +10,6 @@
 
 	.func forceDRCFullscreen
 		stackUpdate(1)
-
 		push(31)
 
 		isRaceReady("_end")
@@ -26,14 +25,13 @@
 		li r4, 0
 		li r5, 0
 		li r6, 1
-		call("ui_Control_RaceDRC_setPushButton")
+		call("ui::Control_RaceDRC::setPushButton()")
 		mr %a3, r31
-		call("ui_Control_RaceDRC_forceSetFullScreen")
+		call("ui::Control_RaceDRC::forceSetFullScreen()")
 		mr %a3, r31
-		call("ui_Control_RaceDRC_quitDRCButtons")
+		call("ui::Control_RaceDRC::quitDRCButtons()")
 
 _end:
 		pop(31)
-
 		stackReset()
 	.endfunc

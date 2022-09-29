@@ -1,7 +1,7 @@
 /*
 * File: dropItemsAtCommand.asm
 * Author: Mewtality
-* Date: 2022-09-07 13:24:52
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -14,7 +14,6 @@
 
 	.func dropItemsAtCommand
 		stackUpdate(3)
-
 		push(31); push(30); push(29)
 
 		isRaceReady("_end")
@@ -24,13 +23,13 @@
 		getDRCPlayer("_end")
 		mr r31, %a3
 
-		call("object_KartInfoProxy_getKartUnit")
+		call("object::KartInfoProxy::getKartUnit()")
 		lwz r12, 0x4 (%a3)
 		lwz r30, 0xC (%a3)
 		lwz r30, 0x5C (r30)
 		lis r29, dropItemsAtCommand.asm@h
 
-		call("object_KartVehicleControl_getRaceController"), "lwz %a3, 0x8 (r12)"
+		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r12)"
 		lwz %a3, 0x1A4 (%a3)
 		isActivator("_else"), enabler
 		lbz %a0, dropItemsAtCommand.asm@l (r29)
@@ -39,8 +38,8 @@
 		li %a0, 1
 		stb %a0, dropItemsAtCommand.asm@l (r29)
 
-		call(0x0E2E47E4), "mr %a3, r30" # SUBROUTINE "object_ItemObjThunder__startThunderEffect"
-		call("object_ItemOwnerProxy__clearItemSlot"), "mr %a3, r30"
+		call(0x0E2E47E4), "mr %a3, r30" # SUBROUTINE from "object::ItemObjThunder::_startThunderEffect()"
+		call("object::ItemOwnerProxy::_clearItemSlot()"), "mr %a3, r30"
 
 		b _end
 
@@ -50,8 +49,6 @@ _else:
 
 _end:
 		pop(29); pop(30); pop(31)
-
 		isync
-
 		stackReset()
 	.endfunc

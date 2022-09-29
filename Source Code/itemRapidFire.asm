@@ -1,7 +1,7 @@
 /*
 * File: rapidfire.asm
 * Author: Mewtality
-* Date: 2022-09-09 02:20:29
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -14,7 +14,7 @@
 	.long rapidfire.asm, 0, hook, 0x880C0000
 
 	.func rapidfire
-	hook = "object_ItemDirector_calcKeyInput_EachPlayer" + 0x5A8
+	hook = "object::ItemDirector::calcKeyInput_EachPlayer_()" + 0x5A8
 	hookData = 0x0EC9DE6C
 
 		stackUpdate(0)
@@ -62,7 +62,7 @@ getHookDataData:
 		push(31)
 		mr r31, r12
 
-		call("object_RaceIndex__DRCPlayer2Kart")
+		call("object::RaceIndex_::DRCPlayer2Kart()")
 		dereference("itemDirector"), 0x7B0
 
 		add r12, r12, %a3

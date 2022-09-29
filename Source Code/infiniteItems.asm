@@ -1,7 +1,7 @@
 /*
 * File: infiniteItems.asm
 * Author: Mewtality
-* Date: 2022-09-12 21:47:25
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -20,7 +20,7 @@
 		lis %a3, itemDirector@ha
 		lwz %a3, itemDirector@l (%a3)
 
-		call("object_ItemDirector_slot_StartSlot")
+		call("object::ItemDirector::slot_StartSlot()")
 
 _end:
 		stackReset()

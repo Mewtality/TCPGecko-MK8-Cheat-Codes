@@ -1,7 +1,7 @@
 /*
 * File: blueShellRide.asm
 * Author: Mewtality
-* Date: 2022-09-10 16:03:06
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -21,7 +21,7 @@
 		lis %a3, itemDirector@ha
 		lwz %a3, itemDirector@l (%a3)
 		addi %a4, %sp, 0xC
-		call("object_ItemDirector_getPosKouraB")
+		call("object::ItemDirector::getPosKouraB()")
 
 		lwz %a0, 0x174 (r12)
 		cmpw %a0, r31 # Is Item Holder DRC Player
@@ -38,7 +38,7 @@
 		cmpwi %a0, 0 # Is First Place
 		beq _end
 
-		call("object_KartInfoProxy_getKartUnit"), "mr %a3, r31"
+		call("object::KartInfoProxy::getKartUnit()"), "mr %a3, r31"
 		lwz %a3, 0x4 (%a3)
 		lwz %a3, 0x14 (%a3)
 
@@ -51,7 +51,7 @@
 		lfs f5, 0x14 (%sp)
 		stfs f5, 0x2C (%a3)
 
-		call("object_KartVehicleMove_forceStop")
+		call("object::KartVehicleMove::forceStop()")
 
 _end:
 		pop(31)

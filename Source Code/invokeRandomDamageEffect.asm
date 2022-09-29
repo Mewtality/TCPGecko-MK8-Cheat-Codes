@@ -1,13 +1,14 @@
 /*
 * File: invokeRandomDamageEffect.asm
 * Author: Mewtality
-* Date: 2022-09-16 10:48:40
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
 	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
 
+	# SETTINGS
 	enabler = "FLICK_DOWN"
 
 	.func invokeRandomDamageEffect
@@ -21,15 +22,15 @@
 		lwz r31, 0x4 (%a3)
 		lwz r30, 0x14 (%a3)
 
-		call("object_KartInfoProxy_isJugemHang"), "lwz %a3, 0x20C (r30)"
+		call("object::KartInfoProxy::isJugemHang()"), "lwz %a3, 0x20C (r30)"
 		cmpwi r3, 0
 		bne _end
 
-		call("object_KartInfoProxy_isKiller"), "lwz %a3, 0x20C (r30)"
+		call("object::KartInfoProxy::isKiller()"), "lwz %a3, 0x20C (r30)"
 		cmpwi r3, 0
 		bne _end
 
-		call("object_KartVehicleControl_getRaceController"), "lwz %a3, 0x8 (r31)"
+		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r31)"
 		lwz %a3, 0x1A4 (%a3)
 
 		isActivator("_end"), enabler
@@ -41,7 +42,7 @@
 		bne _end
 		stw %a5, 0x144 (r31)
 
-		call("nn_nex_Platform_GetRandomNumber"), "li %a3, 0x14"
+		call("nn::nex::Platform::GetRandomNumber()"), "li %a3, 0x14"
 		stw %a3, 0x298 (r30)
 
 		lwz r12, 0x20 (r31)

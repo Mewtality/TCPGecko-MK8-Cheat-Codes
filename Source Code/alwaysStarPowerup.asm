@@ -1,7 +1,7 @@
 /*
 * File: alwaysStarPowerup.asm
 * Author: Mewtality
-* Date: 2022-09-07 12:45:12
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */

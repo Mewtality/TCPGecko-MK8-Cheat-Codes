@@ -1,7 +1,7 @@
 /*
 * File: moonjump.asm
 * Author: Mewtality
-* Date: 2022-09-09 18:40:44
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -17,7 +17,7 @@
 	.long moonjump.asm, 0, hook, 0x38610008
 
 	.func moonjumpHook
-	hook = "object_KartVehicleMove_calcMove" + 0x98
+	hook = "object::KartVehicleMove::calcMove()" + 0x98
 	hookData = 0x0EC9DC90
 
 		stackUpdate(0)
@@ -67,7 +67,7 @@ getHookDataData:
 		cmpw %a0, r30 # Check DRC player true/false.
 		bne _skip
 
-		call("object_KartVehicleControl_getRaceController"), "lwz %a3, 0x8 (%a3)"
+		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (%a3)"
 		lwz %a3, 0x1A4 (%a3)
 		isActivator("_skip"), enabler
 

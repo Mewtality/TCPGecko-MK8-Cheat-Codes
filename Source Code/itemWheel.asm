@@ -1,7 +1,7 @@
 /*
 * File: itemWheel.asm
 * Author: Mewtality
-* Date: 2022-09-07 15:55:04
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -15,9 +15,7 @@
 
 	.func itemWheel
 		stackUpdate(2)
-
-		push(31)
-		push(30)
+		push(31); push(30)
 
 		isRaceReady("_end")
 		isRaceState("_end")
@@ -29,7 +27,7 @@
 		lwz r31, 0x5C (r31)
 		lis r30, itemWheel.asm@h
 
-		call("object_KartVehicleControl_getRaceController"), "lwz %a3, 0x8 (r12)"
+		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r12)"
 		lwz %a3, 0x1A4 (%a3)
 		isActivator("_elseif"), nextItem
 		li %a5, 0x1
@@ -67,17 +65,15 @@ _initItemSet:
 		cmpw %a5, %a0
 		beq _end
 
-		call("object_ItemOwnerProxy_clearItem"), "mr %a3, r31"
+		call("object::ItemOwnerProxy::clearItem()"), "mr %a3, r31"
 
 _setItem:
 		lwz %a0, 0x84 (r31)
 		cmpwi %a0, 0
 		ble _end
-		call("object_ItemOwnerProxy_setItemForce"), "mr %a3, r31; addi %a4, r30, itemWheel.asm+0x4@l"
+		call("object::ItemOwnerProxy::setItemForce()"), "mr %a3, r31; addi %a4, r30, itemWheel.asm+0x4@l"
 
 _end:
-		pop(30)
-		pop(31)
-
+		pop(30); pop(31)
 		stackReset()
 	.endfunc

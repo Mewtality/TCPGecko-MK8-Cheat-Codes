@@ -1,7 +1,7 @@
 /*
 * File: always5Balloons.asm
 * Author: Mewtality
-* Date: 2022-09-07 11:55:18
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -22,7 +22,7 @@
 		rlwinm %a3, %a3, 0x2, 0x0, 0x1D
 		lwzx %a3, r12, %a3
 
-		call("object_RaceKartCheckerBattle_incBalloon")
+		call("object::RaceKartCheckerBattle::incBalloon()")
 
 _end:
 		stackReset()

@@ -1,7 +1,7 @@
 /*
 * File: dialogBoxTest.asm
 * Author: Mewtality
-* Date: 2022-09-18 23:43:50
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -27,7 +27,7 @@ _start:
 		getDRCKartUnit("_resetFlag")
 		lwz %a3, 0x4 (%a3)
 
-		call("object_KartVehicleControl_getRaceController"), "lwz %a3, 0x8 (%a3)"
+		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (%a3)"
 		lwz %a3, 0x1A4 (%a3)
 
 		isActivator("_resetFlag"), enabler

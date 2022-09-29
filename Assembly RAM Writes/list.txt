@@ -11,6 +11,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -29,6 +31,9 @@ Offline [O]
 - Send code before starting a race.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -47,6 +52,8 @@ Offline [O]
 - This code is fully stable.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
@@ -77,6 +84,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -102,6 +111,9 @@ Offline [O]
 - To fully disable, restart the race.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -124,6 +136,8 @@ Offline [O]
 - To fully disable, restart the race.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
@@ -150,6 +164,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -168,6 +184,8 @@ Offline [O]
 - This code is fully stable.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
@@ -198,6 +216,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -217,6 +237,8 @@ Offline [O]
 - Send code before starting a race.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
@@ -238,6 +260,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -256,6 +280,8 @@ Offline [O]
 - This code is fully stable.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
@@ -276,6 +302,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -294,6 +322,8 @@ Offline [X]
 - This code is fully stable.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
@@ -314,6 +344,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -332,6 +364,8 @@ Offline [O]
 - This code is fully stable.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
@@ -352,6 +386,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -370,6 +406,8 @@ Offline [O]
 - This code is fully stable.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
@@ -390,6 +428,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -409,6 +449,8 @@ Offline [O]
 
 ---
 
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
@@ -426,6 +468,8 @@ Offline [O]
 - This code is fully stable.
 
 ---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]

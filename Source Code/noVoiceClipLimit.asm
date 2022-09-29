@@ -1,7 +1,7 @@
 /*
 * File: noVoiceClipLimit.asm
 * Author: Mewtality
-* Date: 2022-09-15 19:13:53
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -17,7 +17,7 @@
 		getDRCKartUnit("_end")
 		lwz %a3, 0x14 (%a3)
 
-		li %a0, -1
+		li %a0, null
 		stw %a0, 0x27C (%a3)
 
 _end:

@@ -1,7 +1,7 @@
 /*
 * File: gliderAtCommand.asm
 * Author: Mewtality
-* Date: 2022-09-07 15:04:57
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -13,41 +13,38 @@
 
 	.func gliderAtCommand
 		stackUpdate(1)
-
 		push(31)
 
 		isRaceReady("_end")
 		isRaceState("_end")
-		isRacePaused("_end")
 
 		getDRCKartUnit("_end")
 		lwz r31, 0x4 (%a3)
 
 		lwz %a3, 0x14 (%a3)
-		call("object_KartInfoProxy_isJugemHang"), "lwz %a3, 0x20C (%a3)"
+		call("object::KartInfoProxy::isJugemHang()"), "lwz %a3, 0x20C (%a3)"
 		cmpwi r3, 0
 		bne _end
 
-		call("object_KartVehicleControl_getRaceController"), "lwz %a3, 0x8 (r31)"
+		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r31)"
 		lwz %a3, 0x1A4 (%a3)
 
 		isActivator("_else"), enabler
 
-		call("object_KartVehicle_isInWing"), "mr %a3, r31; li %a4, null"
+		call("object::KartVehicle::isInWing()"), "mr %a3, r31; li %a4, null"
 		cmpwi r3, 0
 		bne _end
 
-		call("object_KartVehicle_forceGlide"), "mr %a3, r31"
+		call("object::KartVehicle::forceGlide()"), "mr %a3, r31"
 
 		b _end
 
 _else:
 		isActivator("_end"), disabler
 
-		call("object_KartVehicle_forceCloseWing"), "mr %a3, r31"
+		call("object::KartVehicle::forceCloseWing()"), "mr %a3, r31"
 
 _end:
 		pop(31)
-
 		stackReset()
 	.endfunc

@@ -1,7 +1,7 @@
 /*
 * File: rainbowKart8.asm
 * Author: Mewtality
-* Date: 2022-09-07 15:40:30
+* Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -15,7 +15,6 @@
 
 	.func rainbowKart8
 		stackUpdate(2)
-
 		push(31); push(30)
 
 		isRacePaused("_end")
@@ -144,6 +143,5 @@ _reset:
 
 _end:
 		pop(30); pop(31)
-
 		stackReset()
 	.endfunc
