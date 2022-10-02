@@ -59,6 +59,25 @@ Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
 
+Disable Boost [Mewtality]
+#0E345F50 81630004
+0E345F50 4E800020
+
+Boost panels, mushrooms, mini-turbos and grabbing coins will not boost the kart.
+
+Online [O]
+Offline [O]
+
+- This only applies to local players.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]
+
 
 Disable Boundaries [Mewtality]
 #0E316044 4BFFFD3D
