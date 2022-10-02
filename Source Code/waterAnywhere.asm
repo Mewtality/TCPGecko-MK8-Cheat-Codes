@@ -15,7 +15,7 @@
 
 	.func waterAnywhere
 	hook = "object::KartVehicle::calcWetAndWater()" + 0x58
-	hookData = 0x0EC9DD70
+	hookData = 0x0EC9DE6C
 
 		stackUpdate(0)
 
