@@ -75,6 +75,7 @@ _pushVectorIntoArray:
 		fmr f6, f8
 		dereference("cameraManagement")
 		lwz %a7, 0x25C (r12)
+		subi %r9, %a7, 1
 		addi %r8, %sp, 0x20 # Karts Vector Array.
 		mtctr %a7
 
@@ -87,7 +88,7 @@ _searchNearestKartFromVectorArray:
 		beq _invalidKart
 		fcmpu cr0, f7, f6
 		bge _invalidKart
-		subi %a5, %a7, 0xB
+		sub %a5, %a7, %r9
 		neg %a5, %a5
 		fmr f6, f7
 
