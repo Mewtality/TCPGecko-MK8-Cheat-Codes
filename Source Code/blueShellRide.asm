@@ -9,7 +9,7 @@
 	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
 
 	.func blueShellRide
-		stackUpdate(4)
+		stackUpdate(1 + 3) # (Backup Non-Volatile Registers + Space For "object::ItemDirector::getPosKouraB()" 96-bit return value)
 		push(31)
 
 		isRaceReady("_end")

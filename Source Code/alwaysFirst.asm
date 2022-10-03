@@ -19,6 +19,7 @@
 		dereference("raceManagement"), 0x4C
 		rlwinm %a0, %a3, 2, 0, 29
 		lwzx r12, r12, %a0
+
 		li %a0, 0
 		stw %a0, 0x2C (r12)
 

@@ -1,5 +1,5 @@
 /*
-* File: earthMenuAnywhere.asm
+* File: wifiBackgroundAnywhere.asm
 * Author: Mewtality
 * Date: Thursday, September 29, 2022 @ 12:59:30 PM
 * YouTube: https://www.youtube.com/c/Mewtality
@@ -8,7 +8,7 @@
 
 	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
 
-	.func earthMenuAnywhere
+	.func wifiBackgroundAnywhere
 		stackUpdate(0)
 
 		call("FID_conflict:ui::GetBg()")

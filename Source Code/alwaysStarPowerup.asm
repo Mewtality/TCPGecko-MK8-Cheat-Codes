@@ -1,7 +1,7 @@
 /*
 * File: alwaysStarPowerup.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Monday, October 3, 2022 @ 11:31:18 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -15,10 +15,8 @@
 		isRaceState("_end")
 
 		getDRCKartUnit("_end")
-		lwz r12, 0x4 (%a3)
 
-		li %a0, 0x10
-		stw %a0, 0x160 (r12)
+		call(0x0E342CA0), "lwz %a3, 0x4 (%a3)"
 
 _end:
 		stackReset()

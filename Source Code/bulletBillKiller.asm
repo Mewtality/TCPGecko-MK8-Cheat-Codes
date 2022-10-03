@@ -12,7 +12,7 @@
 	enabler = "LEFT_STICK_PRESS"
 
 	.func bulletBillKiller
-		stackUpdate(5)
+		stackUpdate(4 + 1) # (Backup Non-Volatile Registers + "object::Sector_GetSector()" 32-bit Parameter)
 		push(31); push(30); push(29); push(28)
 
 		isRaceReady("_end")

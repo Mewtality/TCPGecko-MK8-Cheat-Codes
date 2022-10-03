@@ -13,7 +13,7 @@
 	disabler = "A" | "B"
 
 	.func bulletBillAtCommand
-		stackUpdate(1)
+		stackUpdate(2)
 		push(31); push(30)
 
 		isRaceReady("_end")

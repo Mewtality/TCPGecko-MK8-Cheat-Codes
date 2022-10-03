@@ -173,23 +173,32 @@ Is Assembly RAM Writes [X]</comment>
     </entry>
     <entry name="Always Draft">
         <code>7C0802A6 90010004
-9421FFF8 3D801069
-818CA70C 2C0C0000
-4182006C 818C023C
-2C0C0000 41820060
-880C003E 2C000000
-41820054 3C000E5C
-6000171C 7C0903A6
-4E800421 2C030000
-4182003C 3C000E5C
-60001B00 7C0903A6
-4E800421 2803000B
-41810024 3C000E31
-60003F38 7C0903A6
-4E800421 81830004
-38000080 900C01A8
-900C01AC 8001000C
-7C0803A6 38210008</code>
+9421FFF4 93E10008
+3D801069 818CA70C
+2C0C0000 418200AC
+818C023C 2C0C0000
+418200A0 880C003E
+2C000000 41820094
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 4182007C
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 41810064
+3C000E31 60003F38
+7C0903A6 4E800421
+83E30004 801F00FC
+540007FF 41820044
+80630014 8063020C
+3C000E31 60004784
+7C0903A6 4E800421
+2C030000 40820024
+807F0014 38800003
+38A00001 38C00001
+3C000E35 6000ABB4
+7C0903A6 4E800421
+83E10008 80010010
+7C0803A6 3821000C</code>
         <codeInputType>Cheat Code</codeInputType>
         <authors>Mewtality</authors>
         <raw_assembly>true</raw_assembly>
@@ -253,19 +262,20 @@ Is Assembly RAM Writes [X]</comment>
         <code>7C0802A6 90010004
 9421FFF8 3D801069
 818CA70C 2C0C0000
-41820068 818C023C
-2C0C0000 4182005C
+41820070 818C023C
+2C0C0000 41820064
 880C003E 2C000000
-41820050 3C000E5C
+41820058 3C000E5C
 6000171C 7C0903A6
 4E800421 2C030000
-41820038 3C000E5C
+41820040 3C000E5C
 60001B00 7C0903A6
 4E800421 2803000B
-41810020 3C000E31
+41810028 3C000E31
 60003F38 7C0903A6
-4E800421 81830004
-38000010 900C0160
+4E800421 80630004
+3C000E34 60002CA0
+7C0903A6 4E800421
 8001000C 7C0803A6
 38210008</code>
         <codeInputType>Cheat Code</codeInputType>
@@ -440,7 +450,7 @@ Is Assembly RAM Writes [X]</comment>
     </entry>
     <entry name="Bullet Bill At Command">
         <code>7C0802A6 90010004
-9421FFF4 93E10008
+9421FFF0 93E10008
 93C1000C 3D801069
 818CA70C 2C0C0000
 41820108 818C023C
@@ -477,8 +487,8 @@ Is Assembly RAM Writes [X]</comment>
 3C000E34 6000361C
 7C0903A6 4E800421
 83C1000C 83E10008
-80010010 7C0803A6
-3821000C</code>
+80010014 7C0803A6
+38210010</code>
         <codeInputType>Cheat Code</codeInputType>
         <authors>Mewtality</authors>
         <raw_assembly>true</raw_assembly>
@@ -1387,12 +1397,25 @@ Is Assembly RAM Writes [X]</comment>
         <enabled>false</enabled>
     </entry>
     <entry name="Instant Finish">
-        <code>3D801069 818CA70C
-2C0C0000 41820024
-818C0238 2C0C0000
-41820018 800C0028
-2C000006 4082000C
-38000007 900C0028</code>
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820074 818C023C
+2C0C0000 41820068
+880C003E 2C000000
+4182005C 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820044 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+4181002C 3D801069
+818CA70C 818C004C
+5460103A 7C6C002E
+38800000 3C000E5C
+60003118 7C0903A6
+4E800421 8001000C
+7C0803A6 38210008</code>
         <codeInputType>Cheat Code</codeInputType>
         <authors>Mewtality</authors>
         <raw_assembly>true</raw_assembly>
@@ -1402,6 +1425,7 @@ Is Assembly RAM Writes [X]</comment>
 Online [O]
 Offline [O]
 
+- This only applies to the player with a Wii U Gamepad.
 - This code is fully stable.
 
 ---
@@ -1416,21 +1440,23 @@ Is Assembly RAM Writes [X]</comment>
         <code>7C0802A6 90010004
 9421FFF8 3D801069
 818CA70C 2C0C0000
-41820068 818C023C
-2C0C0000 4182005C
+4182007C 818C023C
+2C0C0000 41820070
 880C003E 2C000000
-41820050 3C000E5C
+41820064 3C000E5C
 6000171C 7C0903A6
 4E800421 2C030000
-41820038 3C000E5C
+4182004C 3C000E5C
 60001B00 7C0903A6
 4E800421 2803000B
-41810020 3C000E31
+41810034 3C000E31
 60003F38 7C0903A6
-4E800421 81830004
-38000002 900C55A8
-8001000C 7C0803A6
-38210008</code>
+4E800421 80630004
+80630014 3D801050
+C02C22C4 3C000E35
+6000AB84 7C0903A6
+4E800421 8001000C
+7C0803A6 38210008</code>
         <codeInputType>Cheat Code</codeInputType>
         <authors>Mewtality</authors>
         <raw_assembly>true</raw_assembly>
@@ -1535,17 +1561,15 @@ Is Assembly RAM Writes [X]</comment>
         <enabled>false</enabled>
     </entry>
     <entry name="Instant Start">
-        <code>3D801069 818CA70C
-2C0C0000 41820024
-818C0238 2C0C0000
-41820018 800C0028
-2C000005 4082000C
-38000006 900C0028</code>
+        <code>#0E311278 2C000005
+#0E3112C8 2C000006
+0E311278 2C000003
+0E3112C8 2C000003</code>
         <codeInputType>Cheat Code</codeInputType>
         <authors>Mewtality</authors>
-        <raw_assembly>true</raw_assembly>
-        <assembly_ram_write>false</assembly_ram_write>
-        <comment>All local players start instantly.
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>true</assembly_ram_write>
+        <comment>Local players start instantly.
 
 Online [O]
 Offline [O]
@@ -1556,8 +1580,8 @@ Offline [O]
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [O]
-Is Assembly RAM Writes [X]</comment>
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]</comment>
         <enabled>false</enabled>
     </entry>
     <entry name="Instant Stop">
@@ -2038,11 +2062,20 @@ Is Assembly RAM Writes [O]</comment>
         <enabled>false</enabled>
     </entry>
     <entry name="Pause Timer">
-        <code>3D801069 818CA70C
-2C0C0000 41820018
-818C0034 2C0C0000
-4182000C 38000001
-980C004C</code>
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820048 818C023C
+2C0C0000 4182003C
+880C003E 2C000000
+41820030 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820018 3D801069
+818CA70C 818C0034
+38000001 980C004C
+8001000C 7C0803A6
+38210008</code>
         <codeInputType>Cheat Code</codeInputType>
         <authors>Mewtality</authors>
         <raw_assembly>true</raw_assembly>
@@ -2623,6 +2656,58 @@ Is Assembly RAM Writes [X]</comment>
         <raw_assembly>true</raw_assembly>
         <assembly_ram_write>false</assembly_ram_write>
         <comment>Character is able to trick anytime anywhere.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Turbo At Command">
+        <code>7C0802A6 90010004
+9421FFF4 93E10008
+3D801069 818CA70C
+2C0C0000 418200CC
+818C023C 2C0C0000
+418200C0 880C003E
+2C000000 418200B4
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 4182009C
+3C000E5C 60001B00
+7C0903A6 4E800421
+2803000B 41810084
+3C000E31 60003F38
+7C0903A6 4E800421
+83E30004 80630014
+8063020C 3C000E31
+60004784 7C0903A6
+4E800421 2C030000
+40820050 807F0008
+3C000E34 60004D88
+7C0903A6 4E800421
+806301A4 3CA00000
+60A50010 7C662838
+7C053000 40820024
+807F0014 38800008
+38A00001 38C00001
+3C000E35 6000ABB4
+7C0903A6 4E800421
+83E10008 80010010
+7C0803A6 3821000C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Kart engine goes into turbo mode at will.
 
 Online [O]
 Offline [O]

@@ -306,6 +306,26 @@ Is Raw Machine Code [X]
 Is Assembly RAM Writes [O]
 
 
+Instant Start [Mewtality]
+#0E311278 2C000005
+#0E3112C8 2C000006
+0E311278 2C000003
+0E3112C8 2C000003
+
+Local players start instantly.
+
+Online [O]
+Offline [O]
+
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [X]
+Is Assembly RAM Writes [O]
+
 
 No Bullet Bill SFX [Mewtality]
 #0E1EC17C 4812853D

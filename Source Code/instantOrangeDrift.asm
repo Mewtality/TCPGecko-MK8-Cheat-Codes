@@ -1,7 +1,7 @@
 /*
 * File: instantOrangeDrift.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Monday, October 3, 2022 @ 09:00:58 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
@@ -15,10 +15,13 @@
 		isRaceState("_end")
 
 		getDRCKartUnit("_end")
-		lwz r12, 0x4 (%a3)
+		lwz %a3, 0x4 (%a3)
+		lwz %a3, 0x14 (%a3)
 
-		li %a0, 0x2
-		stw %a0, 0x55A8 (r12)
+		const = _rodata + 0xC4 # 1000 (float)
+		lis r12, const@h
+		lfs f1, const@l (r12)
+		call("object::KartVehicleMove::forceSetMiniTurboCounter()")
 
 _end:
 		stackReset()
