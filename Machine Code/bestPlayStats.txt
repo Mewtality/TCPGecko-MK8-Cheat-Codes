@@ -35,6 +35,7 @@ Online [X]
 Offline [X]
  
 - Enter and finish a race for a permanent save.
+- This code is fully stable.
  
 ---
  
