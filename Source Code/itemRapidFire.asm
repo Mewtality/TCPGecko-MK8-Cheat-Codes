@@ -32,7 +32,6 @@
 _skip:
 		isRaceReady("_end")
 		isRaceState("_end")
-		isRacePaused("_end")
 
 		getDRCPlayer("_end")
 		dereference("itemDirector"), 0x7B8

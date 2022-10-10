@@ -56,7 +56,6 @@ getFOVHookData:
 
 		lis r31, switchFOVAtCommand.asm@h
 		isRaceReady("_skip")
-		isRacePaused("_skip")
 
 		getDRCKartUnit("_skip")
 		lwz %a3, 0x4 (%a3)

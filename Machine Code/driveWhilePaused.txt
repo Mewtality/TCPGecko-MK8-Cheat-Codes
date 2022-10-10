@@ -1,0 +1,30 @@
+Drive While Paused [Mewtality]
+7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820054 818C023C
+2C0C0000 41820048
+880C003E 2C000000
+4182003C 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820024 3C000E64
+6000E218 7C0903A6
+4E800421 80630000
+80630200 38000000
+980300CC 8001000C
+7C0803A6 38210008
+
+Allows players to drive while the game is paused.
+
+Online [X]
+Offline [O]
+
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]

@@ -17,7 +17,6 @@
 
 		isRaceReady("_reset")
 		isRaceState("_reset")
-		isRacePaused("_reset")
 
 		getDRCKartUnit("_reset")
 		lwz r31, 0x4 (%a3)

@@ -19,7 +19,6 @@
 
 		isRaceReady("_end")
 		isRaceState("_end")
-		isRacePaused("_end")
 
 		getDRCKartUnit("_end")
 		lwz r12, 0x4 (%a3)

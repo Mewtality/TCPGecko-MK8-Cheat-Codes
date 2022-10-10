@@ -18,7 +18,6 @@
 
 		isRaceReady("_end")
 		isRaceState("_end")
-		isRacePaused("_end")
 
 		getDRCPlayer("_end")
 		mr r31, %a3
