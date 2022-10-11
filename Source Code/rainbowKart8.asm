@@ -17,6 +17,7 @@
 		stackUpdate(2)
 		push(31); push(30)
 
+		isRaceReady("_end")
 		isRacePaused("_end")
 
 		lis r31, rainbowKart8.asm@h
