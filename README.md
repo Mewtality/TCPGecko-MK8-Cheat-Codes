@@ -8,10 +8,14 @@ To use these cheat codes you must download:
 <br/><br/>
 
 "**codelist.xml**" contains all codes ready to be used in Jgecko U. But before that you need to:
-- rename the file to your game's region (European: **AMKP01**.xml; American: **AMKE01**.xml; Japanese: **AMKJ01**.xml)
-- place the file in the "codes" folder of Jgecko U.
-<br/><br/>
+- Rename the file to your game's region:
+	- European: **AMKP01**.xml
+	- American: **AMKE01**.xml
+	- Japanese: **AMKJ01**.xml
 
+- Place the renamed codelist file in the "codes" folder of Jgecko U. If there is no folder named "codes" where "Jgecko U.jar" is located, create one.
+<br/><br/>
+## About
 All cheat codes in the "Machine Code" folder must have the "Raw Machine Code" feature enabled:
 
 ![image](https://user-images.githubusercontent.com/59747767/189653773-bb804530-205c-40f0-80d2-395652d3dede.png)
