@@ -1,4 +1,46 @@
 <?xml version="1.0" encoding="UTF-16"?><codes>
+    <entry name="Ability To Change Drift Direction">
+        <code>7C0802A6 90010004
+9421FFF8 3D801069
+818CA70C 2C0C0000
+41820080 818C023C
+2C0C0000 41820074
+880C003E 2C000000
+41820068 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
+41820050 3C000E5C
+60001B00 7C0903A6
+4E800421 2803000B
+41810038 3C000E31
+60003F38 7C0903A6
+4E800421 80630004
+C0A30104 3D801052
+C0CC2D64 81830014
+818C00EC FC053000
+41820008 D0AC0064
+8001000C 7C0803A6
+38210008</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>true</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Steering the kart left and right while drifting will change to the respective direction.
+
+Online [O]
+Offline [O]
+
+- This only applies to the player with a Wii U Gamepad.
+- This code is fully stable.
+
+---
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
+
+Is Raw Machine Code [O]
+Is Assembly RAM Writes [X]</comment>
+        <enabled>false</enabled>
+    </entry>
     <entry name="Allow Backwards Driving">
         <code>#0E5D4950 9421FFC0
 0E5D4950 4E800020</code>

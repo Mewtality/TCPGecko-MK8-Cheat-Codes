@@ -14,9 +14,8 @@
 		isRaceReady("_end")
 
 		getDRCKartUnit("_end")
-		lwz r12, 0x4 (%a3)
 
-		dereference(null), 0x4C, 0x14
+		dereference(null), 0x4, 0x4C, 0x14
 
 		lwz %a0, 0x34 (r12)
 		stw %a0, 0x1C (r12)
