@@ -24,9 +24,9 @@
 		dereference(null), 0x14, 0xEC
 
 		fcmpu cr0, f5, f6
-        beq _end
+		beq _end
 
-        stfs f5, 0x64 (r12)
+		stfs f5, 0x64 (r12)
 
 _end:
 		stackReset()
