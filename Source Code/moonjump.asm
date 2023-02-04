@@ -1,87 +1,110 @@
 /*
 * File: moonjump.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/codes.S"
-	.include "C:/devkitPro/devkitPPC/assembly/modules/coreinit.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+	
+	import AMKP01, "symbols, macros"
+	import module, "coreinit.rpl"
+	import myStuff, "MK8Codes"
 
-	# SETTINGS
-	enabler = "R"
+	KernelCopyData = 0x2500
+
+	hook = "object::KartVehicleMove::calcMove()" + 0x98
+	hookData = 0x0EC9DC90
 
 	# MAKE SURE TO ADD "#" AT THE START OF THE FIRST TWO LINES IN THE MACHINE CODE.
 	.long moonjump.asm, 0, hook, 0x38610008
 
 	.func moonjumpHook
-	hook = "object::KartVehicleMove::calcMove()" + 0x98
-	hookData = 0x0EC9DC90
-
-		stackUpdate(0)
+		stack.update
 
 		lis r12, moonjump.asm@h
-		lbz %a0, moonjump.asm@l (r12)
-		cmpwi %a0, 0
+		lbz r0, moonjump.asm@l (r12)
+		cmpwi r0, false
 		bne _end
-		li %a0, 1
-		stb %a0, moonjump.asm@l (r12)
+		li r0, true
+		stb r0, moonjump.asm@l (r12)
 
-		KernelCopyData("getHookDataData"), hookData, hookDataLength - 0x4
-		KernelCopyData("getHookData"), hook, hookLength - 0x4
+		int r3, hookData
+		li r4, hookDataLength - 0x4
+		call "DCFlushRange"
+		bl getHookData
+		mfspr r3, %lr
+		call "EffectiveToPhysical"
+		mr r4, r3
+		int r3, hookData|0x80000000
+		li r5, hookDataLength - 0x4
+		call "KernelCopyData"
+
+		int r3, hook
+		li r4, hookLength - 0x4
+		call "DCFlushRange"
+		bl getHook
+		mfspr r3, %lr
+		call "EffectiveToPhysical"
+		mr r4, r3
+		int r3, hook|0x80000000
+		li r5, hookLength - 0x4
+		call "KernelCopyData"
 
 _end:
-		stackReset()
+		stack.restore
 		b _abort
 	.endfunc
 
 	.func hook
-getHookData:
+getHook:
 		blrl
 
 		bl hookData - hook
 
-	hookLength = $ - getHookData
+	hookLength = $ - getHook
 	.endfunc
 
 	.func hookData
-getHookDataData:
+getHookData:
 		blrl
 
-		addi %a3, %sp, 0x8 # Restore orinal instruction from "getHookData".
+		addi r3, %sp, 0x8 # Restore orinal instruction from "getHookData".
 
-		stackUpdate(1)
-		push(29)
-		mr r29, %a3
+		stack.update 1
+		push "r29"
+		mr r29, r3
 
-		isRaceReady("_skip")
-		isRaceState("_skip")
+		is.onRace false, "_skip"
 
-		getDRCKartUnit("_skip")
-		lwz %a3, 0x4 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		load r3, "0x4"
 
-		lwz %a0, 0x14 (%a3)
+		lwz r0, 0x14 (r3)
 
-		cmpw %a0, r30 # Check DRC player true/false.
+		cmpw r0, r30 # Check DRC player true/false.
 		bne _skip
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (%a3)"
-		lwz %a3, 0x1A4 (%a3)
-		isActivator("_skip"), enabler
+		load r3, "0x8"
+		get.kart.activator
+
+		is.activator false, "_skip", "DRC.R"
 
 		lfs f5, 0x238 (r30)
 		fneg f5, f5
 		stfs f5, 0x238 (r30)
 
 _skip:
-		mr %a3, r29
+		mr r3, r29
 
-		pop(29)
-		stackReset()
+		pop "r29"
+		stack.restore
 		blr
 
-	hookDataLength = $ - getHookDataData
+	hookDataLength = $ - getHookData
 	.endfunc
 _abort:

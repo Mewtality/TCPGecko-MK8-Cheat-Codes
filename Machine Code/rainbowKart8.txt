@@ -1,11 +1,15 @@
-Rainbow Kart 8 [Mewtality]
+RGB Map [Mewtality]
+#106F000C 00000000
 7C0802A6 90010004
 9421FFF0 93E10008
 93C1000C 3D801069
 818CA70C 2C0C0000
-418201B0 818C023C
-2C0C0000 418201A4
-880C003E 2C000000
+418201C8 818C023C
+2C0C0000 418201BC
+886C003E 2C030000
+418201B0 3C000E5C
+6000171C 7C0903A6
+4E800421 2C030000
 41820198 3C000E64
 6000E218 7C0903A6
 4E800421 80630000
@@ -57,22 +61,29 @@ ED6B3828 FC0B2800
 D13E00B4 D15E00B8
 D17E00BC 4800000C
 38000000 B01F000C
-83C1000C 83E10008
+83E10008 83C1000C
 80010014 7C0803A6
 38210010
 
 The main source of light in all stages changes from red to green to blue repeatedly.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This code is fully stable.
-- May cause performance issues.
-- To fully disable, restart the race.
+How to use:
+To fully disable this code, start a new race.
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
-
-Is Raw Machine Code [O]
-Is Assembly RAM Writes [X]

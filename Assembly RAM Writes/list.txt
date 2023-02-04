@@ -1,105 +1,149 @@
-Allow Backwards Driving [Mewtality]
+Allow Backwards Driving [Mewtality]:
 #0E5D4950 9421FFC0
 0E5D4950 4E800020
 
 Lakitu will not show up when players drive backwards.
 
-Online [O]
-Offline [O]
+Support Status:
+ - Battle (Offline)
+ - Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-Disable All AI [Mewtality]
+Disable All AI [Mewtality]:
 #0E311418 48025A29
 0E311418 38600001
 
 Disables all AI operations.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-Disable Anti-Gravity [Mewtality]
+Disable Anti-Gravity [Mewtality]:
 #0E5D41A4 9421FF00
 0E5D41A4 4E800020
 
 Players will ignore anti-gravity paths.
 
-Online [X]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This code is fully stable.
-- Send code before starting a race.
+How to use:
+Send code before starting a race.
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-Disable Bloom [Mewtality]
+Disable Bloom [Mewtality]:
 #0E98262C 54C3063E
 0E98262C 38600000
 
 Removes scene bloom FX.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-Disable Boost [Mewtality]
+Disable Boost [Mewtality]:
 #0E345F50 81630004
 0E345F50 4E800020
 
 Boost panels, mushrooms, mini-turbos and grabbing coins will not boost the kart.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-Disable Boundaries [Mewtality]
+Disable Boundaries [Mewtality]:
 #0E316044 4BFFFD3D
 #0E3160E4 4BFFFC9D
 #0E316120 4BFFFC61
@@ -115,130 +159,178 @@ Disable Boundaries [Mewtality]
 
 Prevent Lakitu from grabbing players off-stage.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
-
----
-
-Recommended to be used with:
-- Allow Backwards Driving [Mewtality]
-- Disable Culling [Mewtality]
-- Respawn At Command [Mewtality]
 
 
-
-Disable Camera Anti-Gravity [Mewtality]
+Disable Camera Anti-Gravity [Mewtality]:
 #0E28C2E4 4BFFB8FD
 0E28C2E4 60000000
 
 The camera ignores the gravity changes.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This code is fully stable.
-- Send code before starting a race.
-- To fully disable, restart the race.
+How to use:
+Send code before starting a race.
+To fully disable, restart the race.
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-Disable Culling [Mewtality]
+Disable Culling [Mewtality]:
 #0E297994 9421FFC0
 0E297994 4E800020
 
 Makes the entire map always visible.
 Useful for codes that allow your player to go out of bounds.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
-- May cause performance issues in local multiplayer modes.
-- Send code before starting a race.
-- To fully disable, restart the race.
+How to use:
+Send code before starting a race.
+To fully disable, restart the race.
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
-
----
-
-Recommended to be used with:
-- Disable Boundaries [Mewtality]
 
 
-
-Disable Object Collisions [Mewtality]
+Disable Object Collisions [Mewtality]:
 #0E40B014 7C0802A6
 0E40B014 4E800020
 
 Disables various map object collisions.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
-- Send code before starting a race.
+How to use:
+Send code before starting a race.
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
+
+
+Disable Off-Road [Mewtality]:
+#0E353EBC 80BF01E0
+0E353EBC 60000000
+
+Driving on off-road will not slow down players.
+
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
+
+How to use:
+Send code before starting a race.
+
+Activator(s):
+-
+
+Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
 
 
-Disable Wall Collisions [Mewtality]
+Disable Wall Collisions [Mewtality]:
 #0E355314 4BFFCCD1
 0E355314 60000000
 
 Disables various wall collisions.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
-
----
-
-Recommended to be used with:
-- Disable Boundaries [Mewtality]
-- Disable Culling [Mewtality]
 
 
-
-Gravity Modifier [Mewtality]
+Gravity Modifier [Mewtality]:
 #10688828 3E19999A
 10688828 3D4CCCCD
 
@@ -248,105 +340,119 @@ To change gravity strength, modify the value at line 2.
 Default value is x0.15 (3E19999A)
 Current value is x0.05 (3D4CCCCD)
 
-Online [X]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This code affects all karts in local modes.
-- This code is fully stable.
+How to use:
+-
 
----
-
-Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
-
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
-
-
-
-Ignore Off-Road [Mewtality]
-#0E353EBC 80BF01E0
-0E353EBC 60000000
-
-Driving on off-road will not slow down players.
-
-Online [X]
-Offline [O]
-
-- This code affects all karts in local modes.
-- This code is fully stable.
-- Send code before starting a race.
-
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-Increase Item Limiters [Mewtality]
+Increase Item Limiters [Mewtality]:
 #0E2E948C 7D635B78
 0E2E948C 3860000C
 
 Increases the amount of the same items that can spawn at the same time.
 e.g. multiple blue shells are able to spawn.
 
-Online [X]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This code affects all karts in local modes.
-- This code is fully stable.
+How to use:
+Send code before starting a race.
+To fully disable this code, start a new race.
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-Infinite Laps [Mewtality]
+Infinite Laps [Mewtality]:
 #0E5D58C4 4BFFF9B5
 0E5D58C4 60000000
 
 Lap progression will be stopped.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-Instant Item Box [Mewtality]
+Instant Item Box [Mewtality]:
 #106C5114 000000B4
 106C5114 00000000
 
 Racers instantly get items from item boxes.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-Instant Start [Mewtality]
+Instant Start [Mewtality]:
 #0E311278 2C000005
 #0E3112C8 2C000006
 0E311278 2C000003
@@ -354,201 +460,284 @@ Instant Start [Mewtality]
 
 Local players start instantly.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-No Bullet Bill SFX [Mewtality]
+No Bullet Bill SFX [Mewtality]:
 #0E1EC17C 4812853D
 0E1EC17C 38600000
 
 Removes the bullet bill sound effect.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-No Online Disconnection [Mewtality]
+No Online Disconnection [Mewtality]:
 #0E55F86C 57C3063E
 0E55F86C 38600000
 
 You can't get disconnected from online games.
 
-Online [O]
-Offline [X]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-No Screen Effects [Mewtality]
+No Screen Effects [Mewtality]:
 #0E3221F8 7C0802A6
 0E3221F8 4E800020
 
 Removes ink splash, motion blur and other annoying screen effects.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-No Star Theme [Mewtality]
+No Star Theme [Mewtality]:
 #0E1EC138 481284FD
 0E1EC138 38600000
 
 Removes the star theme while in star powerup.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-No Wall Speed Reduction [Mewtality]
+No Wall Speed Reduction [Mewtality]:
 #0E350EF4 9421FFB0
 0E350EF4 4E800020
 
 Hitting walls will not reduce vehicle speed.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-Remove Out-Of-Bounds Fail-Safe [Mewtality]
+Remove Out-Of-Bounds Fail-Safe [Mewtality]:
 #0E311708 40800010
 0E311708 48000010
 
 Falling to far down will not teleport the player back on the map.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-Slopes Don't Work [Mewtality]
+Slopes Don't Work [Mewtality]:
 #0E35838C 4BFFDF51
 0E35838C 60000000
 
 Driving on slopes causes weird behavior.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-Unbreakable Items [Mewtality]
+Unbreakable Items [Mewtality]:
 #0E2A3970 81830000
 0E2A3970 4E800020
 
 Items can't break by hitting players, stage hazards or other items.
 
-Online [X]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
 
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]
 
 
-
-Use Items During Bullet Bill [Mewtality]
+Use Items During Bullet Bill [Mewtality]:
 #0E299C04 4807AAB5
 0E299C04 38600000
+
 Players gain the ability to use items while in a bullet bill.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
-
-Is Raw Machine Code [X]
-Is Assembly RAM Writes [O]

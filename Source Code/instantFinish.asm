@@ -1,26 +1,32 @@
 /*
 * File: instantFinish.asm
 * Author: Mewtality
-* Date: Monday, October 3, 2022 @ 09:48:23 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func instantFinish
-		stackUpdate(0)
+		stack.update
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCPlayer("_end")
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
 
-		dereference("raceManagement"), 0x4C
-		rlwinm %a0, %a3, 2, 0, 29
+		get r12, _data + 0x7F2C
+		load r12, "0x4C"
+		rlwinm r0, r3, 2, 0, 29
 
-		call("object::RaceKartChecker::forceGoal()"), "lwzx %a3, r12, %a0; li %a4, false"
+		bool r4, false
+		lwzx r3, r12, r0
+		call "object::RaceKartChecker::forceGoal()"
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

@@ -1,78 +1,81 @@
 /*
 * File: itemWheel.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/codes.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
 
-	# SETTINGS
-	nextItem = "DPAD_RIGHT"
-	previousItem = "DPAD_LEFT"
+	import AMKP01, "symbols, macros"
+	import myStuff, "MK8Codes"
 
 	.func itemWheel
-		stackUpdate(2)
-		push(31); push(30)
+		stack.update 2
+		push "r31, r30"
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		int r30, MK8Codes
 
-		getDRCKartUnit("_end")
-		lwz r12, 0x4 (%a3)
-		lwz r31, 0xC (%a3)
-		lwz r31, 0x5C (r31)
-		lis r30, itemWheel.asm@h
+		is.onRace false, "_end"
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r12)"
-		lwz %a3, 0x1A4 (%a3)
-		isActivator("_elseif"), nextItem
-		li %a5, 0x1
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		lwz r12, 0x4 (r3)
+		lwz r31, 0xC (r3)
+		load r31, "0x5C"
+
+		lwz r3, 0x8 (r12)
+		get.kart.activator
+
+		is.activator false, "_elseif", "DRC.DPAD.R"
+		bool r5, true
 		b _calcItem
 
 _elseif:
-		isActivator("_else"), previousItem
-		li %a5, -1
+		is.activator false, "_else", "DRC.DPAD.L"
+		int r5, null
 		b _calcItem
 
 _else:
-		li %a5, 0
+		bool r5, false
 
 _calcItem:
-		lbz %a0, itemWheel.asm@l (r30)
-		cmpwi %a0, 0
-		stb %a5, itemWheel.asm@l (r30)
-
-		lwz %a0, itemWheel.asm+0x4@l (r30)
-
+		lbz r0, itemWheel.asm@l (r30)
+		cmpwi r0, false
+		stb r5, itemWheel.asm@l (r30)
+		lwz r0, itemWheel.asm+0x4@l (r30)
 		bne _initItemSet
 
-		add %a7, %a0, %a5
-		cmplwi %a7, 0x14
+		add r7, r0, r5
+		cmplwi r7, 0x14
 		ble 0x8
-		xori %a7, %a0, 0x14
+		xori r7, r0, 0x14
 
-		mr %a0, %a7
-		stw %a0, itemWheel.asm+0x4@l (r30)
+		mr r0, r7
+		stw r0, itemWheel.asm+0x4@l (r30)
 
 _initItemSet:
-		lwz %a5, 0x44 (r31)
-		cmpwi %a5, 0
+		lwz r5, 0x44 (r31)
+		cmpwi r5, 0
 		blt _setItem
-		cmpw %a5, %a0
+		cmpw r5, r0
 		beq _end
 
-		call("object::ItemOwnerProxy::clearItem()"), "mr %a3, r31"
+		mr r3, r31
+		call "object::ItemOwnerProxy::clearItem()"
 
 _setItem:
-		lwz %a0, 0x84 (r31)
-		cmpwi %a0, 0
+		lwz r0, 0x84 (r31)
+		cmpwi r0, 0
 		ble _end
-		call("object::ItemOwnerProxy::setItemForce()"), "mr %a3, r31; addi %a4, r30, itemWheel.asm+0x4@l"
+		addi r4, r30, itemWheel.asm+0x4@l
+		mr r3, r31
+		call "object::ItemOwnerProxy::setItemForce()"
 
 _end:
-		pop(30); pop(31)
-		stackReset()
+		pop "r30, r31"
+		stack.restore
 	.endfunc

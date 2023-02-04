@@ -1,25 +1,29 @@
 /*
 * File: trickAnywhere.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func trickAnywhere
-		stackUpdate(0)
+		stack.update
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
-		lwz r12, 0x4 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		load r3, 0x4
 
-		li %a0, 0x10
-		stw %a0, 0x1D0 (r12)
+		int r0, 0x10
+		stw r0, 0x1D0 (r3)
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

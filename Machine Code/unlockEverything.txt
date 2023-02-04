@@ -52,15 +52,23 @@ B00C1B5A 900C1B5C
 
 Unlocks everything. This does not include DLC.
 
-Online [X]
-Offline [X]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ + Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- Enter and finish a race for a permanent save.
-- This code is fully stable.
+How to use:
+For a permanent save, enter and finish a race.
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
-
-Is Raw Machine Code [O]
-Is Assembly RAM Writes [X]

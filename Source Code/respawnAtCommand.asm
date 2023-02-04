@@ -1,36 +1,36 @@
 /*
 * File: respawnAtCommand.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
 
-	# SETTINGS
-	enabler = "SELECT"
+	import AMKP01, "symbols, macros"
 
 	.func respawnAtCommand
-		stackUpdate(1)
+		stack.update 1
+		push "r31"
 
-		push(31)
+		is.onRace false, "_end"
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		lwz r31, 0x4 (r3)
 
-		getDRCKartUnit("_end")
-		lwz r31, 0x4 (%a3)
+		lwz r3, 0x8 (r31)
+		get.kart.activator
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r31)"
-		lwz %a3, 0x1A4 (%a3)
+		is.activator false, "_end", "DRC.SELECT"
 
-		isActivator("_end"), enabler
-
-		call("object::KartJugemRecover::startRecover()"), "lwz r3, 0x4C (r31)"
+		lwz r3, 0x4C (r31)
+		call "object::KartJugemRecover::startRecover()"
 
 _end:
-		pop(31)
-
-		stackReset()
+		pop "r31"
+		stack.restore
 	.endfunc

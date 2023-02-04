@@ -1,24 +1,26 @@
 /*
 * File: pauseTimer.asm
 * Author: Mewtality
-* Date: Monday, October 3, 2022 @ 10:02:38 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func pauseTimer
-		stackUpdate(0)
+		stack.update
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		dereference("raceManagement"), 0x34
+		get r12, _data + 0x7F2C
+		load r12, "0x34"
 
-		li %a0, true
-		stb %a0, 0x4C (r12)
+		bool r0, true
+		stb r0, 0x4C (r12)
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

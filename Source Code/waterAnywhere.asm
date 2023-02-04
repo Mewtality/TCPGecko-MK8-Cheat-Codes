@@ -1,72 +1,102 @@
 /*
 * File: waterAnywhere.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 08:22:08 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/codes.S"
-	.include "C:/devkitPro/devkitPPC/assembly/modules/coreinit.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+	
+	import AMKP01, "symbols, macros"
+	import module, "coreinit.rpl"
+	import myStuff, "MK8Codes"
+
+	KernelCopyData = 0x2500
+
+	hook = "object::KartVehicle::calcWetAndWater()" + 0x58
+	hookData = 0x0EC9DED0
 
 	# MAKE SURE TO ADD "#" AT THE START OF THE FIRST TWO LINES IN THE MACHINE CODE.
 	.long waterAnywhere.asm, 0, hook, 0x2C030000
 
 	.func waterAnywhere
-	hook = "object::KartVehicle::calcWetAndWater()" + 0x58
-	hookData = 0x0EC9DF18
+		stack.update
 
-		stackUpdate(0)
+		lis r12, waterAnywhere.asm@h
+		lbz r0, waterAnywhere.asm@l (r12) # get flag
+		cmpwi r0, false
+		bne _end
+		bool r0, true
+		stb r0, waterAnywhere.asm@l (r12) # set flag
 
-		isSent("_end"), waterAnywhere.asm
+		int r3, hookData
+		li r4, hookDataLength - 0x4
+		call "DCFlushRange"
+		bl getHookData
+		mfspr r3, %lr
+		call "EffectiveToPhysical"
+		mr r4, r3
+		int r3, hookData|0x80000000
+		li r5, hookDataLength - 0x4
+		call "KernelCopyData"
 
-		KernelCopyData("getHookDataData"), hookData, hookDataLength - 0x4
-		KernelCopyData("getHookData"), hook, hookLength - 0x4
+		int r3, hook
+		li r4, hookLength - 0x4
+		call "DCFlushRange"
+		bl getHook
+		mfspr r3, %lr
+		call "EffectiveToPhysical"
+		mr r4, r3
+		int r3, hook|0x80000000
+		li r5, hookLength - 0x4
+		call "KernelCopyData"
 
 _end:
-		stackReset()
+		stack.restore
 		b _abort
 	.endfunc
 
 	.func hook
-getHookData:
+getHook:
 		blrl
 
 		bl hookData - hook
 
-	hookLength = $ - getHookData
+	hookLength = $ - getHook
 	.endfunc
 
 	.func hookData
-getHookDataData:
+getHookData:
 		blrl
 
-		stackUpdate(1)
-		push(30)
+		stack.update 1
+		push "r30"
 
-		mr r30, %a3
+		mr r30, r3
 
-		isRaceReady("_skip")
-		isRaceState("_skip")
+		is.onRace false, "_skip"
 
-		getDRCKartUnit("_skip")
-		lwz r12, 0x4 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		lwz r12, 0x4 (r3)
 
 		cmpw r12, r31
 		bne _skip
-		li %a3, 1
+		li r3, true
 		b _newUnderWaterCheckResult
 
 _skip:
-		mr %a3, r30
+		mr r3, r30
 
 _newUnderWaterCheckResult:
-		pop(30)
-		stackReset()
-		cmpwi %a3, 0 # Original Instruction
+		pop "r30"
+		stack.restore
+		cmpwi r3, false # Original Instruction
 		blr
 
-	hookDataLength = $ - getHookDataData
+	hookDataLength = $ - getHookData
 	.endfunc
 _abort:

@@ -1,28 +1,29 @@
 /*
 * File: instantOrangeDrift.asm
 * Author: Mewtality
-* Date: Monday, October 3, 2022 @ 09:00:58 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func instantOrangeDrift
-		stackUpdate(0)
+		stack.update
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
-		lwz %a3, 0x4 (%a3)
-		lwz %a3, 0x14 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
 
-		const = _rodata + 0xC4 # 1000 (float)
-		lis r12, const@h
-		lfs f1, const@l (r12)
-		call("object::KartVehicleMove::forceSetMiniTurboCounter()")
+		load r3, "0x4, 0x14"
+		getf f1, _rodata + 0xC4
+		call "object::KartVehicleMove::forceSetMiniTurboCounter()"
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

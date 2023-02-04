@@ -7,39 +7,36 @@ Best Play Stats [Mewtality]
 808300E4 8884015C
 3C000E67 60003630
 7C0903A6 4E800421
-81830158 3C000098
-6000967F 900C14E8
-900C14F0 900C14F4
-900C14FC 900C1500
-900C1504 900C1A18
-38000000 900C1508
-900C1A1C 3C000001
-6000869F 900C1A20
-900C1A24 8001000C
+80630158 3C000098
+6000967F 900314E8
+900314F0 900314F4
+900314FC 90031500
+90031504 90031A18
+38000000 90031508
+90031A1C 3C000001
+6000869F 90031A20
+90031A24 8001000C
 7C0803A6 38210008
 
 Play stats are modified to the best possible play stats.
-- Coins: 9M
-- Wins: 9M
-- Losses: 0
-- VR: 99K
-- BR: 99K
-- Drifts: 9M
-- Mini-Turbos: 9M
-- Super Mini-Turbos: 9M
-- Jump Boosts: 9M
-- Balloons Popped: 9M
-- Own Balloons Popped: 0
- 
-Online [X]
-Offline [X]
- 
-- Enter and finish a race for a permanent save.
-- This code is fully stable.
- 
----
- 
+
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ + Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
+
+How to use:
+For a permanent save, enter and finish a race.
+
+Activator(s):
+-
+
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
- 
-Is Raw Machine Code [O]
-Is Assembly RAM Writes [X]

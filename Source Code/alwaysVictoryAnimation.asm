@@ -1,28 +1,34 @@
 /*
 * File: alwaysVictoryAnimation.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func alwaysVictoryAnimation
-		stackUpdate(0)
+		stack.update
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
 		lwz r12, 0x4 (%a3)
 
-		lwz %a0, 0x148 (r12)
-		cmpwi %a0, 0
+		lwz r0, 0x148 (r12)
+		cmpwi r0, false
 		bne _end
 
-		call("object::DriverKart::startGoalAnim()"), "lwz %a3, 0x8 (%a3); li %a4, 0x1"
+		load r3, 0x8
+		bool r4, true
+		call "object::DriverKart::startGoalAnim()"
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

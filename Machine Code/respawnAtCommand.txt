@@ -2,44 +2,50 @@ Respawn At Command [Mewtality]
 7C0802A6 90010004
 9421FFF4 93E10008
 3D801069 818CA70C
-2C0C0000 418200A0
+2C0C0000 4182009C
 818C023C 2C0C0000
-41820094 880C003E
-2C000000 41820088
+41820090 886C003E
+2C030000 41820084
 3C000E5C 6000171C
 7C0903A6 4E800421
-2C030000 41820070
+2C030000 4182006C
 3C000E5C 60001B00
 7C0903A6 4E800421
-2803000B 41810058
+2803000B 41810054
 3C000E31 60003F38
 7C0903A6 4E800421
 83E30004 807F0008
 3C000E34 60004D88
 7C0903A6 4E800421
-806301A4 3CA00000
-60A51200 7C662838
-7C053000 40820018
-807F004C 3C000E31
-60005D80 7C0903A6
-4E800421 83E10008
-80010010 7C0803A6
-3821000C
+806301A4 38A01200
+7C662838 7C053000
+40820018 807F004C
+3C000E31 60005D80
+7C0903A6 4E800421
+83E10008 80010010
+7C0803A6 3821000C
 
-Forces a respawn.
+Forces Lakitu to pick up the player back on the map at will.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ - Wii Remote
+ - Wii Remote + Nunchuck
+ - Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to the player with a Wii U Gamepad.
-- This code is fully stable.
+How to use:
+-
 
-<SELECT (-)>
-Enable
+Activator(s):
 
----
+[Wii U GamePad]
+Enable: SELECT (-)
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
-
-Is Raw Machine Code [O]
-Is Assembly RAM Writes [X]

@@ -1,31 +1,36 @@
 /*
 * File: wifiBackgroundAnywhere.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func wifiBackgroundAnywhere
-		stackUpdate(0)
+		stack.update
 
-		call("FID_conflict:ui::GetBg()")
-		cmpwi %a3, 0
+		call "FID_conflict:ui::GetBg()"
+		cmpwi r3, false
 		beq _end
-		call("ui::Page_Bg::animKeepWiFi()")
-		dereference("menuManagement")
+		call "ui::Page_Bg::animKeepWiFi()"
+		get r12, _data + 0x7F58
 		cmpwi r12, 0
 		beq _end
-		lbz %a5, 0x40 (r12)
-		cmpwi %a5, 0x2
+		lbz r5, 0x40 (r12)
+		cmpwi r5, 0x2
 		beq _end
-		lbz %a5, 0x41 (r12)
-		cmpwi %a5, 0x4
+		lbz r5, 0x41 (r12)
+		cmpwi r5, 0x4
 		beq _end
-		call("object::Menu3DModelDirector::informBeginWiFi()"), "mr %a3, r12; li %a4, 1"
+
+		bool r4, true
+		mr r3, r12
+		call "object::Menu3DModelDirector::informBeginWiFi()"
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

@@ -1,38 +1,44 @@
 /*
 * File: turboAtCommand.asm
 * Author: Mewtality
-* Date: Monday, October 3, 2022 @ 10:45:49 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
 
-	enabler = "Y"
+	import AMKP01, "symbols, macros"
 
 	.func turboAtCommand
-		stackUpdate(1)
-		push(31)
+		stack.update 1
+		push "r31"
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
-		lwz r31, 0x4 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		lwz r31, 0x4 (r3)
 
-		lwz %a3, 0x14 (%a3)
-		call("object::KartInfoProxy::isJugemHang()"), "lwz %a3, 0x20C (%a3)"
-		cmpwi r3, 0
+		load r3, "0x14, 0x20C"
+		call "object::KartInfoProxy::isJugemHang()"
+		cmpwi r3, false
 		bne _end
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r31)"
-		lwz %a3, 0x1A4 (%a3)
+		lwz r3, 0x8 (r31)
+		get.kart.activator
 
-		isActivator("_end"), enabler
+		is.activator false, "_end", "DRC.Y"
 
-		call("object::KartVehicleMove::forceDash()"), "lwz %a3, 0x14 (r31); li %a4, 0x8; li %a5, 1; li %a6, 1"
+		lwz r3, 0x14 (r31)
+		int r4, 0x8
+		bool r5, true
+		int r6, 1
+		call "object::KartVehicleMove::forceDash()"
 
 _end:
-		pop(31)
-		stackReset()
+		pop "r31"
+		stack.restore
 	.endfunc

@@ -1,49 +1,55 @@
 /*
 * File: bulletBillAtCommand.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
 
-	# SETTINGS
-	enabler = "A" | "Y"
-	disabler = "A" | "B"
+	import AMKP01, "symbols, macros"
 
 	.func bulletBillAtCommand
-		stackUpdate(2)
-		push(31); push(30)
+		stack.update 2
+		push "r31, r30"
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
-		lwz r31, 0x4 (%a3)
-		lwz r30, 0x14 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		lwz r31, 0x4 (r3)
+		lwz r30, 0x14 (r3)
 
-		call("object::KartInfoProxy::isJugemHang()"), "lwz %a3, 0x20C (r30)"
-		cmpwi %a3, 0
+		lwz r3, 0x20C (r30)
+		call "object::KartInfoProxy::isJugemHang()"
+		cmpwi r3, false
 		bne _end
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r31)"
-		lwz %a3, 0x1A4 (%a3)
+		lwz r3, 0x8 (r31)
+		get.kart.activator
 
-		isActivator("_else"), enabler
-		call("object::KartInfoProxy::isKiller()"), "lwz %a3, 0x20C (r30)"
-		cmpwi %a3, 0
+		is.activator false, "_else", "DRC.A, DRC.Y"
+
+		lwz r3, 0x20C (r30)
+		call "object::KartInfoProxy::isKiller()"
+		cmpwi r3, false
 		bne _end
 
-		call("object::KartVehicle::startKiller()"), "mr %a3, r31"
+		mr r3, r31
+		call "object::KartVehicle::startKiller()"
 
 		b _end
 
 _else:
-		isActivator("_end"), disabler
-		call("object::KartVehicle::endKiller()"), "mr %a3, r31"
+		is.activator false, "_end", "DRC.A, DRC.B"
+
+		mr r3, r31
+		call "object::KartVehicle::endKiller()"
 
 _end:
-		pop(30); pop(31)
-		stackReset()
+		pop "r30, r31"
+		stack.restore
 	.endfunc

@@ -1,29 +1,33 @@
 /*
 * File: always5Balloons.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func always5Balloons
-		stackUpdate(0)
+		stack.update
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCPlayer("_end")
-		mr %a4, %a3
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		mr r4, r3
 
-		dereference("raceManagement"), 0x23C
+		get r12, _data + 0x7F2C
+		load r12, "0x23C"
 		addi r12, r12, 0x80
-		rlwinm %a3, %a3, 0x2, 0x0, 0x1D
-		lwzx %a3, r12, %a3
+		rlwinm r3, r3, 0x2, 0x0, 0x1D
 
-		call("object::RaceKartCheckerBattle::incBalloon()")
+		lwzx r3, r12, r3
+		call "object::RaceKartCheckerBattle::incBalloon()"
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

@@ -1,85 +1,111 @@
 /*
 * File: rapidfire.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/codes.S"
-	.include "C:/devkitPro/devkitPPC/assembly/modules/coreinit.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+	
+	import AMKP01, "symbols, macros"
+	import module, "coreinit.rpl"
+	import myStuff, "MK8Codes"
+
+	KernelCopyData = 0x2500
+
+	hook = "object::ItemDirector::calcKeyInput_EachPlayer_()" + 0x5A8
+	hookData = 0x0EC9DE6C
 
 	# MAKE SURE TO ADD "#" AT THE START OF THE FIRST TWO LINES IN THE MACHINE CODE.
 	.long rapidfire.asm, 0, hook, 0x880C0000
 
 	.func rapidfire
-	hook = "object::ItemDirector::calcKeyInput_EachPlayer_()" + 0x5A8
-	hookData = 0x0EC9DE6C
-
-		stackUpdate(0)
+		stack.update
 
 		lis r12, rapidfire.asm@h
-		lbz %a0, rapidfire.asm@l (r12)
-		cmpwi %a0, 0
+		lbz r0, rapidfire.asm@l (r12)
+		cmpwi r0, false
 		bne _skip
-		li %a0, 1
-		stb %a0, rapidfire.asm@l (r12)
+		bool r0, true
+		stb r0, rapidfire.asm@l (r12)
 
-		KernelCopyData("getHookDataData"), hookData, hookDataLength - 0x4
-		KernelCopyData("getHookData"), hook, hookLength - 0x4
+		int r3, hookData
+		li r4, hookDataLength - 0x4
+		call "DCFlushRange"
+		bl getHookData
+		mfspr r3, %lr
+		call "EffectiveToPhysical"
+		mr r4, r3
+		int r3, hookData|0x80000000
+		li r5, hookDataLength - 0x4
+		call "KernelCopyData"
+
+		int r3, hook
+		li r4, hookLength - 0x4
+		call "DCFlushRange"
+		bl getHook
+		mfspr r3, %lr
+		call "EffectiveToPhysical"
+		mr r4, r3
+		int r3, hook|0x80000000
+		li r5, hookLength - 0x4
+		call "KernelCopyData"
 
 _skip:
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCPlayer("_end")
-		dereference("itemDirector"), 0x7B8
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get r12, _data + 0x7F3C
+		load r12, "0x7B8"
 
-		li %a0, 0
-		stbx %a0, r12, %a3
+		bool r0, false
+		stbx r0, r12, r3
 
 _end:
-		stackReset()
+		stack.restore
 		b _abort
 	.endfunc
 
 	.func hook
-getHookData:
+getHook:
 		blrl
 
 		bl hookData - hook
 
-	hookLength = $ - getHookData
+	hookLength = $ - getHook
 	.endfunc
 
 	.func hookData
-getHookDataData:
+getHookData:
 		blrl
 
-		stackUpdate(1)
-		push(31)
+		stack.update 1
+		push "r31"
 		mr r31, r12
 
-		call("object::RaceIndex_::DRCPlayer2Kart()")
-		dereference("itemDirector"), 0x7B0
+		call "object::RaceIndex_::DRCPlayer2Kart()" 
+		get r12, _data + 0x7F3C
+		load r12, "0x7B0"
 
-		add r12, r12, %a3
+		add r12, r12, r3
 		cmpw r12, r31
 		bne _restore
-		li %a5, 0
+		li r5, false
 		b _exit
 
 _restore:
 		mr r12, r31
-		lbz %a5, 0 (r12)
+		lbz r5, 0 (r12)
 
 _exit:
-		pop(31)
-		stackReset()
-		mr %a0, %a5
+		pop "r31"
+		stack.restore
+		mr r0, r5
 		blr
 
-	hookDataLength = $ - getHookDataData
+	hookDataLength = $ - getHookData
 	.endfunc
 _abort:

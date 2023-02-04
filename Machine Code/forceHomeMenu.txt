@@ -1,33 +1,45 @@
-Force Home Menu [Mewtality]
+Home Menu Unlocker [Mewtality]
+#106F002C 00000000
 7C0802A6 90010004
 9421FFF4 93E10008
-3FE0106F 3D801069
-818CA70C 2C0C0000
-41820048 818C023C
-2C0C0000 4182003C
-880C003E 2C000000
-41820030 881F002C
-2C000000 4082002C
-38000001 981F002C
-38600000 3C000E6E
-60005D30 7C0903A6
-4E800421 4800000C
-38000000 981F002C
-83E10008 80010010
-7C0803A6 3821000C
+3FE0106F 63FF002C
+3D801069 818CA70C
+2C0C0000 41820060
+818C023C 2C0C0000
+41820054 886C003E
+2C030000 41820048
+3C000E5C 6000171C
+7C0903A6 4E800421
+2C030000 41820030
+88BF0000 2C050000
+4082002C 38A00001
+98BF0000 38600000
+3C000E6E 60005D30
+7C0903A6 4E800421
+4800000C 38A00000
+98BF0000 83E10008
+80010010 7C0803A6
+3821000C
 
-Forces the home menu to open when pressing the home button.
+Force the home menu to open in online play.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to local players.
-- This code is fully stable.
-- To fully disable, restart the race.
+How to use:
+To fully disable this code, exit the race.
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
-
-Is Raw Machine Code [O]
-Is Assembly RAM Writes [X]

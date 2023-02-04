@@ -4,7 +4,7 @@ Trick Anywhere [Mewtality]
 818CA70C 2C0C0000
 41820068 818C023C
 2C0C0000 4182005C
-880C003E 2C000000
+886C003E 2C030000
 41820050 3C000E5C
 6000171C 7C0903A6
 4E800421 2C030000
@@ -13,22 +13,30 @@ Trick Anywhere [Mewtality]
 4E800421 2803000B
 41810020 3C000E31
 60003F38 7C0903A6
-4E800421 81830004
-38000010 900C01D0
+4E800421 80630004
+38000010 900301D0
 8001000C 7C0803A6
 38210008
 
 Character is able to trick anytime anywhere.
 
-Online [O]
-Offline [O]
+Support Status:
+ + Battle (Offline)
+ + Battle (Online)
+ + Grand Prix
+ - Menu
+ + VS Race (Offline)
+ + VS Race (Online)
+ + Time Trials
+ - Wii Remote
+ - Wii Remote + Nunchuck
+ - Wii U Classic Controller
+ + Wii U GamePad
 
-- This only applies to the player with a Wii U Gamepad.
-- This code is fully stable.
+How to use:
+-
 
----
+Activator(s):
+-
 
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
-
-Is Raw Machine Code [O]
-Is Assembly RAM Writes [X]

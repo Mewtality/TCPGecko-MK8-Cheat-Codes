@@ -1,26 +1,26 @@
 /*
 * File: driveWhilePaused.asm
 * Author: Mewtality
-* Date: Monday, October 10, 2022 @ 01:39:26 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func driveWhilePaused
-		stackUpdate(0)
+		stack.update
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		call("FUN_0E64E218:sys::SystemEngine::getEngine()")
-		lwz %a3, 0 (%a3)
-		lwz %a3, 0x200 (%a3)
+		call "FUN_0E64E218:sys::SystemEngine::getEngine()"
+		load r3, "0, 0x200"
 
-		li %a0, false
-		stb %a0, 0xCC (%a3)
+		bool r0, false
+		stb r0, 0xCC (r3)
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

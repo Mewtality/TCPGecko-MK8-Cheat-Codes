@@ -1,28 +1,26 @@
 /*
 * File: rainbowKart8.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/codes.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
 
-	# SETTINGS
-	brightness = _rodata + 0xB0
-	RGBSpeed = _rodata + 0x112C
+	import AMKP01, "symbols, macros"
+	import myStuff, "MK8Codes"
 
 	.func rainbowKart8
-		stackUpdate(2)
-		push(31); push(30)
+		stack.update 2
+		push "r31, r30"
 
-		isRaceReady("_end")
-		isRacePaused("_end")
+		is.onRace false, "_end"
+		is.onPause true, "_end"
 
-		lis r31, rainbowKart8.asm@h
+		int r31, MK8Codes
 
-		dereference("raceManagement")
+		get r12, _data + 0x7F2C
 		cmpwi r12, 0
 		beq _reset
 		lwz r12, 0x328 (r12)
@@ -31,9 +29,9 @@
 		lwz r12, 0xA4 (r12)
 		cmpwi r12, 0
 		beq _reset
-		lis %a5, 0x1
-		addi %a5, %a5, 0xA300@l
-		lwzx r12, r12, %a5
+		lis r5, 0x1
+		addi r5, r5, 0xA300@l
+		lwzx r12, r12, r5
 		cmpwi r12, 0
 		beq _reset
 		lwz r12, 0 (r12)
@@ -41,41 +39,35 @@
 		beq _reset
 		mr r30, r12
 
-		lis r12, _rodata + 0x20B64@h
-		lfs f5, _rodata + 0x20B64@l (r12) # Min Value
+		getf f5, _rodata + 0x20B64 # Min Value
+		getf f6, _rodata + 0xBC # Max Value
 
-		lis r12, _rodata + 0xBC@h
-		lfs f6, _rodata + 0xBC@l (r12) # Max Value
-
-		lbz %a5, rainbowKart8.asm@l (r31)
-		cmpwi %a5, 0
+		lbz r5, rainbowKart8.asm@l (r31) # get flag
+		cmpwi r5, false
 		bne _skip
-		li %a0, 0x1
-		stb %a0, rainbowKart8.asm@l (r31)
+		bool r0, true
+		stb r0, rainbowKart8.asm@l (r31) # set flag
 
 		stfs f6, 0xB4 (r30)
 		stfs f5, 0xB8 (r30)
 		stfs f5, 0xBC (r30)
 
 _skip:
-		lis r12, RGBSpeed@h
-		lfs f7, RGBSpeed@l (r12) # RGB Cycle Speed
-
-		lis r12, brightness@h
-		lfs f8, brightness@l (r12) # Brightness
+		getf f7, _rodata + 0x112C # RGB Cycle Speed
+		getf f8, _rodata + 0xB0 # Brightness
 
 		lfs f9, 0xB4 (r30) # R
 		lfs f10, 0xB8 (r30) # G
 		lfs f11, 0xBC (r30) # B
 
-		lbz %a5, rainbowKart8.asm+0x1@l (r31)
-		cmplwi %a5, 0x5
+		lbz r5, rainbowKart8.asm+0x1@l (r31)
+		cmplwi r5, 0x5
 		bgt _reset
-		rlwinm %a5, %a5, 0x2, 0x0, 0x1D
+		rlwinm r5, r5, 0x2, 0x0, 0x1D
 		bl switchD_0_caseD
-		mfspr %a0, %lr
-		add %a0, %a0, %a5
-		mtspr %ctr, %a0
+		mfspr r0, %lr
+		add r0, r0, r5
+		mtspr %ctr, r0
 		bctr
 
 switchD_0_caseD:
@@ -91,45 +83,45 @@ switchD_0_caseD_0:
 		fadds f10, f10, f7
 		fcmpu cr0, f10, f6
 		ble _update
-		li %a0, 1
+		int r0, 1
 		b updateState
 
 switchD_0_caseD_1:
 		fsubs f9, f9, f7
 		fcmpu cr0, f9, f5
 		bgt _update
-		li %a0, 2
+		int r0, 2
 		b updateState
 
 switchD_0_caseD_2:
 		fadds f11, f11, f7
 		fcmpu cr0, f11, f6
 		ble _update
-		li %a0, 3
+		int r0, 3
 		b updateState
 
 switchD_0_caseD_3:
 		fsubs f10, f10, f7
 		fcmpu cr0, f10, f5
 		bgt _update
-		li %a0, 4
+		int r0, 4
 		b updateState
 
 switchD_0_caseD_4:
 		fadds f9, f9, f7
 		fcmpu cr0, f9, f6
 		ble _update
-		li %a0, 5
+		int r0, 5
 		b updateState
 
 switchD_0_caseD_5:
 		fsubs f11, f11, f7
 		fcmpu cr0, f11, f5
 		bgt _update
-		li %a0, 0
+		int r0, 0
 
 updateState:
-		stb %a0, rainbowKart8.asm+0x1@l (r31)
+		stb r0, rainbowKart8.asm+0x1@l (r31)
 
 _update:
 		stfs f8, 0x108 (r30)
@@ -139,10 +131,10 @@ _update:
 		b _end
 
 _reset:
-		li %a0, 0
-		sth %a0, rainbowKart8.asm@l (r31)
+		bool r0, false
+		sth r0, rainbowKart8.asm@l (r31) # reset flag
 
 _end:
-		pop(30); pop(31)
-		stackReset()
+		pop "r31, r30"
+		stack.restore
 	.endfunc

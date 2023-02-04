@@ -1,83 +1,88 @@
 /*
 * File: bulletBillKiller.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
 
-	# SETTINGS
-	enabler = "LEFT_STICK_PRESS"
+	import AMKP01, "symbols, macros"
 
 	.func bulletBillKiller
-		stackUpdate(4 + 1) # (Backup Non-Volatile Registers + "object::Sector_GetSector()" 32-bit Parameter)
-		push(31); push(30); push(29); push(28)
+		stack.update 5
+		push "r31, r30, r29, r28"
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCPlayer("_end")
-		mr r31, %a3
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		mr r31, r3
 
-		call("object::KartInfoProxy::getKartUnit()")
-		lwz r30, 0x4 (%a3)
-		lwz r29, 0x14 (%a3)
+		get.kart
+		lwz r30, 0x4 (r3)
+		lwz r29, 0x14 (r3)
 
-		call("object::KartInfoProxy::isJugemHang()"), "lwz %a3, 0x20C (r29)"
-		cmpwi %a3, 0
+		lwz r3, 0x20C (r29)
+		call "object::KartInfoProxy::isJugemHang()"
+		cmpwi r3, false
 		bne _end
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r30)"
-		lwz %a3, 0x1A4 (%a3)
+		lwz r3, 0x8 (r30)
+		get.kart.activator
 
-		isActivator("_end"), enabler
+		is.activator false, "_end", "DRC.LSTICK.P"
 
-		dereference("raceManagement"), 0x23C
+		get r12, _data + 0x7F2C
+		load r12, "0x23C"
 
-		lwz %a5, 0x30 (r12)
-		addi %a5, %a5, 0xC
-		mulli %a6, r31, 0x6C
-		lwzx %a0, %a5, %a6
+		lwz r5, 0x30 (r12)
+		addi r5, r5, 0xC
+		mulli r6, r31, 0x6C
+		lwzx r0, r5, r6
 
-		push(0)
-		call("object::Sector_GetSector()"), "addi %a3, %sp, push.GPR00"
-		mr r28, %a3
+		stw r0, push.progress * 0x4 + 0x8 (%sp)
+		addi r3, %sp, push.progress * 0x4 + 0x8
+		call "object::Sector_GetSector()"
+		mr r28, r3
 
-		call("nn::nex::Platform::GetRandomNumber()"), "lwz %a3, 0x3C (%a3)"
+		load r3, "0x3C"
+		call "nn::nex::Platform::GetRandomNumber()"
 
-		rlwinm %a3, %a3, 2, 0, 29
+		rlwinm r3, r3, 2, 0, 29
 		lwz r12, 0x40 (r28)
-		lwzx r12, r12, %a3
+		lwzx r12, r12, r3
 
-		call("object::KartInfoProxy::getPos()"), "lwz %a3, 0x20C (r29)"
+		lwz r3, 0x20C (r29)
+		call "object::KartInfoProxy::getPos()"
 
 		lfs f5, 0x74 (r12)
-		stfs f5, 0 (%a3)
+		stfs f5, 0 (r3)
 
 		lfs f5, 0x78 (r12)
-		stfs f5, 0x4 (%a3)
+		stfs f5, 0x4 (r3)
 
 		lfs f5, 0x7C (r12)
-		stfs f5, 0x8 (%a3)
+		stfs f5, 0x8 (r3)
 
 		lfs f5, 0x8C (r12)
-		stfs f5, 0x24C (%a3)
-		stfs f5, 0x258 (%a3)
-		stfs f5, 0x264 (%a3)
+		stfs f5, 0x24C (r3)
+		stfs f5, 0x258 (r3)
+		stfs f5, 0x264 (r3)
 
 		lfs f5, 0x90 (r12)
-		stfs f5, 0x250 (%a3)
-		stfs f5, 0x25C (%a3)
-		stfs f5, 0x268 (%a3)
+		stfs f5, 0x250 (r3)
+		stfs f5, 0x25C (r3)
+		stfs f5, 0x268 (r3)
 
 		lfs f5, 0x94 (r12)
-		stfs f5, 0x254 (%a3)
-		stfs f5, 0x260 (%a3)
-		stfs f5, 0x26C (%a3)
+		stfs f5, 0x254 (r3)
+		stfs f5, 0x260 (r3)
+		stfs f5, 0x26C (r3)
 
 _end:
-		pop(28); pop(29); pop(30); pop(31)
-		stackReset()
+		pop "r28, r29, r30, r31"
+		stack.restore
 	.endfunc

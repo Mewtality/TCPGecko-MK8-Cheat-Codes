@@ -1,31 +1,36 @@
 /*
 * File: instantRecovery.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func instantRecovery
-		stackUpdate(1)
-		push(31)
+		stack.update 1
+		push "r31"
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
-		lwz r31, 0x4 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		lwz r31, 0x4 (r3)
 
-		lwz %a3, 0x14 (%a3)
-		call("object::KartInfoProxy::isAccident()"), "lwz %a3, 0x20C (%a3)"
-		cmpwi %a3, 0
+		load r3, "0x14, 0x20C"
+		call "object::KartInfoProxy::isAccident()"
+		cmpwi r3, false
 		beq _end
 
-		call("object::KartVehicle::forceClearAccident()"), "mr %a3, r31"
+		mr r3, r31
+		call "object::KartVehicle::forceClearAccident()"
 
 _end:
-		pop(31)
-		stackReset()
+		pop "r31"
+		stack.restore
 	.endfunc

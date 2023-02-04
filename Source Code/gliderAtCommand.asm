@@ -1,50 +1,54 @@
 /*
 * File: gliderAtCommand.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
 
-	enabler = "A" | "DPAD_UP"
-	disabler = "A" | "DPAD_DOWN"
+	import AMKP01, "symbols, macros"
 
 	.func gliderAtCommand
-		stackUpdate(1)
-		push(31)
+		stack.update 1
+		push "r31"
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
-		lwz r31, 0x4 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		lwz r31, 0x4 (r3)
 
-		lwz %a3, 0x14 (%a3)
-		call("object::KartInfoProxy::isJugemHang()"), "lwz %a3, 0x20C (%a3)"
-		cmpwi r3, 0
+		load r3, "0x14, 0x20C"
+		call "object::KartInfoProxy::isJugemHang()"
+		cmpwi r3, false
 		bne _end
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r31)"
-		lwz %a3, 0x1A4 (%a3)
+		lwz r3, 0x8 (r31)
+		get.kart.activator
 
-		isActivator("_else"), enabler
+		is.activator false, "_else", "DRC.A, DRC.DPAD.U"
 
-		call("object::KartVehicle::isInWing()"), "mr %a3, r31; li %a4, null"
-		cmpwi r3, 0
+		mr r3, r31
+		int r4, null
+		call "object::KartVehicle::isInWing()"
+		cmpwi r3, false
 		bne _end
 
-		call("object::KartVehicle::forceGlide()"), "mr %a3, r31"
-
+		mr r3, r31
+		call "object::KartVehicle::forceGlide()"
 		b _end
 
 _else:
-		isActivator("_end"), disabler
+		is.activator false, "_end", "DRC.A, DRC.DPAD.D"
 
-		call("object::KartVehicle::forceCloseWing()"), "mr %a3, r31"
+		mr r3, r31
+		call "object::KartVehicle::forceCloseWing()"
 
 _end:
-		pop(31)
-		stackReset()
+		pop "r31"
+		stack.restore
 	.endfunc

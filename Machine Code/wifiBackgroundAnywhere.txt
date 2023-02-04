@@ -10,22 +10,31 @@ WiFi Background Anywhere [Mewtality]
 41820034 88AC0040
 2C050002 41820028
 88AC0041 2C050004
-4182001C 7D836378
-38800001 3C000E6E
+4182001C 38800001
+7D836378 3C000E6E
 6000DB74 7C0903A6
 4E800421 8001000C
 7C0803A6 38210008
 
 Forces the wifi planet background to show anywhere in the menu.
- 
-Online [X]
-Offline [X]
- 
-- This code is fully stable.
- 
----
- 
+
+Support Status:
+ - Battle (Offline)
+ - Battle (Online)
+ - Grand Prix
+ + Menu
+ - VS Race (Offline)
+ - VS Race (Online)
+ - Time Trials
+ + Wii Remote
+ + Wii Remote + Nunchuck
+ + Wii U Classic Controller
+ + Wii U GamePad
+
+How to use:
+Enable while outside a race.
+
+Activator(s):
+-
+
 Source: https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
- 
-Is Raw Machine Code [O]
-Is Assembly RAM Writes [X]

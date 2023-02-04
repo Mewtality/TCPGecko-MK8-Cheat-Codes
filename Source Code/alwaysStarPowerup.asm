@@ -1,23 +1,30 @@
 /*
 * File: alwaysStarPowerup.asm
 * Author: Mewtality
-* Date: Monday, October 3, 2022 @ 11:31:18 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
+
+	subroutine = 0x0E342CA0
 
 	.func alwaysStarPowerup
-		stackUpdate(0)
+		stack.update
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
 
-		call(0x0E342CA0), "lwz %a3, 0x4 (%a3)"
+		load r3, "0x4"
+		call "subroutine"
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

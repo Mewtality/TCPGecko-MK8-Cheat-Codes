@@ -1,41 +1,46 @@
 /*
 * File: piranhaPlantAtCommand.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
 
-	# SETTINGS
-	enabler = "ZR"
+	import AMKP01, "symbols, macros"
+
+	subroutine = 0x0E314878 # from "object::ItemObjPackun::stateInitEquip_Hang"
 
 	.func piranhaPlantAtCommand
-		stackUpdate(2)
-		push(31); push(30)
+		stack.update 2
+		push "r31, r30"
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
-		lwz r31, 0x4 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		lwz r31, 0x4 (r3)
 
-		lwz %a3, 0x14 (%a3)
-		lwz r30, 0x20C (%a3)
+		load r3, "0x14"
+		lwz r30, 0x20C (r3)
 
-		call("object::KartInfoProxy::isPackunItemActive()"), "mr %a3, r30"
-		cmpwi %a3, 0
+		mr r3, r30
+		call "object::KartInfoProxy::isPackunItemActive()"
+		cmpwi r3, false
 		bne _end
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r31)"
-		lwz %a3, 0x1A4 (%a3)
+		lwz r3, 0x8 (r31)
+		get.kart.activator
 
-		isActivator("_end"), enabler
+		is.activator false, "_end", "DRC.ZR"
 
-		call(0x0E314878), "mr %a3, r30" # SUBROUTINE from "object::ItemObjPackun::stateInitEquip_Hang"
+		mr r3, r30
+		call "subroutine"
 
 _end:
-		pop(30); pop(31)
-		stackReset()
+		pop "r30, r31"
+		stack.restore
 	.endfunc

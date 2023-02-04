@@ -1,33 +1,35 @@
 /*
 * File: ability2ChangeDriftDirection.asm
 * Author: Mewtality
-* Date: Saturday, October 15, 2022 @ 11:32:06 AM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+
+	import AMKP01, "symbols, macros"
 
 	.func ability2ChangeDriftDirection
-		stackUpdate(0)
+		stack.update
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		is.onRace false, "_end"
 
-		getDRCKartUnit("_end")
-		lwz %a3, 0x4 (%a3)
-		lfs f5, 0x104 (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		load r3, "0x4"
 
-		lis r12, _rodata + 0x20B64@h
-		lfs f6, _rodata + 0x20B64@l (r12)
-
-		dereference(null), 0x14, 0xEC
+		lfs f5, 0x104 (r3)
+		getf f6, _rodata + 0x20B64
 
 		fcmpu cr0, f5, f6
 		beq _end
 
-		stfs f5, 0x64 (r12)
+		load r3, "0x14, 0xEC"
+		stfs f5, 0x64 (r3)
 
 _end:
-		stackReset()
+		stack.restore
 	.endfunc

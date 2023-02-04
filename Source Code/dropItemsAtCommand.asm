@@ -1,53 +1,60 @@
 /*
 * File: dropItemsAtCommand.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/codes.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
 
-	# SETTINGS
-	enabler = "DPAD_DOWN"
+	import AMKP01, "symbols, macros"
+	import myStuff, "MK8Codes"
+
+	subroutine = 0x0E2E47E4 # from "object::ItemObjThunder::_startThunderEffect()"
 
 	.func dropItemsAtCommand
-		stackUpdate(3)
-		push(31); push(30); push(29)
+		stack.update 3
+		push "r31, r30, r29"
 
-		isRaceReady("_end")
-		isRaceState("_end")
+		int r29, MK8Codes
 
-		getDRCPlayer("_end")
-		mr r31, %a3
+		is.onRace false, "_end"
 
-		call("object::KartInfoProxy::getKartUnit()")
-		lwz r12, 0x4 (%a3)
-		lwz r30, 0xC (%a3)
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		mr r31, r3
+
+		call "object::KartInfoProxy::getKartUnit()"
+		lwz r12, 0x4 (r3)
+		lwz r30, 0xC (r3)
 		lwz r30, 0x5C (r30)
-		lis r29, dropItemsAtCommand.asm@h
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (r12)"
-		lwz %a3, 0x1A4 (%a3)
-		isActivator("_else"), enabler
-		lbz %a0, dropItemsAtCommand.asm@l (r29)
-		cmpwi %a0, 0
+		lwz r3, 0x8 (r12)
+		get.kart.activator
+		
+		is.activator false, "_else", "DRC.DPAD.D"
+		lbz r0, dropItemsAtCommand.asm@l (r29)
+		cmpwi r0, false
 		bne _end
-		li %a0, 1
-		stb %a0, dropItemsAtCommand.asm@l (r29)
+		li r0, true
+		stb r0, dropItemsAtCommand.asm@l (r29)
 
-		call(0x0E2E47E4), "mr %a3, r30" # SUBROUTINE from "object::ItemObjThunder::_startThunderEffect()"
-		call("object::ItemOwnerProxy::_clearItemSlot()"), "mr %a3, r30"
+		mr r3, r30
+		call "subroutine"
+
+		mr r3, r30
+		call "object::ItemOwnerProxy::_clearItemSlot()"
 
 		b _end
 
 _else:
-		li %a0, 0
-		stb %a0, dropItemsAtCommand.asm@l (r29)
+		bool r0, false
+		stb r0, dropItemsAtCommand.asm@l (r29)
 
 _end:
-		pop(29); pop(30); pop(31)
+		pop "r29, r30, r31"
 		isync
-		stackReset()
+		stack.restore
 	.endfunc

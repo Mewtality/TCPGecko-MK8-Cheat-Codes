@@ -1,98 +1,117 @@
 /*
 * File: switchFOVAtCommand.asm
 * Author: Mewtality
-* Date: Thursday, September 29, 2022 @ 12:59:30 PM
+* Date: Saturday, February 4, 2023 @ 03:49:36 PM
 * YouTube: https://www.youtube.com/c/Mewtality
 * Discord: Mewtality#8315
 */
 
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/tools.S"
-	.include "C:/devkitPro/devkitPPC/assembly/titles/AMKP01/codes.S"
-	.include "C:/devkitPro/devkitPPC/assembly/modules/coreinit.S"
+	.include "C:/devkitPro/devkitPPC/assembly/lib.S"
+	
+	import AMKP01, "symbols, macros"
+	import module, "coreinit.rpl"
+	import myStuff, "MK8Codes"
 
-	# SETTINGS
-	toggle = "RIGHT_STICK_PRESS"
+	KernelCopyData = 0x2500
+
+	hook = "object::KartCamera::calcFovy()" + 0x25C
+	hookData = 0x0EC9DD6C
 
 	# MAKE SURE TO ADD "#" AT THE START OF THE FIRST TWO LINES IN THE MACHINE CODE.
 	.long switchFOVAtCommand.asm, 0, hook, 0xFC40D090
 
 	.func FOVPatcher
-	hook = "object::KartCamera::calcFovy()" + 0x25C
-	hookData = 0x0EC9DD70
-
-		stackUpdate(0)
+		stack.update
 
 		lis r12, switchFOVAtCommand.asm@h
-		lbz %a0, switchFOVAtCommand.asm+0x2@l (r12)
-		cmpwi %a0, 0
+		lbz r0, switchFOVAtCommand.asm+0x2@l (r12) # get flag
+		cmpwi r0, false
 		bne _end
-		li %a0, 1
-		stb %a0, switchFOVAtCommand.asm+0x2@l (r12)
+		bool r0, true
+		stb r0, switchFOVAtCommand.asm+0x2@l (r12) # set flag
 
-		KernelCopyData("getFOVHookData"), hookData, FOVHookDataLen - 0x4
-		KernelCopyData("getFOVHook"), hook, FOVHookLen - 0x4
+		int r3, hookData
+		li r4, hookDataLength - 0x4
+		call "DCFlushRange"
+		bl getHookData
+		mfspr r3, %lr
+		call "EffectiveToPhysical"
+		mr r4, r3
+		int r3, hookData|0x80000000
+		li r5, hookDataLength - 0x4
+		call "KernelCopyData"
+
+		int r3, hook
+		li r4, hookLength - 0x4
+		call "DCFlushRange"
+		bl getHook
+		mfspr r3, %lr
+		call "EffectiveToPhysical"
+		mr r4, r3
+		int r3, hook|0x80000000
+		li r5, hookLength - 0x4
+		call "KernelCopyData"
 
 _end:
-		stackReset()
+		stack.restore
 		b _abort
 	.endfunc
 
 	.func FOVHook
-getFOVHook:
+getHook:
 		blrl
 
 		bl hookData - hook
 
-	FOVHookLen = $ - getFOVHook
+	hookLength = $ - getHook
 	.endfunc
 
 	.func FOVHookData
-getFOVHookData:
+getHookData:
 		blrl
 
-		stackUpdate(1)
+		stack.update 1
+		push "r31"
 
-		push(31)
+		int r31, MK8Codes
+		is.onRace false, "_skip"
 
-		lis r31, switchFOVAtCommand.asm@h
-		isRaceReady("_skip")
+		get.DRC.ID
+		cmplwi r3, 0xB
+		bgt _end
+		get.kart
+		load r3, "0x4, 0x8"
+		get.kart.activator
 
-		getDRCKartUnit("_skip")
-		lwz %a3, 0x4 (%a3)
+		lbz r7, switchFOVAtCommand.asm+0x1@l (r31)
 
-		call("object::KartVehicleControl::getRaceController()"), "lwz %a3, 0x8 (%a3)"
-		lwz %a3, 0x1A4 (%a3)
-
-		lbz %a7, switchFOVAtCommand.asm+0x1@l (r31)
-
-		isActivator("_reset"), toggle
-		lbz %a0, switchFOVAtCommand.asm@l (r31)
-		cmpwi %a0, 0
-		li %a0, 0x1
-		stb %a0, switchFOVAtCommand.asm@l (r31)
+		is.activator false, "_reset", "DRC.RSTICK.P"
+		lbz r0, switchFOVAtCommand.asm@l (r31)
+		cmpwi r0, false
+		li r0, true
+		stb r0, switchFOVAtCommand.asm@l (r31)
 		bne _resume
-		xori %a7, %a7, 0x1
-		stb %a7, switchFOVAtCommand.asm+0x1@l(r31)
+		xori r7, r7, 0x1
+		stb r7, switchFOVAtCommand.asm+0x1@l(r31)
 		b _resume
 
 _reset:
-		li %a0, 0
-		stb %a0, switchFOVAtCommand.asm@l (r31)
+		li r0, false
+		stb r0, switchFOVAtCommand.asm@l (r31)
 
 _resume:
-		cmpwi %a7, 0
+		cmpwi r7, false
 		beq _skip
-		lis r12, _rodata + 0x13C@h
-		lfs f5, _rodata + 0x13C@l (r12)
+		getf f5, _rodata + 0x13C
 		fadds f26, f26, f5
 
 _skip:
 		fmr f2, f26
 
-		pop(31)
-		stackReset()
+		pop "r31"
+		stack.restore
 		blr
 
-	FOVHookDataLen = $ - getFOVHookData
+	hookDataLength = $ - getHookData
 	.endfunc
 _abort:
