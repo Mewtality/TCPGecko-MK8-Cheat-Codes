@@ -1,13 +1,14 @@
 # TCPGecko-MK8-Cheat-Codes
-Various cheat codes for MK8 (Wii U) written in PowerPC Assembly.
+Various cheat codes for Mario Kart 8 (Wii U) written in PowerPC Assembly.
 <br/><br/>
-To use these cheat codes you must download:
+To use these cheat codes you need to download:
 
 - Jgecko U: https://github.com/BullyWiiPlaza/JGeckoU
 - TCP Gecko: https://github.com/BullyWiiPlaza/tcpgecko
 <br/><br/>
 
-"**codelist.xml**" contains all codes ready to be used in Jgecko U. But before that you need to:
+## codelist.xml
+This contains all codes ready to be used in Jgecko U. But before that you need to:
 - Rename the file to your game's region:
 	- European: **AMKP01**.xml
 	- American: **AMKE01**.xml
@@ -24,10 +25,6 @@ All cheat codes in the "Machine Code" folder must have the "Raw Machine Code" fe
 Cheat codes in the "Assembly RAM Writes" folder must have the "Assembly RAM Writes" feature enabled:
 
 ![image](https://user-images.githubusercontent.com/59747767/189666550-adff3fa6-9075-4d77-8f5e-056c15cd5492.png)
-<br/><br/>
-
-The source code of each cheat code can be found in the "Source Code" folder.<br />
-If you want to edit and compile the source code, see: https://github.com/Mewtality/WiiU-PowerPC-ASM-Library
 <br/><br/>
 
 All cheat codes were written and tested on Mario Kart 8 v4.1 (PAL). They should work on all regions regardless.
