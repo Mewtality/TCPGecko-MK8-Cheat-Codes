@@ -5,6 +5,7 @@ To use these cheat codes you need to download:
 
 - Jgecko U: https://github.com/BullyWiiPlaza/JGeckoU
 - TCP Gecko: https://github.com/BullyWiiPlaza/tcpgecko
+- **REQUIRES MARIO KART 8 ver. 4.1**
 <br/><br/>
 
 ## codelist.xml
