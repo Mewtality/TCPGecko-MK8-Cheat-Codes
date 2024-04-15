@@ -1,0 +1,17 @@
+Unbreakable Items [Mewtality]:
+#0E2A3970 81830000
+00020000 0E2A3970
+4E800020 00000000
+
+Items can't break by hitting players, stage hazards or other items.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

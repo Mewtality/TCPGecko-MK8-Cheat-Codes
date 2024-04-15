@@ -1,0 +1,17 @@
+Infinite Laps [Mewtality]:
+#0E5D5C3C 4BFFF9B5
+00020000 0E5D5C3C
+60000000 00000000
+
+Lap progression will be stopped.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

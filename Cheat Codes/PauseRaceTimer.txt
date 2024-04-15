@@ -1,0 +1,30 @@
+Pause Race Timer [Mewtality]
+C000000D 7C0802A6
+90010004 9421FFF8
+3FE01069 83FFA72C
+2C1F0000 41820040
+819F023C 2C0C0000
+41820034 880C003E
+2C000000 41820028
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820010
+819F0034 38000001
+980C004C 8001000C
+7C0803A6 38210008
+4E800020 00000000
+
+Pauses game mode timers.
+
+ ⚠ May not properly disable after use. If this is the case, start a new race.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

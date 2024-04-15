@@ -1,0 +1,17 @@
+Disable Camera Anti-Gravity [Mewtality]:
+#0E28C2E4 4BFFB8FD
+00020000 0E28C2E4
+60000000 00000000
+
+The camera ignores the gravity changes.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

@@ -1,0 +1,54 @@
+Respawn At Command [Mewtality]
+140F0000 01000000
+
+C0000019 7C0802A6
+90010004 9421FFF8
+7C7F1B79 418200A8
+3D801069 818CA72C
+2C0C0000 41820098
+818C023C 2C0C0000
+4182008C 880C003E
+2C000000 41820080
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820068
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810050
+3D600E31 616B3F38
+7D6903A6 4E800421
+83C30004 807E0008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 7FE02838
+7C00F800 40820018
+807E004C 3D600E31
+616B5D80 7D6903A6
+4E800421 8001000C
+7C0803A6 38210008
+4E800020 00000000
+
+Forces Lakitu to pick up the player back on the map at will.
+
+Info:
+Line 1 determines the activator value. (Default: 01000000)
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • Flick Up
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

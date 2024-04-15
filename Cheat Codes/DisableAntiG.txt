@@ -1,0 +1,17 @@
+Disable Anti-Gravity [Mewtality]:
+#0E5D451C 9421FF00
+00020000 0E5D451C
+4E800020 00000000
+
+Local players don't get affected by anti-gravity roads.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

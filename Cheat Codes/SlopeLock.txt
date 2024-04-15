@@ -1,0 +1,17 @@
+Slope Lock [Mewtality]:
+#0E35838C 4BFFDF51
+00020000 0E35838C
+60000000 00000000
+
+Local karts cannot properly drive on sloped surfaces.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

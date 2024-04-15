@@ -1,0 +1,40 @@
+Instant Respawn [Mewtality]
+C0000014 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 41820078
+818C023C 2C0C0000
+4182006C 880C003E
+2C000000 41820060
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820048
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810030
+3D600E31 616B3F38
+7D6903A6 4E800421
+81830004 818C004C
+818C0014 800C0034
+900C001C 800C008C
+900C006C 8001000C
+7C0803A6 38210008
+4E800020 00000000
+
+Lakitu instantly places the player back on the map.
+
+ ⚠ May not properly disable after use. If this is the case, start a new race.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

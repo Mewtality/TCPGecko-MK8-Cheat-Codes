@@ -1,0 +1,17 @@
+Disable Turbo [Mewtality]:
+#0E345F50 81630004
+00020000 0E345F50
+4E800020 00000000
+
+Boost panels, mushrooms, mini-turbos and grabbing coins will not boost the kart.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

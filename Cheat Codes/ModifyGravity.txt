@@ -1,0 +1,22 @@
+Modify Gravity [Mewtality]:
+#10688848 3E19999A
+00020000 10688848
+3D4CCCCD 00000000
+
+Modifies the gravity strength.
+
+Info:
+The value at line 3 determines the strength:
+- Default value is 3D4CCCCD (0.05)
+- Original value is 3E19999A (0.15)
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

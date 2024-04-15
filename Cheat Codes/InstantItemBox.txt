@@ -1,0 +1,17 @@
+Instant Item Box [Mewtality]:
+#106C5114 000000B4
+00020000 106C5114
+00000000 00000000
+
+Local players instantly get items from item boxes.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

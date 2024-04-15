@@ -1,0 +1,29 @@
+Always Lightning Environment [Mewtality]
+30000000 1068A72C
+43000000 46000000
+30100000 0000023C
+45000000 48000000
+04100000 0000003E
+00000000 00000000
+10020000 106C4D18
+150F0000 3F800000
+30000000 1068A730
+43000000 46000000
+11120000 000002B4
+13100000 000002B8
+D0000000 DEADCAFE
+
+The thunder light effects is always enabled.
+
+ ⚠ May not properly disable after use. If this is the case, start a new race.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

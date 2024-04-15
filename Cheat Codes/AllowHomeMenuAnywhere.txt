@@ -1,0 +1,13 @@
+Allow Home Menu Anywhere [Mewtality]
+140F0000 00000000
+C1000000 0E6E60B4
+
+Enables the home menu button.
+
+Game Version: 4.2
+
+Modes Supported:
+ • All
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

@@ -1,0 +1,17 @@
+Disable Star Theme [Mewtality]:
+#0E1EC138 481284FD
+00020000 0E1EC138
+38600000 00000000
+
+Removes the star theme while in star powerup.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

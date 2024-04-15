@@ -1,0 +1,38 @@
+Drive While Paused [Mewtality]
+#10014810 00000000
+30000000 1068A72C
+43000000 46000000
+30100000 0000023C
+45000000 48000000
+04100000 0000003E
+00000000 00000000
+C1000000 0E64E59C
+11020000 10014810
+30000000 10014810
+1F000000 20000000
+30100000 00000000
+1F000000 20000000
+30100000 00000200
+40000000 40800000
+001000CC 00000000
+D0000000 DEADCAFE
+
+Allows players to drive while the game is paused.
+
+Info:
+Line 9 and 10 is where the address for this code's variables is store. (Default: 10014810)
+ ⚠ If this address is changed, don't forget to change the undo codeline (Line 1) to the same address.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline)
+
+Default Data Used:
+0x10014810 (4 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

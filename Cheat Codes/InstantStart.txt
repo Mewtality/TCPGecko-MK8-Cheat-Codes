@@ -1,0 +1,19 @@
+Instant Start [Mewtality]:
+#0E311278 2C000005
+#0E3112C8 2C000006
+140F0000 2C000003
+11020000 0E311278
+11020000 0E3112C8
+
+Local players skip Lakitu's countdown.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

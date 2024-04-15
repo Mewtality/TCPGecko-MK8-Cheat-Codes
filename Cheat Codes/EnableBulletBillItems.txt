@@ -1,0 +1,17 @@
+Enable Bullet Bill Items [Mewtality]:
+#0E299C04 4807AAB5
+00020000 0E299C04
+38600000 00000000
+
+Local players gain the ability to use items while in a bullet.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

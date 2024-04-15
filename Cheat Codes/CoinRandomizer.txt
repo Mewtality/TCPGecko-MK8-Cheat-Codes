@@ -1,0 +1,37 @@
+Coin Randomizer [Mewtality]
+C0000013 7C0802A6
+90010004 9421FFF8
+3FE01069 83FFA72C
+2C1F0000 41820070
+83FF023C 2C1F0000
+41820064 881F003E
+2C000000 41820058
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820040
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810028
+399F0080 5463103A
+7FCC182E 38600064
+3D600EA8 616B2344
+7D6903A6 4E800421
+907E0040 8001000C
+7C0803A6 38210008
+4E800020 00000000
+
+Changes the coin amount every frame to a random value between 0 and 99.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

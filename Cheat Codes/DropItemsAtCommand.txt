@@ -1,0 +1,71 @@
+Drop Items At Command [Mewtality]
+#10014814 00000000
+#0E353814 41820018
+
+140F0100 00020000
+140F0000 10014814
+
+00020000 0E353814
+41820040 00000000
+C000001F 7C0802A6
+90010004 9421FFF8
+7C7F1B78 7C9E2379
+418200D8 3D801069
+818CA72C 2C0C0000
+418200C8 818C023C
+2C0C0000 418200BC
+880C003E 2C000000
+418200B0 3D600E5C
+616B1A94 7D6903A6
+4E800421 2C030000
+41820098 3D600E5C
+616B1E78 7D6903A6
+4E800421 2803000B
+41810080 3D600E31
+616B3F38 7D6903A6
+4E800421 7C7D1B78
+807D0004 80630008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 80DF0000
+7FC52838 7C1E2800
+90BF0000 4082003C
+2C060000 40820034
+807D000C 8063005C
+3D600E2E 616B47E4
+7D6903A6 4E800421
+807D000C 8063005C
+3D600E2E 616B3A88
+7D6903A6 4E800421
+8001000C 7C0803A6
+38210008 4E800020
+
+Drop the current item(s) in possession on the ground.
+
+Info:
+Line 4 determines the activator value. (Default: 00020000)
+Line 5 is the starting address of variables used by this code. (Default: 10014814)
+ ⚠ If this address is changed, don't forget to change the undo codeline (Line 1) to the same address.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Activate:
+ • D-Pad Down
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Default Data Used:
+0x10014814 (4 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

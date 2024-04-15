@@ -1,0 +1,16 @@
+Enable Backwards Driving [Mewtality]:
+#0E5D4CC8 9421FFC0
+00020000 0E5D4CC8
+4E800020 00000000
+
+Lakitu will not show up when players drive backwards.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes

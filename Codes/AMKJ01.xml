@@ -1,0 +1,2911 @@
+<?xml version="1.0" encoding="UTF-16"?><codes>
+    <entry name="Ability To Change Drift Direction">
+        <code>C0000015 7C0802A6
+90010004 9421FFF4
+3D801069 818CA72C
+2C0C0000 41820084
+818C023C 2C0C0000
+41820078 880C003E
+2C000000 4182006C
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820054
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 4181003C
+3D600E31 616B3F38
+7D6903A6 4E800421
+81830004 3C000000
+90010008 C0A10008
+C0CC0104 FC062800
+41820010 818C0014
+818C00EC D0CC0064
+80010010 7C0803A6
+3821000C 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Steering the kart while drifting affects the drift direction.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Aimbot">
+        <code>140F0100 00001200
+150F0000 43480000
+140F0000 10014800
+
+C000004E 7C0802A6
+90010004 9421FFF4
+7C7F1B78 7C9E2379
+4182021C 3C000000
+90010008 C3E10008
+FFC00890 3D801069
+818CA72C 2C0C0000
+418201FC 818C023C
+2C0C0000 418201F0
+880C003E 2C000000
+418201E4 3D600E5C
+616B1A94 7D6903A6
+4E800421 2C030000
+418201CC 3D600E5C
+616B1E78 7D6903A6
+4E800421 2803000B
+418101B4 480001D1
+7C7D1B78 807D0004
+80630008 3D600E34
+616B4D88 7D6903A6
+4E800421 80A301A4
+7FC52838 7C05F000
+80DF0000 80FF0004
+40820014 2C060000
+4082000C 7CE72A78
+90FF0004 90BF0000
+2C070000 4182016C
+807D0014 8063020C
+48000185 7C7C1B78
+807D0014 8063020C
+3D600E31 616B4784
+7D6903A6 4E800421
+2C030000 40820130
+807D0014 8063020C
+3D600E31 616B4394
+7D6903A6 4E800421
+2C030000 40820110
+819F0008 2C0C0000
+4082007C 3D801068
+818C3020 818C00F0
+80CC0094 FFA0F090
+3866FFFF 48000109
+80630014 8063020C
+4800010D 7C641B78
+7F83E378 3D600E7F
+616B7B90 7D6903A6
+4E800421 FC01F800
+41820014 FC01F000
+4080000C 38E6FFFF
+FFC00890 34C6FFFF
+4082FFB8 FC1EE800
+4080009C 7CE33B78
+480000B5 907F0008
+7C6C1B78 806C0014
+8063020C 480000B1
+C0A30000 C0C30008
+C0FC0000 C11C0008
+ECA72828 ECC83028
+ECE50172 ED0601B2
+EC27402A 3D600EC0
+616BB9EC 7D6903A6
+4E800421 ECE50824
+ED060824 FCA03850
+FCC04050 3C00BF80
+90010008 C0E10008
+FC053800 40810038
+FC063800 40810030
+D0BC024C D0BC0258
+D0BC0264 D0DC0254
+D0DC0260 D0DC026C
+48000014 38E00000
+90FF0000 90FF0004
+90FF0008 80010010
+7C0803A6 3821000C
+4E800020 3D600E31
+616B3F38 7D6903A6
+4E800420 3D600E31
+616B4218 7D6903A6
+4E800420 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Automatically aim the nearest kart when enabled.
+Stop aiming by pressing the same activator button.
+Uppon activation, if players are too far away, the aim lock will fail.
+
+ ⚠ Respawning or driving on anti-gravity will temporarily disable the Aimbot.
+
+Info:
+Line 1 determines the activator value. (Default: 00001200)
+Line 2 determines the max distance of the nearest kart to search for. (Default: 43480000)
+Line 3 is the starting address of variables used by this code. (Default: 10014800)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Toggler:
+ • Select (-)
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Default Data Used:
+0x10014800 (12 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Allow Home Menu Anywhere">
+        <code>140F0000 00000000
+C1000000 0E6E60B4</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Enables the home menu button.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • All
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always 5 Balloons">
+        <code>C0000012 7C0802A6
+90010004 9421FFF8
+3FE01069 83FFA72C
+2C1F0000 4182006C
+83FF023C 2C1F0000
+41820060 881F003E
+2C000000 41820054
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 4182003C
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810024
+7C641B78 399F0080
+5463103A 7C6C182E
+3D600E5C 616B47D8
+7D6903A6 4E800421
+8001000C 7C0803A6
+38210008 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Always have 5 balloons in battle mode.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always Draft">
+        <code>C000001B 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 418200B0
+818C023C 2C0C0000
+418200A4 880C003E
+2C000000 41820098
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820080
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810068
+3D600E31 616B3F38
+7D6903A6 4E800421
+83E30004 801F00FC
+540007FF 41820048
+80630014 8063020C
+3D600E31 616B4784
+7D6903A6 4E800421
+2C030000 40820028
+807F0014 806300F0
+38800003 38A00001
+38C00001 3D600E34
+616B5F8C 7D6903A6
+4E800421 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Always have draft effect when accelerating.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always Lightning Environment">
+        <code>30000000 1068A72C
+43000000 46000000
+30100000 0000023C
+45000000 48000000
+04100000 0000003E
+00000000 00000000
+10020000 106C4D18
+150F0000 3F800000
+30000000 1068A730
+43000000 46000000
+11120000 000002B4
+13100000 000002B8
+D0000000 DEADCAFE</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>The thunder light effects is always enabled.
+
+ ⚠ May not properly disable after use. If this is the case, start a new race.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always Star Powerup">
+        <code>C0000013 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 41820070
+818C023C 2C0C0000
+41820064 880C003E
+2C000000 41820058
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820040
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810028
+3D600E31 616B3F38
+7D6903A6 4E800421
+80630004 3D600E34
+616B2CA0 7D6903A6
+4E800421 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Always have star powerup.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Always Victory Animation">
+        <code>C0000015 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 41820084
+818C023C 2C0C0000
+41820078 880C003E
+2C000000 4182006C
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820054
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 4181003C
+3D600E31 616B3F38
+7D6903A6 4E800421
+81830004 800C0148
+2C000000 4082001C
+80630008 38800001
+3D600E23 616BDA14
+7D6903A6 4E800421
+8001000C 7C0803A6
+38210008 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Always have the victory character animation.
+
+ ⚠ Start a new race for changes to apply.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Best Play Stats">
+        <code>0C000000 00000001
+C0000012 7C0802A6
+90010004 9421FFF8
+3D600E64 616BE59C
+7D6903A6 4E800421
+2C030000 41820064
+806302C8 808300E4
+8884015C 3D600E67
+616B39B4 7D6903A6
+4E800421 80630158
+3C000098 6000967F
+900314E8 900314F0
+900314F4 900314FC
+90031500 90031504
+90031A18 38000000
+90031508 90031A1C
+3C000001 6000869F
+90031A20 90031A24
+8001000C 7C0803A6
+38210008 4E800020
+D2000000 CAFEBABE</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Play stats are modified to the best possible play stats.
+
+ ⚠ End a race for a permanent save.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • All
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Bullet Bill At Will">
+        <code>140F0000 00000011
+140F0100 00000003
+
+C0000026 7C0802A6
+90010004 9421FFF8
+7C7F1B79 41820110
+7C9E2379 41820108
+3D801069 818CA72C
+2C0C0000 418200F8
+818C023C 2C0C0000
+418200EC 880C003E
+2C000000 418200E0
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 418200C8
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 418100B0
+3D600E31 616B3F38
+7D6903A6 4E800421
+83A30004 83830014
+807C020C 3D600E31
+616B4784 7D6903A6
+4E800421 2C030000
+4082007C 807D0008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 7FE02838
+7C00F800 40820038
+807C020C 3D600E31
+616B46B8 7D6903A6
+4E800421 2C030000
+4082003C 7FA3EB78
+3D600E34 616B2CAC
+7D6903A6 4E800421
+48000024 7FC02838
+7C00F000 40820018
+7FA3EB78 3D600E34
+616B361C 7D6903A6
+4E800421 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Transform into and out of bullet bill at will.
+
+Info:
+Line 1 determines the activator value. (Default: 00000011)
+Line 2 determines the deactivator value. (Default: 00000003)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • A &amp; B
+
+Disable:
+ • A &amp; Y
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Bullet Bill Killer">
+        <code>140F0000 00000080
+
+C0000031 7C0802A6
+90010004 9421FFF4
+7C7F1B79 4182015C
+3FC01069 83DEA72C
+2C1E0000 4182014C
+83DE023C 2C1E0000
+41820140 881E003E
+2C000000 41820134
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 4182011C
+48000129 2803000B
+41810110 3D600E31
+616B3F38 7D6903A6
+4E800421 7C7D1B78
+807D0014 8063020C
+3D600E31 616B4784
+7D6903A6 4E800421
+2C030000 408200DC
+807D0004 80630008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 7FE02838
+7C00F800 408200B4
+480000C1 1D63006C
+819E0030 398C000C
+7D6C582E 91610008
+38610008 3D600E28
+616B81D8 7D6903A6
+4E800421 7C7C1B78
+807C003C 3D600EA8
+616B2344 7D6903A6
+4E800421 5463103A
+819C0040 7D8C182E
+807D0014 8063020C
+3D600E31 616B4218
+7D6903A6 4E800421
+C00C0074 D0030000
+C00C0078 D0030004
+C00C007C D0030008
+C00C008C D003024C
+D0030258 D0030264
+C00C0090 D0030250
+D003025C D0030268
+C00C0094 D0030254
+D0030260 D003026C
+80010010 7C0803A6
+3821000C 4E800020
+3D600E5C 616B1E78
+7D6903A6 4E800420</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Attempts to teleport the kart to the next checkpoint coordinates by holding the activator.
+If there are multiple paths, character will teleport to a random one.
+
+ ⚠ Kart must be accelerating to take effect.
+
+Info:
+Line 1 determines the activator value. (Default: 00000080)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • Left Stick Button
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Coin Randomizer">
+        <code>C0000013 7C0802A6
+90010004 9421FFF8
+3FE01069 83FFA72C
+2C1F0000 41820070
+83FF023C 2C1F0000
+41820064 881F003E
+2C000000 41820058
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820040
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810028
+399F0080 5463103A
+7FCC182E 38600064
+3D600EA8 616B2344
+7D6903A6 4E800421
+907E0040 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Changes the coin amount every frame to a random value between 0 and 99.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable All AI">
+        <code>#0E311418 48025A29
+00020000 0E311418
+38600001 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Disables all AI operations.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Anti-Gravity">
+        <code>#0E5D451C 9421FF00
+00020000 0E5D451C
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Local players don't get affected by anti-gravity roads.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Bloom">
+        <code>#0E982860 54C3063E
+00020000 0E982860
+38600000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Removes scene bloom FX.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Boundaries">
+        <code>#0E311708 40800010
+#0E316044 4BFFFD3D
+#0E316064 4834DC1D
+#0E3160E4 4BFFFC9D
+#0E316104 4834DB7D
+#0E316120 4BFFFC61
+#0E316140 4834DB41
+#0E316FF0 4BFFED91
+#0E317010 4834CC71
+#0E35FB7C 4BFB6205
+#0E35FBD4 4BFB61AD
+#1001480C 00000000
+00020000 0E311708
+48000010 00000000
+140F0000 60000000
+11020000 0E316044
+11020000 0E316064
+11020000 0E3160E4
+11020000 0E316104
+11020000 0E316120
+11020000 0E316140
+11020000 0E316FF0
+11020000 0E317010
+11020000 0E35FB7C
+11020000 0E35FBD4
+30000000 1068A72C
+43000000 46000000
+30100000 0000023C
+45000000 48000000
+04100000 0000003E
+00000000 00000000
+C1000000 0E5C1A94
+11010000 1001480C
+04010000 1001480C
+00000000 00000000
+0C000000 00000001
+30000000 1068A730
+43000000 46000000
+04120000 00000044
+00000000 00000000
+10120000 00000044
+140F0100 00000000
+C1000000 0E297684
+D0000000 DEADCAFE
+0D000000 1001480C</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Prevent Lakitu from grabbing local players off-stage.
+
+Info:
+Line 33 and 34 is where the address for this code's variables is store. (Default: 1001480C)
+ ⚠ If this address is changed, don't forget to change the undo codeline (Line 12) to the same address.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Default Data Used:
+0x1001480C (4 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Bullet Bill SFX">
+        <code>#0E1EC17C 4812853D
+00020000 0E1EC17C
+38600000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Removes the bullet bill sound effect.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Camera Anti-Gravity">
+        <code>#0E28C2E4 4BFFB8FD
+00020000 0E28C2E4
+60000000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>The camera ignores the gravity changes.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Object Collisions">
+        <code>#0E40B014 7C0802A6
+00020000 0E40B014
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Disables various map object collisions.
+
+ ⚠ Start a new race for changes to apply.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Off-Road">
+        <code>#0E353EBC 80BF01E0
+00020000 0E353EBC
+60000000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Driving on off-road will not slow down local players.
+
+ ⚠ Start a new race for changes to apply.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Online Disconnection">
+        <code>#0E55FB10 57C3063E
+00020000 0E55FB10
+38600000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Local players can't get disconnected from online games.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Screen Effects">
+        <code>#0E3221F8 7C0802A6
+00020000 0E3221F8
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Removes ink splash, motion blur and other screen effects.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Star Theme">
+        <code>#0E1EC138 481284FD
+00020000 0E1EC138
+38600000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Removes the star theme while in star powerup.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Turbo">
+        <code>#0E345F50 81630004
+00020000 0E345F50
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Boost panels, mushrooms, mini-turbos and grabbing coins will not boost the kart.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Disable Wall Collisions">
+        <code>#0E355314 4BFFCCD1
+00020000 0E355314
+60000000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Local players gain the ability to phase through walls.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Drive While Paused">
+        <code>#10014810 00000000
+30000000 1068A72C
+43000000 46000000
+30100000 0000023C
+45000000 48000000
+04100000 0000003E
+00000000 00000000
+C1000000 0E64E59C
+11020000 10014810
+30000000 10014810
+1F000000 20000000
+30100000 00000000
+1F000000 20000000
+30100000 00000200
+40000000 40800000
+001000CC 00000000
+D0000000 DEADCAFE</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Allows players to drive while the game is paused.
+
+Info:
+Line 9 and 10 is where the address for this code's variables is store. (Default: 10014810)
+ ⚠ If this address is changed, don't forget to change the undo codeline (Line 1) to the same address.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline)
+
+Default Data Used:
+0x10014810 (4 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Drop Items At Will">
+        <code>#10014814 00000000
+#0E353814 41820018
+
+140F0100 00020000
+140F0000 10014814
+
+00020000 0E353814
+41820040 00000000
+C000001F 7C0802A6
+90010004 9421FFF8
+7C7F1B78 7C9E2379
+418200D8 3D801069
+818CA72C 2C0C0000
+418200C8 818C023C
+2C0C0000 418200BC
+880C003E 2C000000
+418200B0 3D600E5C
+616B1A94 7D6903A6
+4E800421 2C030000
+41820098 3D600E5C
+616B1E78 7D6903A6
+4E800421 2803000B
+41810080 3D600E31
+616B3F38 7D6903A6
+4E800421 7C7D1B78
+807D0004 80630008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 80DF0000
+7FC52838 7C1E2800
+90BF0000 4082003C
+2C060000 40820034
+807D000C 8063005C
+3D600E2E 616B47E4
+7D6903A6 4E800421
+807D000C 8063005C
+3D600E2E 616B3A88
+7D6903A6 4E800421
+8001000C 7C0803A6
+38210008 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Drop the current item(s) in possession on the ground.
+
+Info:
+Line 4 determines the activator value. (Default: 00020000)
+Line 5 is the starting address of variables used by this code. (Default: 10014814)
+ ⚠ If this address is changed, don't forget to change the undo codeline (Line 1) to the same address.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Activate:
+ • D-Pad Down
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Default Data Used:
+0x10014814 (4 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Enable Backwards Driving">
+        <code>#0E5D4CC8 9421FFC0
+00020000 0E5D4CC8
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Lakitu will not show up when players drive backwards.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Enable Bullet Bill Items">
+        <code>#0E299C04 4807AAB5
+00020000 0E299C04
+38600000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality, ShyGuy</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Local players gain the ability to use items while in a bullet.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Force Character Damage">
+        <code>140F0000 02000000
+
+C0000026 7C0802A6
+90010004 9421FFF8
+7C7F1B79 41820110
+3D801069 818CA72C
+2C0C0000 41820100
+818C023C 2C0C0000
+418200F4 880C003E
+2C000000 418200E8
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 418200D0
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 418100B8
+3D600E31 616B3F38
+7D6903A6 4E800421
+83C30004 83A30014
+807D020C 3D600E31
+616B4784 7D6903A6
+4E800421 2C030000
+40820084 807D020C
+3D600E31 616B46B8
+7D6903A6 4E800421
+2C030000 40820068
+807E0008 3D600E34
+616B4D88 7D6903A6
+4E800421 80A301A4
+7FE02838 7C00F800
+40820044 38A04000
+80DE0144 7CA53378
+54C697FF 40820030
+90BE0144 38600014
+3D600EA8 616B2344
+7D6903A6 4E800421
+907D0298 819E0020
+38000000 900C001C
+906C000C 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>It forces a random damage animation to occur at will.
+
+Info:
+Line 1 determines the activator value. (Default: 02000000)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • Flick Down
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Glide At Will">
+        <code>140F0000 00010001
+140F0100 00020001
+
+C000002A 7C0802A6
+90010004 9421FFF8
+7C7F1B78 7C9E2378
+3D801069 818CA72C
+2C0C0000 41820120
+818C023C 2C0C0000
+41820114 880C003E
+2C000000 41820108
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 418200F0
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 418100D8
+3D600E31 616B3F38
+7D6903A6 4E800421
+7C7D1B78 807D0014
+8063020C 3D600E31
+616B4784 7D6903A6
+4E800421 2C030000
+408200A4 807D0014
+8063020C 3D600E31
+616B46B8 7D6903A6
+4E800421 2C030000
+40820084 807D0004
+80630008 3D600E34
+616B4D88 7D6903A6
+4E800421 80A301A4
+7FE02838 7C00F800
+4082003C 807D0004
+3880FFFF 3D600E33
+616BDAAC 7D6903A6
+4E800421 2C030000
+4082003C 807D0004
+3D600E34 616B3330
+7D6903A6 4E800421
+48000024 7FC02838
+7C00F000 40820018
+807D0004 3D600E34
+616B2B5C 7D6903A6
+4E800421 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Open and close the glider at will.
+
+Info:
+Line 1 determines the activator to open the glider. (Default: 00010001)
+Line 2 determines the activator to close the glider. (Default: 00020001)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • A + D-Pad Up (Open Glider)
+ • A + D-Pad Down (Close Glider)
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Infinite Items">
+        <code>C0000012 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 41820068
+818C023C 2C0C0000
+4182005C 880C003E
+2C000000 41820050
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820038
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810020
+7C641B78 3C601069
+8063A73C 3D600E29
+616BD550 7D6903A6
+4E800421 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>After the player uses an item, the item roulette will begin to spin again.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Infinite Laps">
+        <code>#0E5D5C3C 4BFFF9B5
+00020000 0E5D5C3C
+60000000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Lap progression will be stopped.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Acceleration">
+        <code>C000001D 7C0802A6
+90010004 9421FFF4
+3D801069 818CA72C
+2C0C0000 418200C0
+818C023C 2C0C0000
+418200B4 880C003E
+2C000000 418200A8
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820090
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810078
+3D600E31 616B3F38
+7D6903A6 4E800421
+80630004 80A300FC
+54A507BE 80630014
+2C050001 41820018
+2C050002 41820024
+2C050003 41820024
+4800003C C0A302E8
+C02303B8 FC050800
+4181002C 48000018
+3C00C080 48000008
+3C000000 90010008
+C0210008 3D600E34
+616BECA0 7D6903A6
+4E800421 80010010
+7C0803A6 3821000C
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>The player will accelerate to max speed immediately.
+This includes backwards speed, ultra brakes and preserves momentum mid-air.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Finish">
+        <code>C0000012 7C0802A6
+90010004 9421FFF8
+3FE01069 83FFA72C
+2C1F0000 4182006C
+819F023C 2C0C0000
+41820060 880C003E
+2C000000 41820054
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 4182003C
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810024
+819F004C 5460103A
+38800000 7C6C002E
+3D600E5C 616B3490
+7D6903A6 4E800421
+8001000C 7C0803A6
+38210008 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>The race ends right away.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Item Box">
+        <code>#106C5114 000000B4
+00020000 106C5114
+00000000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Local players instantly get items from item boxes.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Orange Drift">
+        <code>C0000015 7C0802A6
+90010004 9421FFF4
+3D801069 818CA72C
+2C0C0000 41820080
+818C023C 2C0C0000
+41820074 880C003E
+2C000000 41820068
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820050
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810038
+3D600E31 616B3F38
+7D6903A6 4E800421
+81830004 3C00447A
+90010008 C0210008
+806C0014 3D600E35
+616BAB84 7D6903A6
+4E800421 80010010
+7C0803A6 3821000C
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>When the player drifts the kart, the orange drift is immediately triggered.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Recovery">
+        <code>C0000017 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 41820094
+818C023C 2C0C0000
+41820088 880C003E
+2C000000 4182007C
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820064
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 4181004C
+3D600E31 616B3F38
+7D6903A6 4E800421
+83E30004 80630014
+8063020C 3D600E31
+616B45F0 7D6903A6
+4E800421 2C030000
+41820018 7FE3FB78
+3D600E33 616BE5C0
+7D6903A6 4E800421
+8001000C 7C0803A6
+38210008 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Player becomes immune to crushing and lightning. After getting hit, the player can react instantly.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Respawn">
+        <code>C0000014 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 41820078
+818C023C 2C0C0000
+4182006C 880C003E
+2C000000 41820060
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820048
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810030
+3D600E31 616B3F38
+7D6903A6 4E800421
+81830004 818C004C
+818C0014 800C0034
+900C001C 800C008C
+900C006C 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Lakitu instantly places the player back on the map.
+
+ ⚠ May not properly disable after use. If this is the case, start a new race.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Instant Start">
+        <code>#0E311278 2C000005
+#0E3112C8 2C000006
+140F0000 2C000003
+11020000 0E311278
+11020000 0E3112C8</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Local players skip Lakitu's countdown.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Item Rapid Fire">
+        <code>#0E29A0A8 880C0000
+C0000011 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 41820060
+818C023C 2C0C0000
+41820054 880C003E
+2C000000 41820048
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820030
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810018
+3D801069 818CA73C
+818C07B8 38000000
+7C0C19AE 8001000C
+7C0803A6 38210008
+4E800020 00000000
+C200000C 0E29A0A8
+7C0802A6 90010004
+9421FFF4 93E10008
+7D9F6378 3D600E5C
+616B1E78 7D6903A6
+4E800421 3D801069
+818CA73C 818C07B0
+7D8C1A14 7C0CF800
+4082000C 38A00000
+48000008 88BF0000
+83E10008 80010010
+7C0803A6 3821000C
+7CA02B78 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Automatically throw items when holding down the "use item" button.
+
+ ⚠ When disabling, make sure this code is selected.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Modify Gravity">
+        <code>#10688848 3E19999A
+00020000 10688848
+3D4CCCCD 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Modifies the gravity strength.
+
+Info:
+The value at line 3 determines the strength:
+- Default value is 3D4CCCCD (0.05)
+- Original value is 3E19999A (0.15)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Modify Item Limiters">
+        <code>#0E2E948C 7D635B78
+00020000 0E2E948C
+3860000C 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality, ShyGuy</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Modifies the amount of items that can spawn at once.
+All items are set to 12.
+Due to memory limitations, it cannot be set to a higher value.
+
+ ⚠ Start a new race for changes to apply.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Moonjump">
+        <code>#0E3583D0 38610008
+C4000001 0E3583D0
+48947C31 00000000
+C400001C 0ECA0000
+38610008 7C0802A6
+90010004 9421FFF4
+93E10008 7C7F1B78
+3D801069 818CA72C
+2C0C0000 418200A0
+818C023C 2C0C0000
+41820094 880C003E
+2C000000 41820088
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820070
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810058
+3D600E31 616B3F38
+7D6903A6 4E800421
+81830004 800C0014
+7C00F000 40820038
+806C0008 3D600E34
+616B4D88 7D6903A6
+4E800421 80A301A4
+38C04000 7CC02838
+7C060000 40820010
+C0BE0238 FCA02850
+D0BE0238 7FE3FB78
+83E10008 80010010
+7C0803A6 3821000C
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Inverts the player's gravity at will.
+
+ ⚠ When disabling, make sure this code is selected.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • R
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="No Voice Clip Limit">
+        <code>C0000012 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 41820068
+818C023C 2C0C0000
+4182005C 880C003E
+2C000000 41820050
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820038
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810020
+3D600E31 616B3F38
+7D6903A6 4E800421
+81830014 3800FFFF
+900C027C 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Character voice clips don't stop between actions.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Pause Race Timer">
+        <code>C000000D 7C0802A6
+90010004 9421FFF8
+3FE01069 83FFA72C
+2C1F0000 41820040
+819F023C 2C0C0000
+41820034 880C003E
+2C000000 41820028
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820010
+819F0034 38000001
+980C004C 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Pauses game mode timers.
+
+ ⚠ May not properly disable after use. If this is the case, start a new race.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Piranha Plant At Will">
+        <code>140F0000 00000020
+
+C000001D 7C0802A6
+90010004 9421FFF8
+7C7F1B79 418200CC
+3D801069 818CA72C
+2C0C0000 418200BC
+818C023C 2C0C0000
+418200B0 880C003E
+2C000000 418200A4
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 4182008C
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810074
+3D600E31 616B3F38
+7D6903A6 4E800421
+83C30004 81830014
+83AC020C 7FA3EB78
+3D600E31 616B46C8
+7D6903A6 4E800421
+2C030000 4082003C
+807E0008 3D600E34
+616B4D88 7D6903A6
+4E800421 80A301A4
+7FE52838 7C05F800
+40820018 7FA3EB78
+3D600E31 616B4878
+7D6903A6 4E800421
+8001000C 7C0803A6
+38210008 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Enable Piranha Plant at will.
+
+Info:
+Line 1 determines the activator value. (Default: 00000020)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • ZR
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Preserve Momentum On Wall Collision">
+        <code>#0E350EF4 9421FFB0
+00020000 0E350EF4
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Hitting walls will not reduce vehicle speed.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Respawn At Will">
+        <code>140F0000 01000000
+
+C0000019 7C0802A6
+90010004 9421FFF8
+7C7F1B79 418200A8
+3D801069 818CA72C
+2C0C0000 41820098
+818C023C 2C0C0000
+4182008C 880C003E
+2C000000 41820080
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820068
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810050
+3D600E31 616B3F38
+7D6903A6 4E800421
+83C30004 807E0008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 7FE02838
+7C00F800 40820018
+807E004C 3D600E31
+616B5D80 7D6903A6
+4E800421 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Forces Lakitu to pick up the player back on the map at will.
+
+Info:
+Line 1 determines the activator value. (Default: 01000000)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • Flick Up
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="RGB Map">
+        <code>#10014820 00000000
+
+150F0000 3C75C28F
+140F0000 10014820
+
+C4000022 0ECA00DC
+3D800ECA C0AC01E8
+C0CC01E4 80030000
+28000005 4D810020
+1C000024 3D600ECA
+616B010C 7D6B0214
+7D6903A6 4E800420
+C0030008 EC00082A
+FC003000 41800010
+38000001 FC003090
+90030000 D0030008
+4E800020 C0030004
+EC000828 FC002800
+41810010 38000002
+FC002890 90030000
+D0030004 4E800020
+C003000C EC00082A
+FC003000 41800010
+38000003 FC003090
+90030000 D003000C
+4E800020 C0030008
+EC000828 FC002800
+41810010 38000004
+FC002890 90030000
+D0030008 4E800020
+C0030004 EC00082A
+FC003000 41800010
+38000005 FC003090
+90030000 D0030004
+4E800020 C003000C
+EC000828 FC002800
+41810010 38000000
+FC002890 90030000
+D003000C 4E800020
+3F800000 00000000
+C0000021 7C0802A6
+90010004 9421FFF0
+7C7F1B78 FFE00890
+3FC01069 83DEA72C
+2C1E0000 418200DC
+83DE0328 2C1E0000
+418200D0 83DE00A4
+2C1E0000 418200C4
+3C000000 6000A300
+7FDE002E 2C1E0000
+418200B0 83DE0000
+2C1E0000 418200A4
+38A00000 3CC03F80
+90A10008 90C1000C
+A0DF0000 34C6FFFF
+40A00020 B0DF0000
+C0A10008 C0C1000C
+90BF0004 D0DF0008
+D0BF000C D0BF0010
+3D600E64 616BE59C
+7D6903A6 4E800421
+80630000 80630200
+806300CC 546347FF
+40820048 FC20F890
+387F0004 3D600ECA
+616B00DC 7D6903A6
+4E800421 38830004
+387E00B4 38A0000C
+38C00001 3D600EC8
+616B21E0 7D6903A6
+4E800421 C0A1000C
+ECA5282A D0BE0108
+80010014 7C0803A6
+38210010 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>The main light source of maps cycles through red, green and blue.
+
+ ⚠ Start a new race to fully disable.
+ ⚠ May cause performance issues.
+
+Info:
+Line 3 determines the RGB cycle speed. (Default: 3C75C28F)
+Line 4 is the starting address of variables used by this code. (Default: 10014820)
+ ⚠ If this address is changed, don't forget to change the undo codeline (Line 1) to the same address.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Default Data Used:
+0x10014820 (20 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Rocket Bill">
+        <code>140F0000 00000010
+140F0100 00000002
+
+C0000023 7C0802A6
+90010004 9421FFF4
+7C7F1B79 418200F8
+7C9E2379 418200F0
+3D801069 818CA72C
+2C0C0000 418200E0
+818C023C 2C0C0000
+418200D4 880C003E
+2C000000 418200C8
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 418200B0
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810098
+3D600E31 616B3F38
+7D6903A6 4E800421
+83A30004 80630014
+8063020C 3D600E31
+616B46B8 7D6903A6
+4E800421 2C030000
+41820064 807D0008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 807D0014
+C0A303B8 7FE02838
+7C00F800 4082000C
+3C004120 48000014
+7FC02838 7C00F000
+40820024 38000000
+90010008 C0C10008
+EC2501B2 3D600E34
+616BECA0 7D6903A6
+4E800421 80010010
+7C0803A6 3821000C
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Multiplies the Bullet Bill's speed by x10 at will.
+
+Info:
+Line 1 determines the activator value for rocket speed. (Default: 00000010)
+Line 2 determines the activator value for full stop. (Default: 00000002)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • Y (Rocket Speed)
+ • B (Full Stop)
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Slope Lock">
+        <code>#0E35838C 4BFFDF51
+00020000 0E35838C
+60000000 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Local karts cannot properly drive on sloped surfaces.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Super Item Wheel">
+        <code>#10014818 00000000
+#1001481C 00000000
+
+140F0000 00040000
+140F0100 00080000
+140F0200 10014818
+
+C000002B 7C0802A6
+90010004 9421FFF8
+7C7F1B79 41820138
+7C9E2379 41820130
+7CBD2B78 3D801069
+818CA72C 2C0C0000
+4182011C 818C023C
+2C0C0000 41820110
+880C003E 2C000000
+41820104 3D600E5C
+616B1A94 7D6903A6
+4E800421 2C030000
+418200EC 3D600E5C
+616B1E78 7D6903A6
+4E800421 2803000B
+418100D4 3D600E31
+616B3F38 7D6903A6
+4E800421 7C7C1B78
+807C0004 80630008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 38C00000
+7FE72838 7C07F800
+4082000C 38C6FFFF
+48000014 7FC72838
+7C07F000 40820008
+38C60001 811D0000
+2C080000 90FD0000
+80BD0004 4082001C
+7CC53214 28060014
+40810008 68A60014
+7CC53378 90BD0004
+819C000C 818C005C
+80CC0044 2C060000
+41800024 7C053000
+41820034 7D836378
+3D600E2E 616B3AC4
+7D6903A6 4E800421
+4800001C 7D836378
+389D0004 3D600E2E
+616B4514 7D6903A6
+4E800421 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Select items at will.
+
+Info:
+Line 4 is the activator value to select the next item. (Default: 00040000)
+Line 5 is the activator value to select the previous item. (Default: 00020000)
+Line 6 is the starting address of variables used by this code. (Default: 10014818)
+ ⚠ If this address is changed, don't forget to change the undo codeline (Line 1 and 2) to the same address.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Activator:
+ • D-Pad Left (Previous Item)
+ • D-Pad Right (Next Item)
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Default Data Used:
+0x10014818 (8 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Switch Camera FOV At Will">
+        <code>#0E2F1FC8 FC40D090
+#10014834 00000000
+C4000001 0E2F1FC8
+489AE225 00000000
+C400001F 0ECA01EC
+7C0802A6 90010004
+9421FFF4 3D801069
+818CA72C 2C0C0000
+418200CC 818C023C
+2C0C0000 418200C0
+880C003E 2C000000
+418200B4 3D600E5C
+616B1A94 7D6903A6
+4E800421 2C030000
+4182009C 3D600E5C
+616B1E78 7D6903A6
+4E800421 2803000B
+41810084 3D600E31
+616B3F38 7D6903A6
+4E800421 80630004
+80630008 3D600E34
+616B4D88 7D6903A6
+4E800421 3D801001
+88AC4834 80C301A4
+38E00040 7CE03038
+7C003800 40820020
+A0EC4836 34E7FFFF
+40A0001C B0EC4836
+68A50001 98AC4834
+4800000C 38000000
+B00C4836 2C050000
+41820014 3C004220
+90010008 C0A10008
+EF5A282A 80010010
+7C0803A6 3821000C
+FC40D090 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Changes the camera FOV at will.
+
+ ⚠ When disabling, make sure this code is selected.
+ ⚠ This code affects all local player cameras.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Toggler:
+ • Right Stick Button
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Default Data Used:
+0x10014834 (4 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Teleporter">
+        <code>#10014838 00000000
+#1001483C 00000000
+#10014840 00000000
+#10014844 00000000
+#10014848 00000000
+#1001484C 00000000
+#10014850 00000000
+
+140F0000 00000008
+140F0100 10014838
+
+C000003C 7C0802A6
+90010004 9421FFF8
+7C7F1B79 418201C0
+7C9E2378 3D801069
+818CA72C 2C0C0000
+4182018C 818C023C
+2C0C0000 41820180
+880C003E 2C000000
+41820174 3D600E5C
+616B1A94 7D6903A6
+4E800421 2C030000
+4182015C 3D600E5C
+616B1E78 7D6903A6
+4E800421 2803000B
+41810144 3D600E31
+616B3F38 7D6903A6
+4E800421 7C7D1B78
+807D0014 8063020C
+3D600E31 616B4784
+7D6903A6 4E800421
+2C030000 40820130
+807D0004 80630008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 A0DE0002
+38E00000 7FE02838
+7C00F800 4082000C
+38E60001 480000F4
+2C060000 418200F0
+807D0014 8063020C
+3D600E31 616B4218
+7D6903A6 4E800421
+2C060020 40800074
+88DE0000 2C060000
+418200C0 C01E0004
+D0030000 C01E0008
+D0030004 C01E000C
+D0030008 C01E0010
+D003024C D0030258
+D0030264 C01E0014
+D0030250 D003025C
+D0030268 C01E0018
+D0030254 D0030260
+D003026C 807D0004
+80630014 3D600E35
+616B95AC 7D6903A6
+4E800421 4800005C
+C0030000 D01E0004
+C0030004 D01E0008
+C0030008 D01E000C
+C003024C D01E0010
+C0030250 D01E0014
+C0030254 D01E0018
+38000001 981E0000
+48000020 7FC3F378
+38800000 38A0001C
+3D600EC9 616B9040
+7D6903A6 4E800421
+B0FE0002 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Save the current location of the kart and teleport back to that location at will.
+
+Info:
+Line 9 determines the activator value. (Default: 00000008)
+Line 10 is the starting address of variables used by this code. (Default: 10014838)
+ ⚠ If this address is changed, don't forget to change the undo codelines as well (From line 1 to 7).
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Activate:
+ • Hold X (Save)
+ • Tap X (Load)
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Default Data Used:
+0x10014838 (28 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Touch Screen Freefly">
+        <code>140F0000 10014854
+
+C0000042 7C0802A6
+90010004 9421FFF4
+7C7F1B78 38000000
+90010008 C3E10008
+3D801069 818CA72C
+2C0C0000 418201D0
+818C023C 2C0C0000
+418201C4 880C003E
+2C000000 418201B8
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 418201A0
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810188
+3D600E31 616B3F38
+7D6903A6 4E800421
+7C7E1B78 3D801069
+818CC38C 818C0010
+818C0004 818C01A0
+806C02BC 7C7D1B79
+4182015C 38800000
+38A00000 38C00001
+3D600E7A 616B1020
+7D6903A6 4E800421
+7FA3EB78 3D600E7A
+616B1FAC 7D6903A6
+4E800421 807E0014
+8063020C 3D600E31
+616B4784 7D6903A6
+4E800421 2C030000
+40820104 807E0014
+8063020C 3D600E31
+616B4394 7D6903A6
+4E800421 2C030000
+408200E4 807E0004
+80630008 3D600E34
+616B4D88 7D6903A6
+4E800421 80A301A4
+54A58FFF C0A30110
+C0C30114 418200B8
+807E0004 80630014
+3D600E35 616B95AC
+7D6903A6 4E800421
+C0FF0000 C11F0004
+ED27402A D0BF0000
+D0DF0004 FC09F800
+4182008C ECA53828
+ECC64028 3C004080
+90010008 C0E10008
+ECA501F2 ECC601F2
+807E0014 8063020C
+3D600E31 616B4218
+7D6903A6 4E800421
+C0E30000 C1030008
+ECA7282A ECC8302A
+3C00BF80 90010008
+C0E10008 D0A30000
+D0C30008 D3E3024C
+D3E30258 D3E30264
+D3E30250 D3E3025C
+D3E30268 D0E30254
+D0E30260 D0E3026C
+4800000C D3FF0000
+D3FF0004 80010010
+7C0803A6 3821000C
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Updates kart coordinates based on touch screen input.
+The "gameplay" screen of the Wii U GamePad will be forced into fullscreen.
+
+ ⚠ Driving on anti-gravity will temporarily disable the freefly.
+
+Info:
+Line 1 is the starting address of variables used by this code. (Default: 10014854)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • Touch Screen
+
+Default Data Used:
+0x10014854 (8 bytes)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Trick Anywhere">
+        <code>C0000012 7C0802A6
+90010004 9421FFF8
+3D801069 818CA72C
+2C0C0000 41820068
+818C023C 2C0C0000
+4182005C 880C003E
+2C000000 41820050
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 41820038
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 41810020
+3D600E31 616B3F38
+7D6903A6 4E800421
+81830004 38000010
+900C01D0 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>The player is able to trick at any moment, anywhere.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Turbo At Will">
+        <code>140F0000 00000010
+
+C0000022 7C0802A6
+90010004 9421FFF8
+7C7F1B79 418200F4
+3D801069 818CA72C
+2C0C0000 418200E4
+818C023C 2C0C0000
+418200D8 880C003E
+2C000000 418200CC
+3D600E5C 616B1A94
+7D6903A6 4E800421
+2C030000 418200B4
+3D600E5C 616B1E78
+7D6903A6 4E800421
+2803000B 4181009C
+3D600E31 616B3F38
+7D6903A6 4E800421
+83C30004 80630014
+8063020C 7C7D1B78
+3D600E31 616B4784
+7D6903A6 4E800421
+2C030000 40820064
+7FA3EB78 3D600E31
+616B45F0 7D6903A6
+4E800421 2C030000
+40820048 807E0008
+3D600E34 616B4D88
+7D6903A6 4E800421
+80A301A4 7FE02838
+7C00F800 40820024
+807E0014 38800008
+38A00001 38C00001
+3D600E35 616BABB4
+7D6903A6 4E800421
+8001000C 7C0803A6
+38210008 4E800020</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Kart engine goes into turbo mode at will.
+
+Info:
+Line 1 determines the activator value. (Default: 00000010)
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Enable:
+ • Y
+
+See Button Activators:
+https://pastebin.com/iYs6n7Sb
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Unbreakable Items">
+        <code>#0E2A3970 81830000
+00020000 0E2A3970
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Items can't break by hitting players, stage hazards or other items.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Unlock Everything">
+        <code>0C000000 00000001
+C000001D 7C0802A6
+90010004 9421FFF8
+3D600E64 616BE59C
+7D6903A6 4E800421
+2C030000 418200A4
+806302C8 808300E4
+8884015C 3D600E67
+616B39B4 7D6903A6
+4E800421 83E30158
+387F04CC 3BC00005
+3880000C 48000085
+38630020 37DEFFFF
+4082FFF0 387F05CC
+3BC00005 3880000C
+48000069 38630020
+37DEFFFF 4082FFF0
+387F1A28 38800008
+48000051 387F1A50
+3880001E 48000045
+387F1A90 3880001A
+48000039 387F1AD0
+38800012 4800002D
+387F1B10 3880000C
+48000021 387F1B5A
+3880005A 48000015
+8001000C 7C0803A6
+38210008 4E800020
+7C852378 38800003
+3D600EC9 616B9040
+7D6903A6 4E800420
+D2000000 CAFEBABE</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality, DarkFlare, BullyWiiPlaza, Mega-Mew, Others</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Unlocks everything. This does not include DLC.
+
+ ⚠ End a race for a permanent save.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • All
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="Water Anywhere">
+        <code>#0E340224 2C030000
+C4000001 0E340224
+489600C1 00000000
+C4000016 0ECA02E4
+7C0802A6 90010004
+9421FFF4 93C10008
+7C7E1B78 3D801069
+818CA72C 2C0C0000
+41820074 818C023C
+2C0C0000 41820068
+880C003E 2C000000
+4182005C 3D600E5C
+616B1A94 7D6903A6
+4E800421 2C030000
+41820044 3D600E5C
+616B1E78 7D6903A6
+4E800421 2803000B
+4181002C 3D600E31
+616B3F38 7D6903A6
+4E800421 81830004
+7C0CF800 4082000C
+38600001 48000008
+7FC3F378 83C10008
+80010010 7C0803A6
+3821000C 2C030000
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Kart behaves as if it were underwater at all times.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Players Supported:
+ • Wii U GamePad
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+    <entry name="WiFi Planet Anywhere">
+        <code>C0000012 7C0802A6
+90010004 9421FFF8
+3D801069 818CC38C
+2C0C0000 41820068
+3D600E6E 616B8138
+7D6903A6 4E800421
+2C030000 41820050
+3D600E76 616B5C74
+7D6903A6 4E800421
+3C601069 8063A758
+2C030000 41820030
+88030040 2C000002
+41820024 88030041
+2C000004 41820018
+38800001 3D600E6E
+616BDEF8 7D6903A6
+4E800421 8001000C
+7C0803A6 38210008
+4E800020 00000000</code>
+        <codeInputType>Cheat Code</codeInputType>
+        <authors>Mewtality</authors>
+        <raw_assembly>false</raw_assembly>
+        <assembly_ram_write>false</assembly_ram_write>
+        <comment>Forces the WiFi planet background to show anywhere in the menu.
+
+Game Version: 4.2
+TCP Gecko Version: 2.53
+
+Modes Supported:
+ • Menu
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes</comment>
+        <enabled>false</enabled>
+    </entry>
+</codes>

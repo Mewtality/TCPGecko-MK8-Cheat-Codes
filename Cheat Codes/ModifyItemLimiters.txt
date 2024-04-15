@@ -1,0 +1,21 @@
+Modify Item Limiters [Mewtality]:
+#0E2E948C 7D635B78
+00020000 0E2E948C
+3860000C 00000000
+
+Modifies the amount of items that can spawn at once.
+All items are set to 12.
+Due to memory limitations, it cannot be set to a higher value.
+
+ ⚠ Start a new race for changes to apply.
+
+Game Version: 4.2
+
+Modes Supported:
+ • Battle (Offline / Online)
+ • Grand Prix
+ • Time Trials
+ • VS Race (Offline / Online)
+
+Source:
+https://github.com/Mewtality/TCPGecko-MK8-Cheat-Codes
