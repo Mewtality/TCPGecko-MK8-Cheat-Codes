@@ -26,6 +26,7 @@ Lakitu instantly places the player back on the map.
  ⚠ May not properly disable after use. If this is the case, start a new race.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

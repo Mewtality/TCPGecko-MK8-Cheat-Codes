@@ -47,6 +47,7 @@ Info:
 Line 1 determines the activator value. (Default: 02000000)
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

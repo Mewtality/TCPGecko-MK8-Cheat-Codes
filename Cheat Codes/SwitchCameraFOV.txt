@@ -42,6 +42,7 @@ Changes the camera FOV at will.
  ⚠ This code affects all local player cameras.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

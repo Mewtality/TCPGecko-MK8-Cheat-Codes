@@ -24,6 +24,7 @@ Line 9 and 10 is where the address for this code's variables is store. (Default:
  ⚠ If this address is changed, don't forget to change the undo codeline (Line 1) to the same address.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline)

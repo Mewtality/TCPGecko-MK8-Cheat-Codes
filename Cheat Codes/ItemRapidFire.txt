@@ -37,6 +37,7 @@ Automatically throw items when holding down the "use item" button.
  ⚠ When disabling, make sure this code is selected.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

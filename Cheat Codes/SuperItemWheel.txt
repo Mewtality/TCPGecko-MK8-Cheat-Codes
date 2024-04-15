@@ -60,6 +60,7 @@ Line 6 is the starting address of variables used by this code. (Default: 1001481
  ⚠ If this address is changed, don't forget to change the undo codeline (Line 1 and 2) to the same address.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

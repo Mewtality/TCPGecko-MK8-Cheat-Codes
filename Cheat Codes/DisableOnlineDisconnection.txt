@@ -6,6 +6,7 @@ Disable Online Disconnection [Mewtality]:
 Local players can't get disconnected from online games.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

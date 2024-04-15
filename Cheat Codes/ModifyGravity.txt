@@ -11,6 +11,7 @@ The value at line 3 determines the strength:
 - Original value is 3E19999A (0.15)
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

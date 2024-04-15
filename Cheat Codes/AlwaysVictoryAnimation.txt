@@ -27,6 +27,7 @@ Always have the victory character animation.
  ⚠ Start a new race for changes to apply.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

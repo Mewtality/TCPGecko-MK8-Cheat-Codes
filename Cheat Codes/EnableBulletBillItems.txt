@@ -1,4 +1,4 @@
-Enable Bullet Bill Items [Mewtality]:
+Enable Bullet Bill Items [Mewtality, ShyGuy]:
 #0E299C04 4807AAB5
 00020000 0E299C04
 38600000 00000000
@@ -6,6 +6,7 @@ Enable Bullet Bill Items [Mewtality]:
 Local players gain the ability to use items while in a bullet.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

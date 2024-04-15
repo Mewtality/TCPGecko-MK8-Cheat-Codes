@@ -53,6 +53,7 @@ Line 1 determines the activator to open the glider. (Default: 00010001)
 Line 2 determines the activator to close the glider. (Default: 00020001)
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

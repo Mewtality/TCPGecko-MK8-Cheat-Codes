@@ -37,6 +37,7 @@ Unlocks everything. This does not include DLC.
  ⚠ End a race for a permanent save.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • All

@@ -6,6 +6,7 @@ Preserve Momentum On Wall Collision [Mewtality]:
 Hitting walls will not reduce vehicle speed.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

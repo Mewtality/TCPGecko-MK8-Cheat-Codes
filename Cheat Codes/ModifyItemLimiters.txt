@@ -1,4 +1,4 @@
-Modify Item Limiters [Mewtality]:
+Modify Item Limiters [Mewtality, ShyGuy]:
 #0E2E948C 7D635B78
 00020000 0E2E948C
 3860000C 00000000
@@ -10,6 +10,7 @@ Due to memory limitations, it cannot be set to a higher value.
  ⚠ Start a new race for changes to apply.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

@@ -27,6 +27,7 @@ C0000017 7C0802A6
 Player becomes immune to crushing and lightning. After getting hit, the player can react instantly.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

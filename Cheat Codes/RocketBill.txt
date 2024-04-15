@@ -46,6 +46,7 @@ Line 1 determines the activator value for rocket speed. (Default: 00000010)
 Line 2 determines the activator value for full stop. (Default: 00000002)
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

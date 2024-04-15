@@ -22,6 +22,7 @@ C0000012 7C0802A6
 Always have 5 balloons in battle mode.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)

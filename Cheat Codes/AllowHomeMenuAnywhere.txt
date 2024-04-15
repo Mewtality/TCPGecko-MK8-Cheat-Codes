@@ -5,6 +5,7 @@ C1000000 0E6E60B4
 Enables the home menu button.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • All

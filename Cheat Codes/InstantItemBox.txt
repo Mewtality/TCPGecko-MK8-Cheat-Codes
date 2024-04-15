@@ -6,6 +6,7 @@ Instant Item Box [Mewtality]:
 Local players instantly get items from item boxes.
 
 Game Version: 4.2
+TCP Gecko Version: 2.53
 
 Modes Supported:
  • Battle (Offline / Online)
